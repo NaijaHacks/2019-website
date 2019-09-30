@@ -19,24 +19,23 @@ const sections: BackgroundSection[] = [
   // MUST BE DEFINED BOTTOM OF PAGE FIRST FOR STACKING
   {
     name: "faq",
-    bg: "#EFF8FA"
+    bg: "#fff"
   },
   {
     name: "sponsors-cta",
-    bg: "#EFF8FA"
+    bg: "#fff"
   },
   {
     name: "leaders",
-    bg: "linear-gradient(180deg, #B77554 0%, #C45E5E 98.96%)"
+    bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 51%)"
   },
   {
     name: "stories",
-    bg: "linear-gradient(180deg, #C46D46 0%, #A47243 98.96%)"
+    bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 51%)"
   },
   {
     name: "about",
-    bg:
-      "linear-gradient(180deg, #314158 18.52%, #2A4A62 36.85%, #345F6C 55.55%, #256477 72.76%, #287795 89.59%, #287795 89.6%)"
+    bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 20%)"
   }
 ];
 

@@ -76,10 +76,10 @@ const Fade = styled.div`
   bottom: 0;
   background-image: linear-gradient(
       90deg,
-      #373f56,
+      #ff775f,
       rgba(248, 252, 254, 0) 150px
     ),
-    linear-gradient(270deg, #373f56, rgba(248, 252, 254, 0) 150px);
+    linear-gradient(270deg, #ff775f, rgba(248, 252, 254, 0) 150px);
   ${props => props.theme.mediaQueries.tabletMobile`
     background-image: none;
   `}

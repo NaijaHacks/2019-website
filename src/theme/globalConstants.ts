@@ -3,11 +3,11 @@ import { GlobalConstants } from "@hackthenorth/north";
 const globalConstants: GlobalConstants = {
   color: {
     /* Text colours */
-    textDark: "#183249",
+    textDark: "#333333",
     textLight: "#EFF8FA",
 
     /* Accent colours */
-    action: "#009DD9",
+    action: "#FF775F",
     actionHover: "#0482b3",
     error: "#FC5430",
     errorHover: "#E54C2B",

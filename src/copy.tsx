@@ -13,6 +13,7 @@ import {
   // Sponsors & Partners
   TechyonLogoImg,
   SponsorLogoImg,
+  SketchLogoImg,
   SponsorIllustrationImg,
   // About section imgs
   TrudeauHeadshotImg,
@@ -70,7 +71,14 @@ import {
 
 interface Sponsor {
   name: string;
-  tier: "bronze" | "silver" | "gold" | "startup" | "partner";
+  tier:
+    | "bronze"
+    | "silver"
+    | "gold"
+    | "startup"
+    | "partner"
+    | "gaming"
+    | "media";
   imgSrc: string;
   link: string;
   feature?: {
@@ -82,137 +90,239 @@ interface Sponsor {
 
 const sponsors: Sponsor[] = [
   {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "bronze",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com",
-    feature: {
-      text:
-        "Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo.",
-      link: "https://hackthenorth.com",
-      linkLabel: "Hack the North"
-    }
-  },
-  {
-    name: "Hack the North",
-    tier: "silver",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "silver",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com",
-    feature: {
-      text:
-        "Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo.",
-      link: "https://hackthenorth.com",
-      linkLabel: "Hack the North"
-    }
-  },
-  {
-    name: "Hack the North",
-    tier: "silver",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com",
-    feature: {
-      text:
-        "Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo.",
-      link: "https://hackthenorth.com",
-      linkLabel: "Hack the North"
-    }
-  },
-  {
-    name: "Hack the North",
-    tier: "silver",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com"
-  },
-  {
-    name: "Hack the North",
-    tier: "gold",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com",
-    feature: {
-      text:
-        "Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo.",
-      link: "https://hackthenorth.com",
-      linkLabel: "Hack the North"
-    }
-  },
-  {
-    name: "Hack the North",
-    tier: "gold",
-    imgSrc: SponsorLogoImg,
-    link: "https://hackthenorth.com",
-    feature: {
-      text:
-        "Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo.",
-      link: "https://hackthenorth.com",
-      linkLabel: "Hack the North"
-    }
-  },
-  {
     name: "Techyon",
     tier: "partner",
     imgSrc: TechyonLogoImg,
     link: "https://techyon.org/"
+  },
+  {
+    name: "Dotts Media",
+    tier: "media",
+    imgSrc:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ0KgyfriU19DYyDnhmd4NMRXUeNhz4q5olRvZEifPF_pvXmnk",
+    link: "https://dottsmediahouse.com/"
+  },
+  {
+    tier: "gaming",
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/isabiplay.png",
+    link: "https://isabiplay.com/",
+    name: "iSabiPlay"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/24hwoman.png",
+    link: "https://www.twentyfourhourwoman.com/",
+    tier: "silver",
+    name: "24Hour Woman"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/tech.png",
+    link: "https://get.tech/",
+    tier: "silver",
+    name: ".Tech Domains"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/afriqcan.png",
+    link: "http://www.afriqcan.com/",
+    tier: "silver",
+    name: "AfriqCan"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/bellanaija.png",
+    link: "https://www.bellanaija.com/",
+    tier: "silver",
+    name: "Bella Naija"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/balsamiq.png",
+    link: "https://balsamiq.com/",
+    tier: "silver",
+    name: "Balsamiq"
+  },
+  // {
+  //   imgSrc: "https://naijahacks.com/2018/res/sponsors/cerchy.png",
+  //   link: "https://cerchy.com/",
+  //   tier: "silver",
+  //   name: "Cerchy Community"
+  // },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/codelagos.png",
+    link: "https://codelagos.org/",
+    tier: "silver",
+    name: "CodeLagos"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/digiclan.png",
+    link: "https://digiclanhub.com/",
+    tier: "silver",
+    name: "DigiClan"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
+    link: "https://digitalocean.com/",
+    tier: "silver",
+    name: "DigitalOcean"
+  },
+  // {
+  //   imgSrc: "https://naijahacks.com/2018/res/sponsors/eiinspire.png",
+  //   link: "http://eiinspire.com",
+  //   tier: "silver",
+  //   name: "EIInspire"
+  // },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/gimme.png",
+    link: "/",
+    tier: "silver",
+    name: "Gimme"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/hemcloth.png",
+    link: "https://hemcloth.com",
+    tier: "silver",
+    name: "Hem Cloth"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/ingressive.png",
+    link: "https://ingressive.co/",
+    tier: "silver",
+    name: "Ingressive"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/isabiplay.png",
+    link: "https://isabiplay.com/",
+    tier: "silver",
+    name: "iSabiPlay"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/ivorymark.png",
+    link: "http://ivorymark.com/",
+    tier: "silver",
+    name: "IvoryMark NG"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/jetbrains.png",
+    link: "http://jetbrains.com/",
+    tier: "silver",
+    name: "Jetbrains"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/keoyo.png",
+    link: "http://www.keoyo.com/",
+    tier: "silver",
+    name: "Keoyo"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/linode.png",
+    link: "https://www.linode.com/",
+    tier: "gold",
+    name: "Linode"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/lushplans.png",
+    link: "https://lushplans.com",
+    tier: "silver",
+    name: "Lush Plans"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/mlh.png",
+    link: "https://mlh.io",
+    tier: "silver",
+    name: "MLH"
+  },
+  // {
+  //   imgSrc: "https://naijahacks.com/2018/res/sponsors/nicson.png",
+  //   link: "https://nicsonafrica.com",
+  //   tier: "silver",
+  //   name: "Nicson"
+  // },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/ntel.png",
+    link: "https://ntel.com.ng",
+    tier: "silver",
+    name: "Ntel"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/nugget.ai.png",
+    link: "https://nugget.ai",
+    tier: "silver",
+    name: "Nugget AI"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/ondo.png",
+    link: "https://www.ondostate.gov.ng/",
+    tier: "silver",
+    name: "Ondo State Government"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/printivo.png",
+    link: "https://www.printivo.com/",
+    tier: "silver",
+    name: "Printivo"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/redcarpetontv.png",
+    link: "https://redcarpetontv.com",
+    tier: "silver",
+    name: "Red Carpet On TV"
+  },
+  // {
+  //   imgSrc: "https://naijahacks.com/2018/res/sponsors/seso.png",
+  //   link: "https://seso.global",
+  //   tier: "silver",
+  //   name: "Seso Global"
+  // },
+  {
+    imgSrc: SketchLogoImg,
+    link: "https://www.sketch.com",
+    tier: "silver",
+    name: "Sketch"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/stemhubfoundation.png",
+    link: "https://stemhubfoundation.com",
+    tier: "silver",
+    name: "StemHub Foundation"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/stickergiant.png",
+    link: "https://www.stickergiant.com/",
+    tier: "silver",
+    name: "Stickergiant"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/stickermule.png",
+    link: "https://mule.to/NaijaHacks",
+    tier: "silver",
+    name: "Stickermule"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/stickeryou.png",
+    link: "https://stickeryou.com",
+    tier: "silver",
+    name: "StickerYou"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/techher.png",
+    link: "https://techherng.com/",
+    tier: "silver",
+    name: "TechHer"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/trippy.png",
+    link: "https://www.instagram.com/trippy_socks/",
+    tier: "silver",
+    name: "Trippy Socks"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/twilio.png",
+    link: "https://www.twilio.com/",
+    tier: "silver",
+    name: "Twilio"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/wolfram.png",
+    link: "https://www.wolfram.com/",
+    tier: "silver",
+    name: "Wolfram"
   }
 ];
 
@@ -235,192 +345,102 @@ const shuffle = <T extends {}>(array: T[]) => {
 
 const team = [
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Uchi Uchibeke",
+    alt: "Uchi Uchibeke",
+    img: "https://naijahacks.com/2018/res/team/uchi.png"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Blessing Thomas",
+    alt: "Blessing Thomas",
+    img: "https://naijahacks.com/2018/res/team/blessing.jpeg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Dolapo Fadare",
+    alt: "Dolapo Fadare",
+    img: "https://naijahacks.com/res/team/dolapo.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Rosemary Ajuka",
+    alt: "Rosemary Ajuka",
+    img: "https://naijahacks.com/2018/res/team/rosemary.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "ABDULSALAM DAUD",
+    alt: "ABDULSALAM DAUD",
+    img: "https://naijahacks.com/res/team/abdulsalam.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Ifeanyichukwu Nwabuokei ",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/ify.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Andrew Miracle",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/andrew.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Adeniyi Adedamola ",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/adeniyi.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Steven Omole-Adebomi",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/steven.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Olabode Oyinkansola",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/olabode.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Richard",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/ganihu.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Favour George Okpara ",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/favour.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Mohammed Bayero Yayandi",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/mohammed.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Ahmed Olanrewaju O.",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/ahmed.jpeg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Adekanye Francisca",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/cisca.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Helen Ogbogu",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/helen.jpg"
   },
   {
-    text: "Open-sourced with 💛 by Michal Jez, Frontend",
-    img: MichalHeadshotImg,
-    alt: "A headshot of Michal Jez"
+    text: "Daniel Enemchukwu",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/daniel_e.jpg"
   },
   {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
-  },
-  {
-    text: "Made with 💛 by students in Waterloo 🇨🇦",
-    img: OrganizerHeadshotImg,
-    alt: "Hack the North logo"
+    text: "Chidiebere Onyegbuchulem",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/chidi.jpg"
   }
 ];
 
 export default {
   nav: {
     logo: {
-      light: LogoIconLightImg,
-      dark: LogoIconDarkImg
+      light: "https://naijahacks.com/guide/img/favicon.png",
+      dark: "https://naijahacks.com/guide/img/favicon.png"
     },
     sections: ["About", "Leaders", "Sponsors", "FAQ", "2018"],
     socialLinks: [
@@ -430,7 +450,7 @@ export default {
           light: SocialFacebookImg,
           dark: SocialFacebookImgDark
         },
-        link: "https://www.facebook.com/hackthenorth"
+        link: "https://www.facebook.com/naijahacks"
       },
       {
         name: "twitter",
@@ -438,7 +458,7 @@ export default {
           light: SocialTwitterImg,
           dark: SocialTwitterImgDark
         },
-        link: "https://twitter.com/hackthenorth"
+        link: "https://twitter.com/naijahacks"
       },
       {
         name: "instagram",
@@ -446,7 +466,7 @@ export default {
           light: SocialInstaImg,
           dark: SocialInstaImgDark
         },
-        link: "https://www.instagram.com/hackthenorth"
+        link: "https://www.instagram.com/naijahacks"
       }
     ],
     sponsorButton: {
@@ -454,50 +474,48 @@ export default {
     }
   },
   hero: {
-    firstLine: "Your",
-    secondLine: "Your Hack the North.",
-    keyWords: ["idea,", "design,", "story,", "challenge,", "learning,"],
-    subtitle: "September 13 - 15, 2019  ·  University of Waterloo",
+    firstLine: "This is a movement of ",
+    secondLine: "This is NaijaHacks.",
+    keyWords: ["Leaders.", "Makers.", "Disruptors."],
+    subtitle: "Online Dec 7 - 14 \nDemo day Dec 17, 2019  \n@ Zone Tech Park",
     emailNotif: " has been added to our mailing list.",
     emailPlaceholder: "Enter your email address for updates",
     emailDupe: "This email is already on the mailing list!",
     emailError: "Error! Please try again."
   },
   sponsorsSection: {
-    heading: "Sponsor a special weekend",
+    heading: "Support Innovation",
     desc: (
       <>
         <Text variant="sectionText">
-          Each year, our sponsors help us unite 1,000+ emerging developers,
-          designers, and builders. Our sponsors make it possible for hackers to
-          build something they're proud of. Stay tuned as we confirm more
-          sponsors for the event.
+          Each year, sponsors from around the world join us to empower young
+          Nigerian's to build solutions that make a difference for them, their
+          families and for the world. Stay tuned as we confirm more sponsors for
+          NaijaHacks 2019.
         </Text>
         <Text variant="sectionText" as="p">
           Interested in sponsoring? Email us at{" "}
-          <Link href="mailto:sponsor@hackthenorth.com">
-            sponsor@hackthenorth.com
-          </Link>
+          <Link href="mailto:team@naijahacks.com">team@naijahacks.com</Link>
         </Text>
       </>
     ),
     cta: {
-      link: "mailto:sponsor@hackthenorth.com",
+      link: "mailto:team@naijahacks.com",
       label: "Become a sponsor"
     },
     illustration: SponsorIllustrationImg,
     sponsors
   },
   about: {
-    title: "Canada's biggest hackathon",
+    title: "Africa's biggest hackathon",
     sentence1:
-      "Join 1,000+ students from all around the globe at the University of Waterloo to build something incredible in just 36 hours.",
+      "Join 1,300+ students, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019.",
     sentence2:
-      "At Hack the North, we want to make it easy for anyone to dream big. Our hackathon aims to engage and empower students of all experience levels by providing the resources to turn your ideas into a reality. Let us handle food, travel, and all the details so you can create #YourHackTheNorth.",
+      "NaijaHacks is not just a hackathon. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
     gears: [
       {
         name: "speakers",
-        body: "Inspiring leaders and mentors from the tech industry",
+        body: "Speakers and Judges from 5 countries",
         images: [
           { id: "speaker1", url: SpeakerImg1 },
           { id: "speaker2", url: SpeakerImg2 },
@@ -509,7 +527,7 @@ export default {
       },
       {
         name: "activities",
-        body: "Enjoy fun and exciting activities throughout the event",
+        body: "Have fun while working on a challenge you're passionate about",
         images: [
           { id: "activity1", url: ActivityImg1 },
           { id: "activity2", url: ActivityImg2 },
@@ -521,7 +539,8 @@ export default {
       },
       {
         name: "hackers",
-        body: "Meet 1,000+ hackers from all around the globe",
+        body:
+          "Meet and network with 1,300+ hackers from all around the the country",
         images: [
           { id: "hacker1", url: HackerImg1 },
           { id: "hacker2", url: HackerImg2 },
@@ -533,7 +552,7 @@ export default {
       },
       {
         name: "hardware",
-        body: "Access to state-of-the-art hardware",
+        body: "Win Millions of Naira in cash and prizes",
         images: [
           { id: "hardware1", url: HardwareImg1 },
           { id: "hardware2", url: HardwareImg2 },
@@ -553,7 +572,7 @@ export default {
       logo: WaterlooEngLogoImg,
       illustration: EngineeringIllustrationImg,
       text:
-        "Our partner of over 5 years, Waterloo Engineering continues to support Hack the North to build a creative, diverse, and unique experience for hackers. The University of Waterloo is home to Canada’s largest engineering school — a pipeline for engineering talent for the world’s leading companies. Ranked among the top 50 engineering schools in the world, the school’s reputation for excellence is built on the foundation of co-op education and a bold history of innovation."
+        "We started NaijaHacks to inspire a new generation of Nigerians and Africans to be makers, leaders and diruptors. After attending over 50 Hackathons and watching the impact that they made in our lives and careers, we decided to bring a Hackathon, built for Africa, from the lessons we learned at Harvard, MIT, Stanford, Waterloo, Princeton and others. NaijaHacks is built by Africans for Africans and powered by supporters from over 8 countries."
     },
     video: {
       url:
@@ -640,50 +659,44 @@ export default {
     title: "Frequently asked questions",
     body: [
       {
-        question: "What is Hack the North?",
+        question: "What is NaijaHacks?",
         answer:
-          "Hack the North is Canada’s biggest hackathon, where 1,000 students of different skill levels come together from around the world to experiment and create unique software or hardware projects from scratch. We empower and enable teams to make something great in only 36 hours by providing an abundance of resources like workshops, mentors, sponsors, and hardware components."
+          "Started in 2018, NaijaHacks is Africa's largest Hackathon, where 1,300+ young Nigerian of different skill levels come together and create unique software or hardware projects from scratch. We empower and enable teams to make something great by providing an abundance of resources like workshops, mentors, sponsors, challenges and prizes."
       },
       {
         question: "Who can participate?",
         answer:
-          "Students of any education level from anywhere in the world are eligible to apply for Hack the North!"
+          "Anyone of any education level from anywhere in the world are eligible to apply for NaijaHacks!"
       },
       {
-        question: "How much does it cost to attend Hack the North?",
+        question: "How much does it cost to attend NaijaHacks?",
         answer:
-          "Admission to Hack the North is completely free. We also provide food and accommodation for the entire event and help out as much as we can with your transportation to and from the University of Waterloo!"
+          "Admission to NaijaHacks is completely free. We also provide food and some travel reimbursement!"
       },
       {
-        question: "How do I get to Hack the North?",
+        question: "How do I get to NaijaHacks?",
         answer:
-          "We will be providing several buses from schools within driving distance of the University of Waterloo, as well as from nearby airports. For students who need to fly to Hack the North, we subsidize as much of your plane ticket as possible."
+          "We will be partnering with transportation companies to provide travel discounts to participants. We are also working on providing reimbursements for travel expenses."
       },
       {
         question: "How many people can be on a team?",
         answer:
-          "You can form teams of up to 4 people. There are no restrictions for who they can be, so you can team up with hackers from any school, country, or experience level. Teams can be formed before or during the event."
+          "You can form teams of up to 3 people. There are no restrictions for who they can be, so you can team up with hackers from any school, country, or experience level. Teams can be formed before or during the event."
       },
       {
         question: "What if I've never been to a hackathon before?",
         answer:
-          "Hack the North welcomes students of all skill levels. In previous years, 30% of students have attended Hack the North as their first hackathon. We’ll have talks, mentors and workshops to help you with your project; hackathons can be a great place to learn new skills in a short amount of time. Just be eager to learn, and excited to meet lots of awesome people."
+          "NaijaHacks welcomes participants of all skill levels. We’ll have talks, mentors and workshops to help you with your project; hackathons can be a great place to learn new skills in a short amount of time. Just be eager to learn, and excited to meet lots of awesome people. Check out our Hacker Guide!"
       },
       {
         question: "Can I start working on my hack before the event?",
         answer:
-          "No. In the interest of fairness, students should not be working on their projects before Hack the North begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand! Hardware will also be provided to hackers who fill out hardware request forms made available after they have been accepted to the event."
+          "No. In the interest of fairness, students should not be working on their projects before NaijaHacks begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand!"
       },
       {
-        question:
-          "What kind of workshops, talks, and activities will there be?",
+        question: "When will applications for NaijaHacks 2019 open?",
         answer:
-          "Previously, we’ve held workshops and talks for a range of skill levels from beginner to advanced like Intro to Web Development and Team Building. We’ve also had introductory workshops to various programming tools such as APIs, databases and platforms. Activities like VR demos, meetups, and even karaoke happen throughout the weekend. Whether it’s for relaxation or health, novelty or competition, our team has something exciting prepared for you!"
-      },
-      {
-        question: "When will applications for Hack the North 2019 open?",
-        answer:
-          "They'll be opening in early June - follow us on social media to find out exactly when!"
+          "They'll be opening in end of September - follow us on social media to find out exactly when!"
       },
       {
         question: "404: Question Not Found",
@@ -691,12 +704,10 @@ export default {
           <>
             If your question is not listed here, please feel free to reach out
             to us at{" "}
-            <Link href="mailto:hello@hackthenorth.com">
-              hello@hackthenorth.com
-            </Link>{" "}
+            <Link href="mailto:team@naijahacks.com">team@naijahacks.com</Link>{" "}
             or on{" "}
-            <Link href="https://www.facebook.com/hackthenorth" newTab>
-              Facebook
+            <Link href="https://www.twitter.com/naijahacks" newTab>
+              Twitter
             </Link>
             .
           </>
@@ -706,26 +717,26 @@ export default {
   },
   footer: {
     img: Robogoose4IllustrationImg,
-    cta: "#YourHackTheNorth • What will you create?",
+    cta: "Fun Makers • Creative Leaders • Norm Disruptors • #NaijaHacks2019 ",
     links: [
       {
-        text: "About Hack the North",
+        text: "About NaijaHacks",
         hyperlink: "#about",
         newTab: false
       },
+      // {
+      //   text: "Open Source",
+      //   hyperlink: "https://github.com/hackthenorth",
+      //   newTab: true
+      // },
+      // {
+      //   text: "Privacy Policy",
+      //   hyperlink: "https://2018.hackthenorth.com/privacy",
+      //   newTab: true
+      // },
       {
-        text: "Open Source",
-        hyperlink: "https://github.com/hackthenorth",
-        newTab: true
-      },
-      {
-        text: "Privacy Policy",
-        hyperlink: "https://2018.hackthenorth.com/privacy",
-        newTab: true
-      },
-      {
-        text: "Code of Conduct",
-        hyperlink: "https://2018.hackthenorth.com/code-of-conduct",
+        text: "MLH Code of Conduct",
+        hyperlink: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
         newTab: true
       }
     ],
@@ -733,87 +744,179 @@ export default {
       {
         name: "Email",
         img: SocialEmailImg,
-        link: "mailto:hello@hackthenorth.com"
+        link: "mailto:team@naijahacks.com"
       },
       {
         name: "Facebook",
         img: SocialFacebookImg,
-        link: "https://www.facebook.com/hackthenorth"
+        link: "https://www.facebook.com/naijahacks"
       },
       {
         name: "Twitter",
         img: SocialTwitterImg,
-        link: "https://twitter.com/hackthenorth"
+        link: "https://twitter.com/naijahacks"
       },
       {
         name: "Instagram",
         img: SocialInstaImg,
-        link: "https://www.instagram.com/hackthenorth/"
+        link: "https://www.instagram.com/naijahacks/"
       }
     ],
     team: shuffle(team),
-    defaultOrganizerText: "Made with 💛 by students in Waterloo 🇨🇦"
+    // defaultOrganizerText: "Originally made with 💛 in Waterloo 🇨🇦"
+    defaultOrganizerText: "#TeamNaijaHacks 🇳🇬"
   },
   leaders: {
-    title: "Be inspired by industry leaders",
+    title: "Learn from the best",
     desc: (
       <Text className="desc" variant="sectionText">
-        Tech leaders come to Hack the North to be judges, to speak, and to be on
-        the ground innovating with hackers. Stay tuned for updates on this
-        year's speakers and judges.
+        Tech and Business leaders from 5 countries judge, speak and mentor at
+        NaijaHacks. We will be announing more amazing Judges, Mentors and
+        Speakers in the coming weeks.
       </Text>
     ),
     img: LightbulbBalloonCloudsIllustrationImg,
     leaders: [
       {
-        name: "Cat Noone",
-        title: "Founder, Iris",
-        img: CatHeadshotImg
+        name: "Adeola D. Olubamiji, Ph.D.",
+        title: "Founder, STEMHub Foundation",
+        img: "https://naijahacks.com/2018/res/bosses/adeola.png"
       },
       {
-        name: "Chamath Palihapitiya",
-        title: "CEO and Founder, Social Capital",
-        img: ChamathHeadshotImg
+        name: "Charles St.Louis",
+        title: "Co-Founder, HealthBlock Identity (HBI)",
+        img: "https://naijahacks.com/2018/res/bosses/charles.jpeg"
       },
       {
-        name: "Connie Yang",
-        title: "Design Director, Coinbase",
-        img: ConnieHeadshotImg
+        name: "Allan Kerr",
+        title: "Snr. Software Engineer, Classified",
+        img: "https://naijahacks.com/2018/res/bosses/allan.JPG"
       },
       {
-        name: "Dylan Field",
-        title: "CEO and Co-founder, Figma",
-        img: DylanHeadshotImg
+        name: "Obafunto AyinOluwa",
+        title: "Snr. Manager, Royal Bank of Canada",
+        company: "Royal Bank of Canada",
+        img: "https://naijahacks.com/2018/res/bosses/funto.png"
       },
       {
-        name: "Ethan Wilding",
-        title: "Co-founder, Ledger Labs",
-        img: EthanWildingHeadshotImg
+        name: "Shedrack Akintayo ",
+        title: "Software Developer, Legal Robot Inc ",
+        img: "https://naijahacks.com/2018/res/bosses/shedrack.png"
       },
       {
-        name: "Jeff Coleman",
-        title: "Co-founder, Ledger Labs",
-        img: JeffHeadshotImg
+        name: "Ifeanyi Anazodo",
+        title: "Co-founder and VP, Data & Intelligence, Farmcrowdy",
+        img: "https://naijahacks.com/2018/res/bosses/ifeanyi.png"
       },
       {
-        name: "Jennifer Dewalt",
-        title: "Founder, Zube",
-        img: JenniferHeadshotImg
+        name: "Tiwalola Olanubi Jnr",
+        title: "Creative Director, Dotts Media House",
+        img: "https://naijahacks.com/2018/res/bosses/tj.png"
       },
       {
-        name: "Tiffani Bell",
-        title: "Founder, The Human Utility",
-        img: TiffaniHeadshotImg
+        name: "Chidera Muoka ",
+        title: "Editor, Guardian Life, The Guardian Newspapers ",
+        img: "https://naijahacks.com/2018/res/bosses/chidera.jpg"
       },
       {
-        name: "Tracy Chou",
-        title: "Founding Advisor, Project Include",
-        img: TracyHeadshotImg
+        name: "Ali El-Shayeb",
+        title: "Founder/CEO, Nugget.ai",
+        img: "https://naijahacks.com/2018/res/bosses/ali.png"
       },
       {
-        name: "Vinod Khosla",
-        title: "Co-founder,  Sun Microsystems",
-        img: VinodHeadshotImg
+        name: "Winfrey Okolo",
+        title: "Barrister/Presenter, Silverbird Television",
+        img: "https://naijahacks.com/2018/res/bosses/winfrey.png"
+      },
+      {
+        name: "Chioma Agwuegbo",
+        title: "Program Manager for Africa, Reboot",
+        img: "https://naijahacks.com/2018/res/bosses/chioma.png"
+      },
+      {
+        name: "Namnso Ukpanah",
+        title: "Lead Designer Advocate, Figma Africa",
+        img: "https://naijahacks.com/2018/res/bosses/namnso.jpg"
+      },
+      {
+        name: "Ngowari Diminas",
+        title: "Founder, CAFEW",
+        img: "https://naijahacks.com/2018/res/bosses/ngowari.png"
+      },
+      {
+        name: "Kevin Eligwe",
+        title: "Designer, Hemcloth",
+        img: "https://naijahacks.com/2018/res/bosses/kevin.jpg"
+      },
+      {
+        name: "Muyiwa Aleshinloye",
+        title: "Head of Digital, 141 Worldwide ",
+        img: "https://naijahacks.com/2018/res/bosses/muyiwa.png"
+      },
+      {
+        name: "Victory Oomotayo",
+        title: "Owner & Founder, Twenty-Four Hour Woman",
+        img: "https://naijahacks.com/2018/res/bosses/victory.png"
+      },
+      {
+        name: "Toni Akinwumi",
+        title: "Communications Specialist, Shopify",
+        img: "https://naijahacks.com/2018/res/bosses/toni.png"
+      },
+      {
+        name: "Adeloye Olanrewaju",
+        title: "CEO, Babymigo",
+        img: "https://naijahacks.com/2018/res/bosses/lanre.png"
+      },
+      {
+        name: "Rosemary Ajuka",
+        title: "Media Entrepreneur,Cerchy Community ",
+        img: "https://naijahacks.com/2018/res/bosses/rosemary.png"
+      },
+      {
+        name: "Phillips Tunde",
+        title: "Lead, Digital Marketing, Printivo.com",
+        img: "https://naijahacks.com/2018/res/bosses/tunde.png"
+      },
+      {
+        name: "Dayo Olawo",
+        title: "Senior Product Strategist, Google",
+        img: "https://naijahacks.com/2018/res/bosses/dayo.png"
+      },
+      {
+        name: "Temitope Ekundayo",
+        title: "Head of Growth & Partnership, Printivo.com",
+        img: "https://naijahacks.com/2018/res/bosses/tope.jpg"
+      },
+      {
+        name: "Ejike Anih",
+        title: "Founder & CEO, IfeanHealth",
+        img: "https://naijahacks.com/2018/res/bosses/ejike.png"
+      },
+      {
+        name: "Doug Gould",
+        title: "Partnerships, Microsoft",
+        img: "https://naijahacks.com/2018/res/bosses/doug.png"
+      },
+      {
+        name: "Rahman Oloritun",
+        title: "Analytics & DevOps, Reach ltd",
+        img: "https://naijahacks.com/2018/res/bosses/rahman.png"
+      },
+      {
+        name: "Funbi Makinde",
+        title: "UX Researcher, Shopify",
+        img: "https://naijahacks.com/2018/res/bosses/funbi.png"
+      },
+      {
+        name: "Banke Alawaye",
+        title: "Program Manager, CodeLagos",
+        img: "https://naijahacks.com/2018/res/bosses/banke.png"
+      },
+      {
+        name: "Ara Sadiq",
+        title: "Business Development Lead, FinConecta",
+        img: "https://naijahacks.com/2018/res/bosses/ara.png"
       }
     ]
   }

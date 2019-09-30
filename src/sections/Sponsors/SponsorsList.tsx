@@ -18,6 +18,14 @@ const partners = siteCopy.sponsorsSection.sponsors.filter(
   sponsor => sponsor.tier === "partner"
 );
 
+const media = siteCopy.sponsorsSection.sponsors.filter(
+  sponsor => sponsor.tier === "media"
+);
+
+const gaming = siteCopy.sponsorsSection.sponsors.filter(
+  sponsor => sponsor.tier === "gaming"
+);
+
 const sponsorHeights = {
   gold: {
     h: 225,
@@ -34,6 +42,14 @@ const sponsorHeights = {
   partner: {
     h: 45,
     wm: 35
+  },
+  media: {
+    h: 225,
+    wm: 90
+  },
+  gaming: {
+    h: 225,
+    wm: 90
   }
 };
 
@@ -52,7 +68,10 @@ const SponsorItem = styled(Link)<{ tier: string }>`
   display: flex;
   position: relative;
   height: ${props => sponsorHeights[props.tier].h}px;
-  width: ${props => (props.tier === "gold" ? "100%" : "unset")};
+  width: ${props =>
+    props.tier === "gold" || props.tier === "media" || props.tier === "gaming"
+      ? "100%"
+      : "unset"};
   padding: 40px;
   cursor: pointer;
 
@@ -128,6 +147,30 @@ const SponsorsList = () => (
     </SponsorContainer>
 
     <Text as="h3" variant="subheading">
+      Official Media partner
+    </Text>
+    <SponsorContainer>
+      {media.map(media => (
+        <SponsorItem key={media.name} href={media.link} newTab tier="media">
+          <SponsorImg src={media.imgSrc} alt={media.name} title={media.name} />
+        </SponsorItem>
+      ))}
+    </SponsorContainer>
+    <Text as="h3" variant="subheading">
+      Official Gaming partner
+    </Text>
+    <SponsorContainer>
+      {gaming.map(gaming => (
+        <SponsorItem key={gaming.name} href={gaming.link} newTab tier="gaming">
+          <SponsorImg
+            src={gaming.imgSrc}
+            alt={gaming.name}
+            title={gaming.name}
+          />
+        </SponsorItem>
+      ))}
+    </SponsorContainer>
+    {/* <Text as="h3" variant="subheading">
       Our partners
     </Text>
     <SponsorContainer>
@@ -145,7 +188,7 @@ const SponsorsList = () => (
           />
         </SponsorItem>
       ))}
-    </SponsorContainer>
+    </SponsorContainer> */}
   </>
 );
 

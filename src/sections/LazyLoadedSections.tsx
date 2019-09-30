@@ -13,7 +13,7 @@ const LazyLoadedSections = () => (
   <>
     <Background />
     <About />
-    <Stories />
+    {/* <Stories /> */}
     <Leaders />
     <Sponsors />
     <FAQ />

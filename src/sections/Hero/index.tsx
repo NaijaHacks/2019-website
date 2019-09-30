@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SectionWrapper from "components/SectionWrapper";
 import MailingListSignup from "components/MailingListSignup";
 
-import GradientBg from "static/img/hero/gradient.svg";
+import GradientBg from "static/img/hero/gradient.png";
 import IllustrationBg from "static/img/hero/illustration-background.png";
 import IllustrationFg from "static/img/hero/illustration-foreground.png";
 import IllustrationMiddle from "static/img/hero/illustration-middle-1.png";
@@ -55,6 +55,7 @@ const HeroWrapper = styled(SectionWrapper)`
   max-height: 1500px;
   max-width: 100%;
   overflow: hidden;
+  background-color: #ffd6dc;
   background-image: url(${GradientBg});
   background-position: 0 ${backgroundPercentage}%;
 
@@ -177,6 +178,8 @@ const Hero = () => {
     <HeroWrapper id="home">
       <Content>
         <Text variant="header" as="h1">
+          <br></br>
+          <br></br>
           {siteCopy.hero.firstLine}{" "}
           <TextLoop>
             {siteCopy.hero.keyWords.map(word => (
@@ -192,7 +195,7 @@ const Hero = () => {
         </Text>
         <MailingListSignup width={width} />
       </Content>
-      {width <= 768 ? (
+      {/* {width <= 768 ? (
         <MobileWrapper className="parallax">
           <Lottie options={mobileOptions} />
           <ImageFg alt="" bottom={"auto"} src={IllustrationFg} />
@@ -224,7 +227,7 @@ const Hero = () => {
             <ImageFg alt="" bottom={"auto"} src={IllustrationFg} />
           </Parallax>
         </>
-      )}
+      )} */}
     </HeroWrapper>
   );
 };

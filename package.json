@@ -32,7 +32,8 @@
     "lint:ts": "eslint --ext .jsx,.js,.tsx,.ts src/ --fix",
     "lint:css": "stylelint src",
     "minimize-images": "node ./scripts/image-minimizer.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dep": "npm run build && rm -rf ../naijahacks/static && rm -rf ../naijahacks/precach*.js && cp -r build/* ../naijahacks/"
   },
   "browserslist": {
     "production": [

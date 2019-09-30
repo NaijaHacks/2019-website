@@ -4,6 +4,7 @@ import Arrow from "static/img/hero/arrow.svg";
 import { Text, TextInput, Button, Loader } from "@hackthenorth/north";
 import globalConstants from "theme/globalConstants";
 import posed, { PoseGroup } from "react-pose";
+import CallToActionButton from "../Navbar/CallToActionButton";
 
 import siteCopy from "copy";
 import Loading from "./Loading";
@@ -122,6 +123,18 @@ const Image = styled.img<{ show: boolean }>`
   `}
 `;
 
+const SponsorButton = styled(Button)`
+  width: 200px;
+  padding: 1em;
+
+  border-radius: ${props => props.theme.globalConstants.borderRadius.button}px;
+  transition: opacity 250ms ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
 interface MailingListSignUpProps {
   width: number;
   footer?: boolean;
@@ -235,7 +248,7 @@ const MailingListSignUp = (props: MailingListSignUpProps) => {
     </PoseGroup>
   ) : (
     <>
-      <EmailForm footer={props.footer} onSubmit={signupForMailingList}>
+      {/* <EmailForm footer={props.footer} onSubmit={signupForMailingList}>
         <TextInput
           placeholder={siteCopy.hero.emailPlaceholder}
           onChange={handleChange}
@@ -253,7 +266,14 @@ const MailingListSignUp = (props: MailingListSignUpProps) => {
           <Loader loading={signUpState === "SUBMITTING"} render={Loading} />
           <Image src={Arrow} alt="arrow" show={signUpState !== "SUBMITTING"} />
         </SignupButton>
-      </EmailForm>
+
+      </EmailForm> */}
+      <SponsorButton
+        className="cta"
+        onClick={() => window.open("https://naijahacks.com/signup")}
+      >
+        Apply to participate
+      </SponsorButton>
       {buttonVariant === "duplicate" || buttonVariant === "error" ? (
         <PoseWrapper footer={props.footer}>
           <PoseGroup animateOnMount preEnterPose="before">

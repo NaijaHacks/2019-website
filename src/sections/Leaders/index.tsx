@@ -74,11 +74,12 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Image = styled.img`
-  height: 125px;
-  width: 125px;
-  border-radius: 50%;
-`;
+const Image = {
+  height: "125px",
+  width: "125px",
+  backgroundSize: "cover",
+  borderRadius: "50% 50% 50% 50%"
+};
 
 const LeaderBubbleWrapper = styled.div`
   display: flex;
@@ -136,7 +137,9 @@ const CarouselWrapper = styled.div`
 const getImages = () =>
   leaders.map((leader, i) => (
     <LeaderBubbleWrapper key={`${leader.name}${i}`}>
-      <Image src={leader.img} alt={leader.name} />
+      {/* <Image src={leader.img} alt={leader.name} /> */}
+      <div style={{ ...Image, backgroundImage: `url(${leader.img})` }}></div>
+
       <Text as="p" variant="leaderName">
         {leader.name}
       </Text>

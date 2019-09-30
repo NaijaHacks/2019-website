@@ -101,6 +101,7 @@ const EngineeringLogo = styled.img`
 `;
 
 const EngineeringText = styled.div`
+  color: ${props => props.theme.globalConstants.color.textLight};
   max-width: 579px;
 
   p {
@@ -166,10 +167,9 @@ const Engineering = () => (
       alt="engineering-illustration"
     />
     <EngineeringText>
-      <EngineeringLogo
-        src={aboutCopy.engineering.logo}
-        alt="engineering-logo"
-      />
+      <Text className="heading" as="h2" variant="sectionHeading">
+        {"Why NaijaHacks"}
+      </Text>
       <Text as="p" variant="subheader">
         {aboutCopy.engineering.text}
       </Text>
@@ -183,14 +183,22 @@ const About: React.FC = () => {
   const videoOptions = {
     url: aboutCopy.video.url
   };
+  const openInNewTab = (url: any) => {
+    var win = window.open(url, "_blank") as any;
+    win.focus();
+  };
   return (
     <AboutWrapper id="about">
       {AboutTextBlock}
       <RecapVideoButton
         icon={aboutCopy.videoButton.icon}
-        text={aboutCopy.videoButton.text}
+        text={"View 2018 Highlights"}
         background={aboutCopy.videoButton.background}
-        toggleVideo={() => toggleVideo(true)}
+        toggleVideo={() =>
+          openInNewTab(
+            "https://drive.google.com/file/d/1TIOWGH8f9aqCQQqxHSCYC4sdWc1dJtRx/view"
+          )
+        }
       />
       {isVideoOpen && (
         <VideoModal

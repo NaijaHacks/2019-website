@@ -33,6 +33,7 @@ const Headshot = styled.img`
   border-radius: 50%;
   margin: 0;
   padding: 0;
+  background-size: cover;
   filter: grayscale(100%);
   transition: all 0.5s ease;
 

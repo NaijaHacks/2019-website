@@ -113,7 +113,7 @@ const NavLinks: React.FC<NavLinkProps> = ({
         return section === "2018" ? (
           <NavLink
             key={section}
-            href="https://2018.hackthenorth.com"
+            href="https://naijahacks.com/2018"
             variant="navlink"
             className="mobile-navlink"
             newTab

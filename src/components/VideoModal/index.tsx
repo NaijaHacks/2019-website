@@ -104,7 +104,7 @@ const VideoModal: React.FC<VideoModalProps> = ({
             <img src={closeIcon} alt="close" />
           </CloseButton>
           <iframe
-            title="Hack the North 2018"
+            title="NaijaHacks Highlights"
             width="460"
             height="230"
             src={videoOptions.url}

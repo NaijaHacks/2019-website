@@ -2,52 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <meta name="description" content="Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo.">
-    <meta name="msapplication-TileColor" content="#0e0e1c" />
-    <meta name="theme-color" content="#0e0e1c" />
-
-    <!-- apple -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#0e0e1c" />
-    <meta name="apple-mobile-web-app-title" content="Hack the North" />
-
-    <!-- og -->
-    <meta property="og:description" content="Hack the North is Canada's biggest hackathon, happening on September 13-15, 2019 at the University of Waterloo." />
-    <meta property="og:title" content="Hack the North" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title style="text-align: center;">
+      NaijaHacks | Africa's biggest technology invention competition. Africa's
+      Hackathon.
+    </title>
+    <meta
+      name="description"
+      content="NaijaHacks was started by Uchi Uchibeke to inspire a generation of Nigerian innovators to use technology to create solutions for their communities. NaijaHacks is a platform in the forefront of pushing Africa’s technological development."
+    />
+    <meta
+      name="keywords"
+      content="uchi uchibeke, uchibeke, uchi, hackathon, tech, africa, lagos tech, events, coding, nigerian hackahthon, lagos, naija, wedding planner, nigerian wedding app"
+    />
+    <meta name="author" content="Uchi Uchibeke https://uchi.me" />
+    <link rel="shortcut icon" href="guide/img/favicon.png" />
+    <meta property="og:url" content="https://naijahacks.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hackthenorth.com" />
-    <meta property="og:image" content="https://hackthenorth.com/images/share_preview.jpg" />
-    <meta property="og:image:secure_url" content="https://hackthenorth.com/images/share_preview.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="851" />
-    <meta property="og:image:height" content="315" />
-    <meta property="og:image:alt" content="Hack the North logo" />
-
-    <!-- twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@hackthenorth" />
-    <meta name="twitter:creator" content="@hackthenorth" />
-    <meta name="twitter:image" content="https://hackthenorth.com/images/twitter_preview.jpg" />
-
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Hack the North</title>
+    <meta
+      property="og:title"
+      content="NaijaHacks | Nigeria's Official Hackathon"
+    />
+    <meta
+      property="og:description"
+      content="NaijaHacks was started by Uchi Uchibeke to inspire a generation of Nigerian innovators to use technology to create solutions for their communities. Naija is a platform in the forefront of pushing Africa’s technological development."
+    />
+    <meta property="og:image" content="res/woman.png" />
+    <meta property="og:image:secure_url" content="res/logo.png" />
+    <meta property="og:site_name" content="NaijaHacks" />
+    <meta
+      property="twitter:card"
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta name="twitter:site" content="@naijahacks" />
+    <meta name="twitter:creator" content="@naijahacks" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detectionicon" content="telephone=no" />
+    <meta name="apple-touch-" content="res/logo.jpg" />
+    <meta name="application-name" content="NaijaHacks" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="res/woman.png" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      href="/opensearch.xml"
+      title="NaijaHacks"
+    />
+    <meta name="referrer" content="origin" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -64,5 +68,83 @@
     -->
     <!-- hackerapi.js -->
     <script src="https://static.hackthenorth.com/hackerapi.js/2.1.9/hackerapi.web.js"></script>
+    <!-- FullStory -->
+    <script>
+      window["_fs_debug"] = false;
+      window["_fs_host"] = "fullstory.com";
+      window["_fs_org"] = "FF2BR";
+      window["_fs_namespace"] = "FS";
+      (function(m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function(a, b) {
+          g.q ? g.q.push([a, b]) : g._api(a, b);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.src = "https://" + _fs_host + "/s/fs.js";
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function(i, v) {
+          g(l, { uid: i });
+          if (v) g(l, v);
+        };
+        g.setUserVars = function(v) {
+          g(l, v);
+        };
+        g.event = function(i, v) {
+          g("event", { n: i, p: v });
+        };
+        g.shutdown = function() {
+          g("rec", !1);
+        };
+        g.restart = function() {
+          g("rec", !0);
+        };
+        g.consent = function(a) {
+          g("consent", !arguments.length || a);
+        };
+        g.identifyAccount = function(i, v) {
+          o = "account";
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function() {};
+      })(window, document, window["_fs_namespace"], "script", "user");
+    </script>
+    <script id="mcjs">
+      !(function(c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/86fa2fe2205acc2ebc5634e99/f199ec69a1a5609037f34f4ce.js"
+      );
+    </script>
+    <script id="mcjs">
+      !(function(c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/60de228ce97701f97d1c1c314/90a39e27da4682dad94702d72.js"
+      );
+    </script>
   </body>
 </html>

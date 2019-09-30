@@ -79,7 +79,7 @@ const Gear: React.FC<GearProps> = ({
   gradient
 }) => {
   const [imageIndex, setImageIndex] = useState(0);
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState(true);
 
   const imageTransitions = useTransition(images[imageIndex], item => item.id, {
     from: { opacity: 0 },
@@ -122,13 +122,11 @@ const Gear: React.FC<GearProps> = ({
     <GearContainer
       {...gearConfigs}
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseLeave={() => setHovered(true)}
     >
-      {hovered && (
-        <GearTextContainer show={hovered}>
-          <Text variant="gearText">{text}</Text>
-        </GearTextContainer>
-      )}
+      <GearTextContainer show={true}>
+        <Text variant="gearText">{text}</Text>
+      </GearTextContainer>
       {textTransitions.map(
         ({ item, props, key }) =>
           item && (
@@ -150,7 +148,7 @@ const Gear: React.FC<GearProps> = ({
             />
           )
       )}
-      {imageTransitions.map(({ item, props, key }) => (
+      {/* {imageTransitions.map(({ item, props, key }) => (
         <animated.div
           key={key}
           style={{
@@ -166,7 +164,7 @@ const Gear: React.FC<GearProps> = ({
             backgroundPosition: "center"
           }}
         />
-      ))}
+      ))} */}
     </GearContainer>
   );
 };

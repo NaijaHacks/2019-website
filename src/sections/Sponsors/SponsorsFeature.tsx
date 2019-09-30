@@ -1,12 +1,130 @@
 import React, { useState, useMemo } from "react";
 import styled from "styled-components";
-import { Text, Gallery, Link } from "@hackthenorth/north";
+import { Text, Gallery } from "@hackthenorth/north";
 
-import siteCopy from "copy";
+const sponsorsWithFeatures = [
+  {
+    name: "Apply to Participate",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Submit your application at naijahacks.com/submit or by clicking the PARTICIPATE button. Enter your details & create a team.",
+      link: "#",
+      linkLabel: "by Oct. 30, 2019"
+    }
+  },
+  {
+    name: "Get accepted",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Get acceptance email & log into your application to confirm you participation. Enter T-Shirt size, update team & upload CV/Resume for opportunities.",
+      link: "#",
+      linkLabel: "by Nov. 15, 2019"
+    }
+  },
+  {
+    name: "Pick a project",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Working with your teamates, come up with an idea or pick one from the ideas board. ",
+      link: "#",
+      linkLabel: "by Dec. 1, 2019"
+    }
+  },
 
-const sponsorsWithFeatures = siteCopy.sponsorsSection.sponsors.filter(
-  sponsor => sponsor.feature // keep only those with features
-);
+  {
+    name: "Join Slack & Start building",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Join the NaijaHacks Slack team, create a private channel for your team & start hacking.",
+      link: "#",
+      linkLabel: "Dec. 5, 2019"
+    }
+  },
+
+  {
+    name: "Build. Ask questions. Push",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Work with your team on your project. Ask mentors questions on slack. Ensure you push your changes regularly to Github.",
+      link: "#",
+      linkLabel: "Dec. 7, 2019"
+    }
+  },
+  {
+    name: "Submit your project",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text: "Submit your project on DevPost and include the github link.",
+      link: "#",
+      linkLabel: "Dec. 14, 2019"
+    }
+  },
+  {
+    name: "Meet, Learn, Eat, get Swag & Demo",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Meet in Lagos Nigeria & listen to talks from speakers speaking from around the world. Be one of 100 teams to demo your project in expo-style setting to esteemed judges. Get your personalized NaijaHacks Goodie bag.",
+      link: "#",
+      linkLabel: "Dec. 17, 2019"
+    }
+  },
+  {
+    name: "Get T-Shirts, photoshoot, & pitch",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Return to venue to pitch to VCs & Execs from Nigeria & Silicon valley. Get Official NaijaHacks T-shirt & more swag.",
+      link: "#",
+      linkLabel: "Dec. 17, 2019"
+    }
+  },
+  {
+    name: "Get prizes",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text: "Get more swag. Prizes announced and given to winners.",
+      link: "#",
+      linkLabel: "Dec. 17, 2019"
+    }
+  },
+  {
+    name: "Pilot. Incubate. Interviews",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Continue working on project as pilot. Join one of our Incubation partners. Do job interviews with our partners.",
+
+      link: "#",
+      linkLabel: "After event"
+    }
+  }
+];
 
 const Feature = styled.div`
   display: flex;
@@ -70,7 +188,7 @@ const GalleryBubble = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  width: 440px;
+  width: 90&;
   margin: auto;
   padding: 20px 30px;
 
@@ -78,21 +196,6 @@ const GalleryBubble = styled.div`
   color: ${props => props.theme.globalConstants.color.textDark};
   border-radius: 8px;
 
-  &::before {
-    content: "";
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    left: -7px;
-    top: 20px;
-    width: 14px;
-    height: 14px;
-    border-top: solid 7px rgba(243, 243, 243, 0.8);
-    border-left: solid 7px rgba(243, 243, 243, 0.8);
-    border-top-left-radius: 2px;
-    border-right: solid 7px transparent;
-    border-bottom: solid 7px transparent;
-    transform: rotate(-45deg);
 
     ${props => props.theme.mediaQueries.tabletMobile`
       top: -7px;
@@ -135,15 +238,15 @@ const SponsorsFeature = () => {
   return (
     <>
       <Text as="h3" variant="subheading">
-        Sponsor Showcase
+        Our Process
       </Text>
       <Feature onClick={() => updateInteractedWith(true)}>
-        <FeatureImgContainer>
+        {/* <FeatureImgContainer>
           <FeatureImg
             src={randomizedSponsors[curFeatureIndex].imgSrc}
             alt={`Logo of ${randomizedSponsors[curFeatureIndex].name}`}
           />
-        </FeatureImgContainer>
+        </FeatureImgContainer> */}
 
         <FeatureGallery
           className="website-feature-gallery"
@@ -161,12 +264,11 @@ const SponsorsFeature = () => {
               onMouseOut={() => updateInteractedWith(false)}
             >
               <GalleryBubble>
+                <h2>{sponsor.name}</h2>
                 <Text as="p" variant="sectionText">
                   {sponsor.feature && sponsor.feature.text}
                 </Text>
-                <Link href={sponsor.feature ? sponsor.feature.link : ""} newTab>
-                  {sponsor.feature && sponsor.feature.linkLabel}
-                </Link>
+                <h3>{sponsor.feature && sponsor.feature.linkLabel}</h3>
               </GalleryBubble>
             </GalleryBubbleContainer>
           ))}

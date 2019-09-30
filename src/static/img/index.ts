@@ -9,6 +9,9 @@
 export { default as WaterlooEngLogoImg } from "./sponsors/waterloo-eng.png";
 export { default as SponsorLogoImg } from "./sponsors/sponsor.png";
 export { default as TechyonLogoImg } from "./sponsors/techyon.png";
+export {
+  default as SketchLogoImg
+} from "./sponsors/2019/sketch-logo-light-transparent@2x.png";
 
 /* Logos */
 export { default as LogoDarkImg } from "./logos/primary-dark.svg";
