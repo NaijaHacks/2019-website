@@ -8,13 +8,15 @@ import Sponsors from "sections/Sponsors";
 import FAQ from "sections/FAQ";
 import Footer from "sections/Footer";
 import Leaders from "sections/Leaders";
+import Judges from "./Judges";
 
 const LazyLoadedSections = () => (
   <>
     <Background />
     <About />
     {/* <Stories /> */}
-    <Leaders />
+    <Judges />
+    {/* <Leaders /> */}
     <Sponsors />
     <FAQ />
     <Footer />

@@ -442,7 +442,7 @@ export default {
       light: "https://naijahacks.com/guide/img/favicon.png",
       dark: "https://naijahacks.com/guide/img/favicon.png"
     },
-    sections: ["About", "Leaders", "Sponsors", "FAQ", "2018"],
+    sections: ["About", "Judges", "Sponsors", "FAQ", "2018"],
     socialLinks: [
       {
         name: "facebook",
@@ -476,6 +476,7 @@ export default {
   hero: {
     firstLine: "This is a movement of ",
     secondLine: "This is NaijaHacks.",
+    thirdLine: "Africa's Biggest Hackathon.",
     keyWords: ["Leaders.", "Makers.", "Disruptors."],
     subtitle: "Online Dec 7 - 14 \nDemo day Dec 17, 2019  \n@ Zone Tech Park",
     emailNotif: " has been added to our mailing list.",
@@ -509,7 +510,7 @@ export default {
   about: {
     title: "Africa's biggest hackathon",
     sentence1:
-      "Join 1,300+ students, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019.",
+      "Join 1,300+ participants, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019.",
     sentence2:
       "NaijaHacks is not just a hackathon. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
     gears: [
@@ -572,7 +573,7 @@ export default {
       logo: WaterlooEngLogoImg,
       illustration: EngineeringIllustrationImg,
       text:
-        "We started NaijaHacks to inspire a new generation of Nigerians and Africans to be makers, leaders and diruptors. After attending over 50 Hackathons and watching the impact that they made in our lives and careers, we decided to bring a Hackathon, built for Africa, from the lessons we learned at Harvard, MIT, Stanford, Waterloo, Princeton and others. NaijaHacks is built by Africans for Africans and powered by supporters from over 8 countries."
+        "We started NaijaHacks to inspire a new generation of Nigerians and Africans to be makers, leaders and diruptors. After attending over 50 Hackathons and seeing the impact that they made in our lives and careers, we decided to bring a Hackathon, built for Africa, from the lessons we learned at Harvard, MIT, Stanford, Waterloo, Princeton and others. NaijaHacks is built by Africans for Africans and powered by supporters from over 8 countries."
     },
     video: {
       url:
@@ -583,7 +584,7 @@ export default {
   storiesSection: {
     heading: "Everything you need to create something incredible",
     desc:
-      "For the past 5 years, we’ve continued to inspire students to discover the world around them and empower students like you who are eager to learn and create by providing an environment for you to explore and build with workshops, mentorship, and hardware.",
+      "For the past 5 years, we’ve continued to inspire participants to discover the world around them and empower participants like you who are eager to learn and create by providing an environment for you to explore and build with workshops, mentorship, and hardware.",
     stories: [
       {
         person: "Justin Trudeau",
@@ -604,14 +605,14 @@ export default {
         desc: "Lyft",
         img: KimberHeadshotImg,
         quote:
-          "Hack the North is one of the best hackathons I've experienced — the organizers are incredible, the projects produced at the end of the weekend are really impressive, and the energy of students and mentors remains insanely high throughout the event."
+          "Hack the North is one of the best hackathons I've experienced — the organizers are incredible, the projects produced at the end of the weekend are really impressive, and the energy of participants and mentors remains insanely high throughout the event."
       },
       {
         person: "Alexis Ohanian",
         desc: "Co-founder of Reddit",
         img: AlexisHeadshotImg,
         quote:
-          "There is an undeniable reputation throughout tech of the kind of engineering talent that comes out of the University of Waterloo. The students here are probably going to be the business leaders of this century."
+          "There is an undeniable reputation throughout tech of the kind of engineering talent that comes out of the University of Waterloo. The participants here are probably going to be the business leaders of this century."
       },
       {
         person: "Alex",
@@ -661,12 +662,12 @@ export default {
       {
         question: "What is NaijaHacks?",
         answer:
-          "Started in 2018, NaijaHacks is Africa's largest Hackathon, where 1,300+ young Nigerian of different skill levels come together and create unique software or hardware projects from scratch. We empower and enable teams to make something great by providing an abundance of resources like workshops, mentors, sponsors, challenges and prizes."
+          "Started in 2018, NaijaHacks is Africa's largest Hackathon, where 1,300+ young Nigerians of different skill levels come together and create unique software or hardware projects from scratch. We empower and enable teams to make something great by providing an abundance of resources like workshops, mentors, sponsors, challenges and prizes."
       },
       {
         question: "Who can participate?",
         answer:
-          "Anyone of any education level from anywhere in the world are eligible to apply for NaijaHacks!"
+          "Anyone of any education level from anywhere in Africa are eligible to apply for NaijaHacks!"
       },
       {
         question: "How much does it cost to attend NaijaHacks?",
@@ -676,7 +677,7 @@ export default {
       {
         question: "How do I get to NaijaHacks?",
         answer:
-          "We will be partnering with transportation companies to provide travel discounts to participants. We are also working on providing reimbursements for travel expenses."
+          "Actual building and workshops happen remotely. For teams invited to demo in Lagos, we will be partnering with transportation companies to provide travel discounts to participants. We are also working on providing reimbursements for travel expenses."
       },
       {
         question: "How many people can be on a team?",
@@ -691,12 +692,12 @@ export default {
       {
         question: "Can I start working on my hack before the event?",
         answer:
-          "No. In the interest of fairness, students should not be working on their projects before NaijaHacks begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand!"
+          "No. In the interest of fairness, participants should not be working on their projects before NaijaHacks begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand!"
       },
       {
         question: "When will applications for NaijaHacks 2019 open?",
         answer:
-          "They'll be opening in end of September - follow us on social media to find out exactly when!"
+          "Applications for NaijaHacks opened October 5, 2019 and will close October 31, 2019 - follow us on social media to learn more!"
       },
       {
         question: "404: Question Not Found",
@@ -770,7 +771,7 @@ export default {
     title: "Learn from the best",
     desc: (
       <Text className="desc" variant="sectionText">
-        Tech and Business leaders from 5 countries judge, speak and mentor at
+        Tech and Business leaders from 5 countries judge, speaker and mentor at
         NaijaHacks. We will be announing more amazing Judges, Mentors and
         Speakers in the coming weeks.
       </Text>

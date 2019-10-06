@@ -68,10 +68,7 @@ const SponsorItem = styled(Link)<{ tier: string }>`
   display: flex;
   position: relative;
   height: ${props => sponsorHeights[props.tier].h}px;
-  width: ${props =>
-    props.tier === "gold" || props.tier === "media" || props.tier === "gaming"
-      ? "100%"
-      : "unset"};
+  width: ${props => (props.tier === "gold" ? "100%" : "unset")};
   padding: 40px;
   cursor: pointer;
 
