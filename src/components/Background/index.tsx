@@ -5,9 +5,11 @@ import BackgroundLayer from "./BackgroundLayer";
 type SectionName =
   | "about"
   | "stories"
+  | "judges"
   | "leaders"
   | "sponsors-cta"
   | "faq"
+  | "sponsors"
   | "other";
 
 interface BackgroundSection {
@@ -26,6 +28,10 @@ const sections: BackgroundSection[] = [
     bg: "#fff"
   },
   {
+    name: "judges",
+    bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 20%)"
+  },
+  {
     name: "leaders",
     bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 51%)"
   },
@@ -36,6 +42,14 @@ const sections: BackgroundSection[] = [
   {
     name: "about",
     bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 20%)"
+  },
+  {
+    name: "sponsors",
+    bg: "white"
+  },
+  {
+    name: "other",
+    bg: "white"
   }
 ];
 

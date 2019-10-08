@@ -190,6 +190,9 @@ const Hero = () => {
         <Text variant="header" as="h1">
           {siteCopy.hero.secondLine}
         </Text>
+        <Text variant="header" as="h1">
+          {siteCopy.hero.thirdLine}
+        </Text>
         <Text variant="subheader" as="p">
           <span style={{ whiteSpace: "pre" }}>{siteCopy.hero.subtitle}</span>
         </Text>

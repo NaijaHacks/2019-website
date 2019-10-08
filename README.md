@@ -2,7 +2,7 @@
 
 ### Check it out
 
-👉👉👉 [naijahcks.com](https://naijahcks.com) 👈👈👈
+👉👉👉 [naijahacks.com](https://naijahacks.com) 👈👈👈
 
 ### Running locally
 
@@ -10,7 +10,7 @@ First, clone the repo
 
 ```
 $ git clone https://github.com/hackthenorth/hackthenorth.com.git
-$ cd naijahcks.com
+$ cd naijahacks.com
 ```
 
 Then install dependencies and get it running
@@ -21,10 +21,6 @@ $ npm start
 ```
 
 Navigate to `localhost:3000` in your browser and give it a look 👀
-
-### Contributing
-
-This is a modified copy of the actual hackthenorth.com repo and is not actively maintained. For that reason, contributions are not welcome at this time.
 
 ### Tech stack
 
@@ -47,4 +43,4 @@ Our code is licensed under the MIT license. All other assets are copyright of Ha
 
 ### Cheers
 
-Originally developed with ❤️ by [Michal Jez](https://github.com/MJez29), [Jason Hong](https://github.com/JHong098), [Alex Xie](https://github.com/alexieyizhe) and [Jevin Sidhu](https://github.com/jevinsidhu) with the help of the rest of the [Hack the North](https://github.com/orgs/hackathon/people) team.
+Originally developed with ❤️ by the [Hack the North](https://github.com/orgs/hackathon/people) team.

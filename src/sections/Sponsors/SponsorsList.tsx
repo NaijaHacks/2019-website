@@ -4,27 +4,18 @@ import { Text, Link } from "@hackthenorth/north";
 
 import siteCopy from "copy";
 
-const goldSponsors = siteCopy.sponsorsSection.sponsors.filter(
-  sponsor => sponsor.tier === "gold"
-);
-const silverSponsors = siteCopy.sponsorsSection.sponsors.filter(
-  sponsor => sponsor.tier === "silver"
-);
-const bronzeAndStartupSponsors = siteCopy.sponsorsSection.sponsors.filter(
+const { sponsors, previousSponsors } = siteCopy.sponsorsSection;
+const goldSponsors = sponsors.filter(sponsor => sponsor.tier === "gold");
+const silverSponsors = sponsors.filter(sponsor => sponsor.tier === "silver");
+const bronzeAndStartupSponsors = sponsors.filter(
   sponsor => sponsor.tier === "bronze" || sponsor.tier === "startup"
 );
 
-const partners = siteCopy.sponsorsSection.sponsors.filter(
-  sponsor => sponsor.tier === "partner"
-);
+const partners = sponsors.filter(sponsor => sponsor.tier === "partner");
 
-const media = siteCopy.sponsorsSection.sponsors.filter(
-  sponsor => sponsor.tier === "media"
-);
+const media = sponsors.filter(sponsor => sponsor.tier === "media");
 
-const gaming = siteCopy.sponsorsSection.sponsors.filter(
-  sponsor => sponsor.tier === "gaming"
-);
+const gaming = sponsors.filter(sponsor => sponsor.tier === "gaming");
 
 const sponsorHeights = {
   gold: {
@@ -68,10 +59,7 @@ const SponsorItem = styled(Link)<{ tier: string }>`
   display: flex;
   position: relative;
   height: ${props => sponsorHeights[props.tier].h}px;
-  width: ${props =>
-    props.tier === "gold" || props.tier === "media" || props.tier === "gaming"
-      ? "100%"
-      : "unset"};
+  width: ${props => (props.tier === "gold" ? "100%" : "unset")};
   padding: 40px;
   cursor: pointer;
 
@@ -100,7 +88,7 @@ const SponsorImg = styled.img`
 const SponsorsList = () => (
   <>
     <Text as="h3" variant="subheading" id="sponsors">
-      Our sponsors
+      Our sponsors & Partners
     </Text>
     <SponsorContainer>
       {goldSponsors.map(sponsor => (
@@ -166,6 +154,25 @@ const SponsorsList = () => (
             src={gaming.imgSrc}
             alt={gaming.name}
             title={gaming.name}
+          />
+        </SponsorItem>
+      ))}
+    </SponsorContainer>
+    <Text as="h3" variant="subheading">
+      Previous Sponsors
+    </Text>
+    <SponsorContainer>
+      {previousSponsors.map(sponsor => (
+        <SponsorItem
+          key={sponsor.name}
+          href={sponsor.link}
+          newTab
+          tier="bronzeAndStartup"
+        >
+          <SponsorImg
+            src={sponsor.imgSrc}
+            alt={sponsor.name}
+            title={sponsor.name}
           />
         </SponsorItem>
       ))}

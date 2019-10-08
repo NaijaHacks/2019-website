@@ -10,9 +10,9 @@ const sponsorsWithFeatures = [
     link: "#",
     feature: {
       text:
-        "Submit your application at naijahacks.com/submit or by clicking the PARTICIPATE button. Enter your details & create a team.",
+        "Submit your application at naijahacks.com/submit. Enter all required details & create a team.",
       link: "#",
-      linkLabel: "by Oct. 30, 2019"
+      linkLabel: "by Oct. 31, 2019"
     }
   },
   {
@@ -22,7 +22,7 @@ const sponsorsWithFeatures = [
     link: "#",
     feature: {
       text:
-        "Get acceptance email & log into your application to confirm you participation. Enter T-Shirt size, update team & upload CV/Resume for opportunities.",
+        "Get acceptance email & log into your application to confirm you participation. Enter additional information & upload CV/Resume for job opportunities.",
       link: "#",
       linkLabel: "by Nov. 15, 2019"
     }
@@ -41,15 +41,28 @@ const sponsorsWithFeatures = [
   },
 
   {
-    name: "Join Slack & Start building",
+    name: "Join Slack and learn our process",
     tier: "bronze",
     imgSrc: "",
     link: "#",
     feature: {
       text:
-        "Join the NaijaHacks Slack team, create a private channel for your team & start hacking.",
+        "Join the NaijaHacks Slack team, create a private channel for your team.",
       link: "#",
       linkLabel: "Dec. 5, 2019"
+    }
+  },
+
+  {
+    name: "Attend remote talks, workshops and demos",
+    tier: "bronze",
+    imgSrc: "",
+    link: "#",
+    feature: {
+      text:
+        "Sponsors, speakers and mentors will be presenting remotely. All sessions will be recorded and shared",
+      link: "#",
+      linkLabel: "Dec. 7, 2019"
     }
   },
 
@@ -83,19 +96,19 @@ const sponsorsWithFeatures = [
     link: "#",
     feature: {
       text:
-        "Meet in Lagos Nigeria & listen to talks from speakers speaking from around the world. Be one of 100 teams to demo your project in expo-style setting to esteemed judges. Get your personalized NaijaHacks Goodie bag.",
+        "Meet in Zone Tech Park & listen to talks from speakers speaking from around the world. Be one of top teams to demo your project in expo-style setting to esteemed judges. Get your personalized NaijaHacks Goodie bag.",
       link: "#",
       linkLabel: "Dec. 17, 2019"
     }
   },
   {
-    name: "Get T-Shirts, photoshoot, & pitch",
+    name: "Pitch",
     tier: "bronze",
     imgSrc: "",
     link: "#",
     feature: {
       text:
-        "Return to venue to pitch to VCs & Execs from Nigeria & Silicon valley. Get Official NaijaHacks T-shirt & more swag.",
+        "Return to venue to pitch to VCs & Execs from Nigeria & around the world.",
       link: "#",
       linkLabel: "Dec. 17, 2019"
     }
