@@ -10,8 +10,13 @@ export { default as WaterlooEngLogoImg } from "./sponsors/waterloo-eng.png";
 export { default as SponsorLogoImg } from "./sponsors/sponsor.png";
 export { default as TechyonLogoImg } from "./sponsors/techyon.png";
 export {
+  default as NexmoLogoImg
+} from "./sponsors/2019/Nexmo_VonageAPI_vert.png";
+export {
   default as SketchLogoImg
 } from "./sponsors/2019/sketch-logo-light-transparent@2x.png";
+export { default as ZoneTechLogoImg } from "./sponsors/2019/zonetech.png";
+export { default as CovenantLogoImg } from "./sponsors/2019/covenant.png";
 
 /* Logos */
 export { default as LogoDarkImg } from "./logos/primary-dark.svg";

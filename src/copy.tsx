@@ -12,8 +12,10 @@ import {
   MichelleHackerHeadshotImg,
   // Sponsors & Partners
   TechyonLogoImg,
-  SponsorLogoImg,
   SketchLogoImg,
+  NexmoLogoImg,
+  ZoneTechLogoImg,
+  CovenantLogoImg,
   SponsorIllustrationImg,
   // About section imgs
   TrudeauHeadshotImg,
@@ -43,20 +45,20 @@ import {
   SpeakerImg4,
   WaterlooEngLogoImg,
   // Leaders section
-  CatHeadshotImg,
-  ChamathHeadshotImg,
-  ConnieHeadshotImg,
-  DylanHeadshotImg,
-  EthanWildingHeadshotImg,
-  JeffHeadshotImg,
-  JenniferHeadshotImg,
-  TiffaniHeadshotImg,
-  TracyHeadshotImg,
-  VinodHeadshotImg,
+  // CatHeadshotImg,
+  // ChamathHeadshotImg,
+  // ConnieHeadshotImg,
+  // DylanHeadshotImg,
+  // EthanWildingHeadshotImg,
+  // JeffHeadshotImg,
+  // JenniferHeadshotImg,
+  // TiffaniHeadshotImg,
+  // TracyHeadshotImg,
+  // VinodHeadshotImg,
   LightbulbBalloonCloudsIllustrationImg,
   // Navbar
-  LogoIconLightImg,
-  LogoIconDarkImg,
+  // LogoIconLightImg,
+  // LogoIconDarkImg,
   SocialFacebookImg,
   SocialFacebookImgDark,
   SocialInstaImg,
@@ -64,9 +66,9 @@ import {
   SocialTwitterImg,
   SocialTwitterImgDark,
   SocialEmailImg,
-  Robogoose4IllustrationImg,
-  MichalHeadshotImg,
-  OrganizerHeadshotImg
+  Robogoose4IllustrationImg
+  // MichalHeadshotImg,
+  // OrganizerHeadshotImg
 } from "static/img";
 
 interface Sponsor {
@@ -335,16 +337,17 @@ const sponsors: Sponsor[] = [
     name: "iSabiPlay"
   },
   {
-    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
-    link: "https://digitalocean.com/",
-    tier: "silver",
-    name: "DigitalOcean"
-  },
-  {
-    imgSrc: "https://www.nexmo.com/wp-content/uploads/2019/02/logo-dark.png",
+    imgSrc: NexmoLogoImg,
     link: "https://nexmo.com",
     tier: "silver",
     name: "Nexmo"
+  },
+  {
+    imgSrc:
+      "https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/2661/r0mjZTxOTjmP9vbv2Ypl",
+    link: "https://particle.io",
+    tier: "silver",
+    name: "Particle"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/stemhubfoundation.png",
@@ -353,11 +356,10 @@ const sponsors: Sponsor[] = [
     name: "StemHub Foundation"
   },
   {
-    imgSrc:
-      "https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/2661/r0mjZTxOTjmP9vbv2Ypl",
-    link: "https://particle.io",
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
+    link: "https://digitalocean.com/",
     tier: "silver",
-    name: "Particle"
+    name: "DigitalOcean"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/twilio.png",
@@ -446,6 +448,18 @@ const sponsors: Sponsor[] = [
     link: "https://pcbway.com",
     tier: "silver",
     name: "PCBWay"
+  },
+  {
+    imgSrc: ZoneTechLogoImg,
+    link: "zonetechpark.co",
+    tier: "silver",
+    name: "Zone Tech Park"
+  },
+  {
+    imgSrc: CovenantLogoImg,
+    link: "https://covenantuniversity.edu.ng/",
+    tier: "silver",
+    name: "Covenant University"
   }
 ];
 

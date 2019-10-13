@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@hackthenorth/north": "^0.6.4",
+    "@shopify/react-async": "^3.0.10",
     "@types/lodash.throttle": "^4.1.6",
     "@types/node": "^11.13.9",
     "@types/react": "^16.8.15",
@@ -17,7 +18,7 @@
     "react-lottie": "^1.2.3",
     "react-pose": "^4.0.8",
     "react-rellax": "^1.0.3",
-    "react-scripts": "3.0.0",
+    "react-scripts": "^3.2.0",
     "react-spring": "^8.0.20",
     "react-text-loop": "^2.0.2",
     "smoothscroll-polyfill": "^0.4.4",
@@ -27,13 +28,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn run delete-maps",
     "lint": "npm run lint:ts && npm run lint:css",
     "lint:ts": "eslint --ext .jsx,.js,.tsx,.ts src/ --fix",
     "lint:css": "stylelint src",
     "minimize-images": "node ./scripts/image-minimizer.js",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && rm -rf ../naijahacks/static && rm -rf ../naijahacks/precach*.js && cp -r build/* ../naijahacks/"
+    "deploy": "npm run build && rm -rf ../naijahacks/static && rm -rf ../naijahacks/precach*.js && cp -r build/* ../naijahacks/",
+    "delete-maps": "rm ./build/static/js/*.map && rm ./build/static/css/*.map"
   },
   "browserslist": {
     "production": [
