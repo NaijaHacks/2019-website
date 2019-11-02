@@ -9,8 +9,8 @@
 First, clone the repo
 
 ```
-$ git clone https://github.com/hackthenorth/hackthenorth.com.git
-$ cd naijahacks.com
+$ git clone https://github.com/naijahacks/2019-website.git
+$ cd 2019-website
 ```
 
 Then install dependencies and get it running
