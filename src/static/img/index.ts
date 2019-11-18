@@ -17,6 +17,12 @@ export {
 } from "./sponsors/2019/sketch-logo-light-transparent@2x.png";
 export { default as ZoneTechLogoImg } from "./sponsors/2019/zonetech.png";
 export { default as CovenantLogoImg } from "./sponsors/2019/covenant.png";
+export { default as AWSLogoImg } from "./sponsors/2019/aws.png";
+export {
+  default as BizzSkillsLogoImg
+} from "./sponsors/2019/bizskill_logo.svg";
+export { default as OnePassword } from "./sponsors/2019/1Password.png";
+export { default as XYZDomains } from "./sponsors/2019/xyz.png";
 
 /* Logos */
 export { default as LogoDarkImg } from "./logos/primary-dark.svg";

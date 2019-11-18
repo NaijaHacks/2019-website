@@ -218,7 +218,12 @@ const NavBar: React.FC = () => {
             {!mobile && (
               <CallToActionButton
                 text={copy.nav.sponsorButton.text}
-                onClick={() => scrollTo("sponsors-cta")}
+                // onClick={() => scrollTo("sponsors-cta")}
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSdfgQX6azxhaQD2JyVpSIaewQXCrnPMcqgZWTr1pv53qPhFVQ/viewform?usp=sf_link"
+                  )
+                }
                 scrolledDown={scrolledDown}
               />
             )}

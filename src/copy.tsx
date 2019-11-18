@@ -16,7 +16,11 @@ import {
   NexmoLogoImg,
   ZoneTechLogoImg,
   CovenantLogoImg,
+  AWSLogoImg,
+  BizzSkillsLogoImg,
   SponsorIllustrationImg,
+  OnePassword,
+  XYZDomains,
   // About section imgs
   TrudeauHeadshotImg,
   RecapVidButtonBackgroundImg,
@@ -80,7 +84,8 @@ interface Sponsor {
     | "startup"
     | "partner"
     | "gaming"
-    | "media";
+    | "media"
+    | "startup";
   imgSrc: string;
   link: string;
   feature?: {
@@ -311,11 +316,16 @@ const sponsors: Sponsor[] = [
     link: "https://techyon.org/"
   },
   {
-    imgSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    imgSrc: AWSLogoImg,
     link: "https://www.aws.com/",
     tier: "silver",
     name: "Amazon"
+  },
+  {
+    imgSrc: NexmoLogoImg,
+    link: "https://nexmo.com",
+    tier: "silver",
+    name: "Nexmo"
   },
   {
     imgSrc: SketchLogoImg,
@@ -331,16 +341,16 @@ const sponsors: Sponsor[] = [
     link: "https://dottsmediahouse.com/"
   },
   {
+    name: "BizSkills Academy",
+    tier: "startup",
+    imgSrc: BizzSkillsLogoImg,
+    link: "https://www.bizskillsacademy.com/"
+  },
+  {
     tier: "gaming",
     imgSrc: "https://naijahacks.com/2018/res/sponsors/isabiplay.png",
     link: "https://isabiplay.com/",
     name: "iSabiPlay"
-  },
-  {
-    imgSrc: NexmoLogoImg,
-    link: "https://nexmo.com",
-    tier: "silver",
-    name: "Nexmo"
   },
   {
     imgSrc:
@@ -429,6 +439,12 @@ const sponsors: Sponsor[] = [
     name: "Axure"
   },
   {
+    imgSrc: ZoneTechLogoImg,
+    link: "zonetechpark.co",
+    tier: "silver",
+    name: "Zone Tech Park"
+  },
+  {
     imgSrc:
       "https://raw.githubusercontent.com/eggheadio/egghead-brand/master/Egghead-Logo-Dark.png",
     link: "https://egghead.io",
@@ -443,6 +459,30 @@ const sponsors: Sponsor[] = [
     name: "Voiceflow"
   },
   {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/techher.png",
+    link: "https://techherng.com/",
+    tier: "silver",
+    name: "TechHer"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/digiclan.png",
+    link: "https://digiclanhub.com/",
+    tier: "silver",
+    name: "DigiClan"
+  },
+  {
+    imgSrc: XYZDomains,
+    link: "https://gen.xyz/",
+    tier: "silver",
+    name: ".XYZ Domains"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/gimme.png",
+    link: "/",
+    tier: "silver",
+    name: "Oh Woh popcorn"
+  },
+  {
     imgSrc:
       "https://4.bp.blogspot.com/-sn_1frB-tto/W_eevs6kyzI/AAAAAAAANhE/ZPlkvH6ysTAMuBJlbtYsSxkC28xaRrZugCLcBGAs/s1600/PCBWay%2BTlogo.png",
     link: "https://pcbway.com",
@@ -450,16 +490,16 @@ const sponsors: Sponsor[] = [
     name: "PCBWay"
   },
   {
-    imgSrc: ZoneTechLogoImg,
-    link: "zonetechpark.co",
-    tier: "silver",
-    name: "Zone Tech Park"
-  },
-  {
     imgSrc: CovenantLogoImg,
     link: "https://covenantuniversity.edu.ng/",
     tier: "silver",
     name: "Covenant University"
+  },
+  {
+    imgSrc: OnePassword,
+    link: "1Password.com",
+    tier: "bronze",
+    name: "1Password"
   }
 ];
 
@@ -582,14 +622,6 @@ export default {
     sections: ["About", "Judges", "Sponsors", "FAQ", "2018"],
     socialLinks: [
       {
-        name: "facebook",
-        icons: {
-          light: SocialFacebookImg,
-          dark: SocialFacebookImgDark
-        },
-        link: "https://www.facebook.com/naijahacks"
-      },
-      {
         name: "twitter",
         icons: {
           light: SocialTwitterImg,
@@ -604,10 +636,18 @@ export default {
           dark: SocialInstaImgDark
         },
         link: "https://www.instagram.com/naijahacks"
+      },
+      {
+        name: "facebook",
+        icons: {
+          light: SocialFacebookImg,
+          dark: SocialFacebookImgDark
+        },
+        link: "https://www.facebook.com/naijahacks"
       }
     ],
     sponsorButton: {
-      text: "Interested in sponsoring?"
+      text: "Interested in volunteering?"
     }
   },
   hero: {
@@ -648,13 +688,14 @@ export default {
   about: {
     title: "Africa's biggest hackathon",
     sentence1:
-      "Join 1,300+ participants, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019.",
+      "Join 1,300+ participants, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019 to build solutions for Education, Housing, Job Creation and Citizen Safety",
     sentence2:
       "NaijaHacks is not just a hackathon. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
     gears: [
       {
         name: "speakers",
-        body: "Speakers and Judges from 5 countries",
+        // body: "Speakers and Judges from 5 countries",
+        body: "CITIZEN SAFETY",
         images: [
           { id: "speaker1", url: SpeakerImg1 },
           { id: "speaker2", url: SpeakerImg2 },
@@ -666,7 +707,8 @@ export default {
       },
       {
         name: "activities",
-        body: "Have fun while working on a challenge you're passionate about",
+        // body: "Have fun while working on a challenge you're passionate about",
+        body: "EDUCATION",
         images: [
           { id: "activity1", url: ActivityImg1 },
           { id: "activity2", url: ActivityImg2 },
@@ -678,8 +720,8 @@ export default {
       },
       {
         name: "hackers",
-        body:
-          "Meet and network with 1,300+ hackers from all around the the country",
+        // body:  "Meet and network with 1,300+ hackers from all around the the country",
+        body: "HOUSING ",
         images: [
           { id: "hacker1", url: HackerImg1 },
           { id: "hacker2", url: HackerImg2 },
@@ -691,7 +733,8 @@ export default {
       },
       {
         name: "hardware",
-        body: "Win Millions of Naira in cash and prizes",
+        // body: "Win Millions of Naira in cash and prizes",
+        body: "JOB CREATION",
         images: [
           { id: "hardware1", url: HardwareImg1 },
           { id: "hardware2", url: HardwareImg2 },
@@ -820,7 +863,12 @@ export default {
       {
         question: "How many people can be on a team?",
         answer:
-          "You can form teams of up to 3 people. There are no restrictions for who they can be, so you can team up with hackers from any school, country, or experience level. Teams can be formed before or during the event."
+          "You can form teams of up to 4 people. There are no restrictions for who they can be, so you can team up with hackers from any school, country, or experience level. Teams can be formed before or during the event."
+      },
+      {
+        question: "What if I’m new to programming?",
+        answer:
+          "That's okay! A hackathon is a great place to gain valuable experience. There will be tutorials, workshops and mentors to help throughout the event!"
       },
       {
         question: "What if I've never been to a hackathon before?",
@@ -835,7 +883,32 @@ export default {
       {
         question: "When will applications for NaijaHacks 2019 open?",
         answer:
-          "Applications for NaijaHacks opened October 5, 2019 and will close October 31, 2019 - follow us on social media to learn more!"
+          "Applications for NaijaHacks opened October 5, 2019 and will close November 15, 2019 - follow us on social media to learn more!"
+      },
+      {
+        question: "What if I can't find a team?",
+        answer:
+          "Don't worry! The team formation session on the first day of NaijaHacks is a great place to find teammmates!"
+      },
+      {
+        question: "What can I win?",
+        answer:
+          "Over 30 Prizes worth over $100,000 will be won at NaijaHacks. Stay tunned for prize announcements!"
+      },
+      {
+        question: "Is there a Code of Conduct?",
+        answer: (
+          <>
+            Yes! Hackers are expected to adhere to the{" "}
+            <Link
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              newTab
+            >
+              Major League Hacking Code of Conduct.
+            </Link>
+            .
+          </>
+        )
       },
       {
         question: "404: Question Not Found",
@@ -886,11 +959,6 @@ export default {
         link: "mailto:team@naijahacks.com"
       },
       {
-        name: "Facebook",
-        img: SocialFacebookImg,
-        link: "https://www.facebook.com/naijahacks"
-      },
-      {
         name: "Twitter",
         img: SocialTwitterImg,
         link: "https://twitter.com/naijahacks"
@@ -899,6 +967,11 @@ export default {
         name: "Instagram",
         img: SocialInstaImg,
         link: "https://www.instagram.com/naijahacks/"
+      },
+      {
+        name: "Facebook",
+        img: SocialFacebookImg,
+        link: "https://www.facebook.com/naijahacks"
       }
     ],
     team: shuffle(team),
@@ -906,7 +979,7 @@ export default {
     defaultOrganizerText: "By #TeamNaijaHacks 🇳🇬. Originally made in 🇨🇦"
   },
   leaders: {
-    title: "Learn from the best",
+    title: "2018 Judges & Speakers",
     desc: (
       <Text className="desc" variant="sectionText">
         Tech and Business leaders from 5 countries judge, speak and mentor at

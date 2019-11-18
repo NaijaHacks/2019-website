@@ -8,7 +8,7 @@ const { sponsors, previousSponsors } = siteCopy.sponsorsSection;
 const goldSponsors = sponsors.filter(sponsor => sponsor.tier === "gold");
 const silverSponsors = sponsors.filter(sponsor => sponsor.tier === "silver");
 const bronzeAndStartupSponsors = sponsors.filter(
-  sponsor => sponsor.tier === "bronze" || sponsor.tier === "startup"
+  sponsor => sponsor.tier === "bronze"
 );
 
 const partners = sponsors.filter(sponsor => sponsor.tier === "partner");
@@ -16,6 +16,8 @@ const partners = sponsors.filter(sponsor => sponsor.tier === "partner");
 const media = sponsors.filter(sponsor => sponsor.tier === "media");
 
 const gaming = sponsors.filter(sponsor => sponsor.tier === "gaming");
+
+const startup = sponsors.filter(sponsor => sponsor.tier === "startup");
 
 const sponsorHeights = {
   gold: {
@@ -39,6 +41,10 @@ const sponsorHeights = {
     wm: 90
   },
   gaming: {
+    h: 225,
+    wm: 90
+  },
+  startup: {
     h: 225,
     wm: 90
   }
@@ -141,6 +147,25 @@ const SponsorsList = () => (
       {media.map(media => (
         <SponsorItem key={media.name} href={media.link} newTab tier="media">
           <SponsorImg src={media.imgSrc} alt={media.name} title={media.name} />
+        </SponsorItem>
+      ))}
+    </SponsorContainer>
+    <Text as="h3" variant="subheading">
+      Official Startup partner
+    </Text>
+    <SponsorContainer>
+      {startup.map(startup => (
+        <SponsorItem
+          key={startup.name}
+          href={startup.link}
+          newTab
+          tier="startup"
+        >
+          <SponsorImg
+            src={startup.imgSrc}
+            alt={startup.name}
+            title={startup.name}
+          />
         </SponsorItem>
       ))}
     </SponsorContainer>

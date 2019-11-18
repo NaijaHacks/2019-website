@@ -35,7 +35,7 @@
     "minimize-images": "node ./scripts/image-minimizer.js",
     "eject": "react-scripts eject",
     "deploy": "npm run build && rm -rf ../naijahacks/static && rm -rf ../naijahacks/precach*.js && cp -r build/* ../naijahacks/",
-    "delete-maps": "rm ./build/static/js/*.map && rm ./build/static/css/*.map"
+    "delete-maps": "rm ./build/static/js/*.map"
   },
   "browserslist": {
     "production": [

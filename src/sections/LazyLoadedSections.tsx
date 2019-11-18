@@ -3,27 +3,24 @@ import { createAsyncComponent } from "@shopify/react-async";
 
 import Background from "components/Background";
 
-const About = createAsyncComponent({
-  load: () => import("sections/About")
-});
-const Stories = createAsyncComponent({
-  load: () => import("sections/Stories")
-});
-const Sponsors = createAsyncComponent({
-  load: () => import("sections/Sponsors")
-});
+import About from "sections/About";
+import Judges from "sections/Judges";
+import Sponsors from "sections/Sponsors";
+// const Stories = createAsyncComponent({
+//   load: () => import("sections/Stories")
+// });
+// const Sponsors = createAsyncComponent({
+//   load: () => import("sections/Sponsors")
+// });
 const FAQ = createAsyncComponent({
   load: () => import("sections/FAQ")
 });
 const Footer = createAsyncComponent({
   load: () => import("sections/Footer")
 });
-const Leaders = createAsyncComponent({
-  load: () => import("./Leaders")
-});
-const Judges = createAsyncComponent({
-  load: () => import("./Judges")
-});
+// const Leaders = createAsyncComponent({
+//   load: () => import("./Leaders")
+// });
 
 const LazyLoadedSections = () => (
   <>

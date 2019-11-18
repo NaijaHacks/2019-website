@@ -268,7 +268,7 @@ const MailingListSignUp = (props: MailingListSignUpProps) => {
       </EmailForm> */}
       <SponsorButton
         className="cta"
-        onClick={() => window.open("https://naijahacks.com/signup")}
+        onClick={() => window.open("https://apply.naijahacks.com")}
       >
         Apply to participate
       </SponsorButton>
