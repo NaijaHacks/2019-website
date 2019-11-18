@@ -1,10 +1,8 @@
 import React, { useState, FormEvent } from "react";
 import styled from "styled-components";
-import Arrow from "static/img/hero/arrow.svg";
-import { Text, TextInput, Button, Loader } from "@hackthenorth/north";
+import { Text, Button } from "@hackthenorth/north";
 import globalConstants from "theme/globalConstants";
 import posed, { PoseGroup } from "react-pose";
-import CallToActionButton from "../Navbar/CallToActionButton";
 
 import siteCopy from "copy";
 import Loading from "./Loading";
@@ -270,7 +268,7 @@ const MailingListSignUp = (props: MailingListSignUpProps) => {
       </EmailForm> */}
       <SponsorButton
         className="cta"
-        onClick={() => window.open("https://naijahacks.com/signup")}
+        onClick={() => window.open("https://apply.naijahacks.com")}
       >
         Apply to participate
       </SponsorButton>

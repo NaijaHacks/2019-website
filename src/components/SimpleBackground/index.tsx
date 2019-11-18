@@ -7,6 +7,7 @@ type SectionName =
   | "leaders"
   | "sponsors"
   | "faq"
+  | "judges"
   | "other";
 
 interface BackgroundSections {
@@ -38,6 +39,11 @@ const sections: BackgroundSections = {
     bg: "#C46D46"
   },
   leaders: {
+    offset: 2800,
+    height: 700,
+    bg: "#C45E5E"
+  },
+  judges: {
     offset: 2800,
     height: 700,
     bg: "#C45E5E"
@@ -93,6 +99,8 @@ const SimpleBackground = () => {
       updateCurSection("stories");
     } else if (windowBottom > sections.about.offset) {
       updateCurSection("about");
+    } else if (windowBottom > sections.judges.offset) {
+      updateCurSection("judges");
     } else {
       updateCurSection("other");
     }

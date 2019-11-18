@@ -16,20 +16,20 @@
       name="keywords"
       content="uchi uchibeke, uchibeke, uchi, hackathon, tech, africa, lagos tech, events, coding, nigerian hackahthon, lagos, naija, wedding planner, nigerian wedding app"
     />
-    <meta name="author" content="Uchi Uchibeke https://uchi.me" />
-    <link rel="shortcut icon" href="guide/img/favicon.png" />
+    <meta name="author" content="NaijaHacks" />
+    <link rel="shortcut icon" href="images/logo.png" />
     <meta property="og:url" content="https://naijahacks.com/" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="NaijaHacks | Nigeria's Official Hackathon"
+      content="NaijaHacks | Africa's biggest Hackathon and technology invention competition. Africa's Hackathon"
     />
     <meta
       property="og:description"
       content="NaijaHacks will inspire a generation of Nigerian innovators to use technology to create solutions for their communities. NaijaHacks is Africa's Biggest Hackathon and we are poised to push Africa’s technological development."
     />
-    <meta property="og:image" content="res/woman.png" />
-    <meta property="og:image:secure_url" content="res/logo.png" />
+    <meta property="og:image" content="images/home.jpeg" />
+    <meta property="og:image:secure_url" content="images/logo.png" />
     <meta property="og:site_name" content="NaijaHacks" />
     <meta
       property="twitter:card"
@@ -38,18 +38,23 @@
     />
     <meta name="twitter:site" content="@naijahacks" />
     <meta name="twitter:creator" content="@naijahacks" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="assets/images/home.jpeg" />
+
+    <!-- / -->
+
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detectionicon" content="telephone=no" />
-    <meta name="apple-touch-" content="res/logo.jpg" />
+    <meta name="apple-touch-" content="images/logo.png" />
     <meta name="application-name" content="NaijaHacks" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="res/woman.png" />
+    <meta name="msapplication-TileImage" content="images/home.jpeg" />
     <link
       rel="search"
       type="application/opensearchdescription+xml"
       href="/opensearch.xml"
-      title="NaijaHacks"
+      title="NaijaHacks | Africa's biggest Hackathon and technology invention competition. Africa's Hackathon"
     />
     <meta name="referrer" content="origin" />
   </head>
@@ -72,7 +77,8 @@
     <script>
       window["_fs_debug"] = false;
       window["_fs_host"] = "fullstory.com";
-      window["_fs_org"] = "FF2BR";
+      window["_fs_script"] = "edge.fullstory.com/s/fs.js";
+      window["_fs_org"] = "DYY6W";
       window["_fs_namespace"] = "FS";
       (function(m, n, e, t, l, o, g, y) {
         if (e in m) {
@@ -83,30 +89,34 @@
           }
           return;
         }
-        g = m[e] = function(a, b) {
-          g.q ? g.q.push([a, b]) : g._api(a, b);
+        g = m[e] = function(a, b, s) {
+          g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
         };
         g.q = [];
         o = n.createElement(t);
         o.async = 1;
-        o.src = "https://" + _fs_host + "/s/fs.js";
+        o.crossOrigin = "anonymous";
+        o.src = "https://" + _fs_script;
         y = n.getElementsByTagName(t)[0];
         y.parentNode.insertBefore(o, y);
-        g.identify = function(i, v) {
-          g(l, { uid: i });
-          if (v) g(l, v);
+        g.identify = function(i, v, s) {
+          g(l, { uid: i }, s);
+          if (v) g(l, v, s);
         };
-        g.setUserVars = function(v) {
-          g(l, v);
+        g.setUserVars = function(v, s) {
+          g(l, v, s);
         };
-        g.event = function(i, v) {
-          g("event", { n: i, p: v });
+        g.event = function(i, v, s) {
+          g("event", { n: i, p: v }, s);
         };
         g.shutdown = function() {
           g("rec", !1);
         };
         g.restart = function() {
           g("rec", !0);
+        };
+        g.log = function(a, b) {
+          g("log", [a, b]);
         };
         g.consent = function(a) {
           g("consent", !arguments.length || a);

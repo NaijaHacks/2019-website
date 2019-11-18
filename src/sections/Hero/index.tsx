@@ -5,17 +5,17 @@ import SectionWrapper from "components/SectionWrapper";
 import MailingListSignup from "components/MailingListSignup";
 
 import GradientBg from "static/img/hero/gradient.png";
-import IllustrationBg from "static/img/hero/illustration-background.png";
-import IllustrationFg from "static/img/hero/illustration-foreground.png";
-import IllustrationMiddle from "static/img/hero/illustration-middle-1.png";
-import IllustrationMiddle3 from "static/img/hero/illustration-middle-3.png";
+// import IllustrationBg from "static/img/hero/illustration-background.png";
+// import IllustrationFg from "static/img/hero/illustration-foreground.png";
+// import IllustrationMiddle from "static/img/hero/illustration-middle-1.png";
+// import IllustrationMiddle3 from "static/img/hero/illustration-middle-3.png";
 
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import animationData from "sections/Hero/lottie.json";
 import animationDataMobile from "sections/Hero/data.json";
 
 import TextLoop from "react-text-loop";
-import Parallax from "react-rellax";
+// import Parallax from "react-rellax";
 import { Text } from "@hackthenorth/north";
 
 import siteCopy from "copy";
@@ -103,58 +103,58 @@ const Image = styled.img<ImageProps>`
   pointer-events: none;
 `;
 
-const ImageFg = styled(Image)`
-  width: 110vw;
-  left: -70px;
+// const ImageFg = styled(Image)`
+//   width: 110vw;
+//   left: -70px;
 
-  ${props => props.theme.mediaQueries.tablet`
-    width: 150%;
-    left: 0;
-  `}
+//   ${props => props.theme.mediaQueries.tablet`
+//     width: 150%;
+//     left: 0;
+//   `}
 
-  ${props => props.theme.mediaQueries.tabletMobile`
-    width: 110%;
-  `}
+//   ${props => props.theme.mediaQueries.tabletMobile`
+//     width: 110%;
+//   `}
 
-  ${props => props.theme.mediaQueries.mobile`
-    width: 130%;
-    top: 350px;
-  `}
+//   ${props => props.theme.mediaQueries.mobile`
+//     width: 130%;
+//     top: 350px;
+//   `}
 
-  ${props => props.theme.mediaQueries.smallMobile`
-    top: 275px;
-  `}
-`;
+//   ${props => props.theme.mediaQueries.smallMobile`
+//     top: 275px;
+//   `}
+// `;
 
-const ParallaxWrapper = styled.div`
-  width: 1150px;
-  margin-top: 340px;
-  margin-left: auto;
-  margin-right: auto;
-`;
+// const ParallaxWrapper = styled.div`
+//   width: 1150px;
+//   margin-top: 340px;
+//   margin-left: auto;
+//   margin-right: auto;
+// `;
 
-const LottieWrapper = styled.div`
-  width: 1475px;
-  position: absolute;
-  left: -206px;
-  bottom: 0;
-  pointer-events: none;
-`;
+// const LottieWrapper = styled.div`
+//   width: 1475px;
+//   position: absolute;
+//   left: -206px;
+//   bottom: 0;
+//   pointer-events: none;
+// `;
 
-const MobileWrapper = styled.div`
-  width: 135%;
-  pointer-events: none;
-  margin-top: -23px;
+// const MobileWrapper = styled.div`
+//   width: 135%;
+//   pointer-events: none;
+//   margin-top: -23px;
 
-  ${props => props.theme.mediaQueries.tabletMobile`
-    width: 100vh;
-    margin-left: -105px;
-  `}
-`;
+//   ${props => props.theme.mediaQueries.tabletMobile`
+//     width: 100vh;
+//     margin-left: -105px;
+//   `}
+// `;
 
-const style = {
-  willChange: "transform"
-};
+// const style = {
+//   willChange: "transform"
+// };
 
 const Hero = () => {
   const { width } = useWindowDimensions();
