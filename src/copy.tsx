@@ -70,9 +70,28 @@ import {
   SocialTwitterImg,
   SocialTwitterImgDark,
   SocialEmailImg,
-  Robogoose4IllustrationImg
+  Robogoose4IllustrationImg,
   // MichalHeadshotImg,
   // OrganizerHeadshotImg
+  Sam,
+  Deji,
+  Tope,
+  Ara,
+  Sola,
+  Nelly,
+  Kevin,
+  Doug,
+  Chude,
+  Chris,
+  Banke,
+  Tunde,
+  Funto,
+  Sefunmi,
+  Samson,
+  Namnso,
+  Shedrack,
+  Kevwe,
+  Christine
 } from "static/img";
 
 interface Sponsor {
@@ -979,7 +998,7 @@ export default {
     defaultOrganizerText: "By #TeamNaijaHacks 🇳🇬. Originally made in 🇨🇦"
   },
   leaders: {
-    title: "2018 Judges & Speakers",
+    title: "Judges & Speakers",
     desc: (
       <Text className="desc" variant="sectionText">
         Tech and Business leaders from 5 countries judge, speak and mentor at
@@ -988,7 +1007,7 @@ export default {
       </Text>
     ),
     img: LightbulbBalloonCloudsIllustrationImg,
-    leaders: [
+    leaders2018: [
       {
         name: "Adeola D. Olubamiji, Ph.D.",
         title: "Founder, STEMHub Foundation",
@@ -1130,6 +1149,222 @@ export default {
         title: "Business Development Lead, FinConecta",
         img: "https://naijahacks.com/2018/res/bosses/ara.png"
       }
+    ],
+    leaders: [
+      {
+        name: "Adeola D. Olubamiji, Ph.D.",
+        title: "Founder, STEMHub Foundation",
+        img: "https://naijahacks.com/2018/res/bosses/adeola.png",
+        bio: `
+        `
+      },
+      {
+        name: `Sam "SuperGeek" Uduma`,
+        title: "Acting CEO, Nigeria, TechAdvance",
+        img: Sam,
+        bio: `Sam is a seasoned entrepreneur, who has ventured into both hardware and software tech startups in Nigeria. With a Penchant for innovation and technology for solutions, Sam has launched several investment vehicles geared towards activating the knowledge capacity of Nigerians, promote our technology and culture and equipping the industry as a whole.
+        `
+      },
+      {
+        name: `Doug Gould`,
+        title: "Startup Business Development, Amazon Web Services",
+        img: Doug,
+        bio: `Doug is a startup advisor and angel investor. He's spent his career working in the developer tools and cloud space with startups Cloudability and Xamarin. In addition, he's been on teams both at Microsoft and AWS working on emerging technologies. He's also spent time working at venture firm Kairos Society supporting entrepreneurs around the world. 
+        `
+      },
+      {
+        name: `Obafunto AyinOluwa`,
+        title:
+          "Snr. Manager, Portfolio Planning & Strategy, Royal Bank of Canada",
+        img: Funto,
+        bio: `"Obafunto AyinOluwa is accountable to provide leadership for the entire Core Banking and Systems Modernization portfolio in the areas of portfolio analysis, communication, strategy development and research. 
+
+        Obafunto has proven experience in consulting, design thinking, agile, risk management, governance and compliance. In his previous role at Strategy and Transformation, he facilitated and supported the Technology and Operations strategy cycle from how our strategy is designed, to how it is implemented, and how our results are delivered and measured.
+        
+        Obafunto holds a BSc degree in Banking and Finance from Covenant University and a Master’s degree in Management Innovation and Entrepreneurship from Queen’s University.
+        
+        He is also the co-founder of Smile Care Initiative with extensive involvement in community and social leadership activities.
+        
+        "
+        `
+      },
+      {
+        name: `Christine Dikongué`,
+        title:
+          "National Director, Young Entrepreneurs & Strategic Partnerships, Canadian Black Chamber of Commerce",
+        img: Christine,
+        bio: `"Christine Dikongué was born in Douala, Cameroon, raised between three continents and in 6 different countries.
+
+
+        She has been living in Toronto for a decade now. Christine has experience in various disciplines (international economics, project management, marketing and technology).
+        
+        
+        Christine draws on her personal experience and cross-cultural knowledge to raise awareness of issues related to access to quality education (SDG 4) and gender equality (SDG 5), while representing youth and marginalized communities.
+        
+        
+        With her expertise in youth Mentoring , capacity building & strategic Partnerships, Christine is a member of the Board of Directors of the United Nations Association in Canada ( Toronto Branch) and the Canadian Black Chamber of Commerce.
+        
+        
+        More recently, she was a youth ambassador for Barack Obama’s Canada2020 Conference. You can find her on the Most Influential People of African Descent ‘s Global Top 100 under 40, in recognition of the UN International Decade for People of African Decent and amongst  the Top 100 Black Women to Watch in Canada.
+        "
+        `
+      },
+      {
+        name: `Samson Opaleye`,
+        title: "COO/Managing Partner, Dotts Media House",
+        img: Samson,
+        bio: `Samson Opaleye is the Chief Operating Officer and Managing Partner of Dotts Media House, Nigeria’s foremost digital media agency for leading brands in Africa. Samson’s passion for solving problems for brands through digital media marketing and business development has led him to work with global brands like Pepsi, HP, Dano Milk Nigeria, SPAR Nigeria, Intel, Lufthansa Airlines, World Economic Forum and many more. He is a thought leader in digital marketing.
+        `
+      },
+      {
+        name: `Sefunmi Osinaike`,
+        title: "Product Lead, Dot Health",
+        img: Sefunmi,
+        bio: `Sefunmi is passionate about using technology to solve human problems and has made that his mission that directs his life. With a background in electrical engineering and entrepreneurship from the University of Waterloo, he got the opportunity to work on his own start-up, Pave, and intern for companies like Apple and Microsoft. He is currently the Product Lead at Dot Health, where he is focused on building experiences to empower Canadians with their health information. Before Dot, he led the software product development for the thermostat product at ecobee. On the side, he is working on doing a thing which includes writing a book on how to transition into a product management role in technology from outside the industry and building a community of do-ers to encourage one another in enjoying the process of creating something exciting. 
+        `
+      },
+      {
+        name: `Temitope Ekundayo`,
+        title: "Chief of Growth, Printivo.com & Segment Mgr, Promostack",
+        img: Tope,
+        bio: `"Temitope leads the growth team at Printivo.com, an online print and design company focused on helping SMEs and Multinationals print marketing collaterals with top quality, speed and convenience making it one of the fastest growing Startups today.
+
+        He also manages Promostack, an SBU under the Printivo group focused on gifts, merchandise and souvenirs to serve your everyday gift needs.
+        
+        Tope is an astute business strategist with a wide background in business development, sales, marketing, growth hacking, product and process development, technology, operations and creative ad roles with over 10 years experience. 
+            
+           
+        He is the Founder of Endava Interactive(www.endava.com.ng), an SMB Consultancy and design Agency focused on growing Startups by providing strategies that move them from 0 to 1.
+        
+        He is also an Alumni of AIESEC a Global organisation of change makers and leaders present in 122 countries worldwide and he was Local lead where he started projects  centred on on Cancer/HIV Awareness that impacted over 5000 men/women across 15 communities in Rivers State in 2011.
+        
+        He enjoys creating business models , helping scale startups and preach about focus on driving growth within the ecosystem, he is also an aspiring Chef and Food connoisseur.
+            
+        He can be reached on twitter at @sinzubaba as well as Medium https://medium.com/@sinzubaba/shadow-titan-the-beloxxi-case-study-c4cf93e4fa12
+        "
+        `
+      },
+      {
+        name: `Oluwasola Obagbemi`,
+        title: "Senior Comms Mgr., Africa, Andela",
+        img: Sola,
+        bio: `"Oluwasola Obagbemi (29years)
+
+        Since she started her career as a PR, Event and Media Consultant ten years ago, Sola has steadily climbed through the corporate ladder to become the Senior Manager, Marketing and Communications for Andela, overseeing the brand’s marketing communications across Africa. She first joined the Andela team as the Communications Manager for Nigeria, and in her first 6 months, she led strategic PR efforts that saw to a significant increase in brand visibility and awareness - hence the promotion to lead and build the Comms and Marketing team in Africa (Uganda, Kenya, Rwanda, Egypt and Nigeria)
+        
+        Before her move to Andela, Sola was the Deputy Chief Operating Officer at Red Media Africa and was also the Senior Account Manager for Facebook, Union Bank, Uber Africa, HP, Intel WestAfrica, Maltina, Heineken, British Council, 33’Export, Life Beer and Pepsodent. During this time, Sola coordinated the publicity and press viewing event of Mark Zuckerberg’s 2016 visit to Nigeria. In 2015, she worked with Waggener Edstrom Communication in South Africa where she handled projects and PR activities on Microsoft, Intel Africa, and Samsung in 2015.
+        
+        She graduated with a B.A Degree in Dramatic Arts from Obafemi Awolowo University and holds a Master's degree in Communications Studies from the University of Ghana, Accra Ghana (2012-2013) with a major in Public Relations and Advertising. Sola is also a certified member of the Nigerian Institute of Public Relations (NIPR).
+        
+        Sola is very passionate about the girl child and has championed causes, geared towards promoting equality and inclusion for women. She is also an advocate for women rising to the peak of their career while having work-life-balance."
+        `
+      },
+      {
+        name: "Tiwalola Olanubi Jnr",
+        title: "Creative Director, Dotts Media House",
+        img: "https://naijahacks.com/2018/res/bosses/tj.png",
+        bio: `
+        `
+      },
+      {
+        name: `Banke Alawaye`,
+        title: "Digital Transformation Specialist, Independent Consultant",
+        img: Banke,
+        bio: `"Banke Alawaye is a digital transformation specialist and business analyst based in Lagos Nigeria. With over 20 years of work experience with many businesses, she has been helping personal brands and organisations make the best of digital tools for years.
+
+        Banke is a Chartered Management Consultant. She holds a B.Sc in Computer Science, a Masters in Business Administration from Edinburgh Business School, Scotland and a Certificate in Entrepreneurial Management from Pan African University’s Enterprise Development Centre. 
+        
+        She is an Independent consultant working with Government and Private Sector clients on digital transformation projects. She was the pioneer program manager CodeLagos – an initiative to train 1 million Lagos residents to code. She’s on the advisory board for Girl Code Academy and founder, Girls-in-Glasses – a community for women in tech which seeks to improve access to opportunities and ultimately the success of women in tech.
+        
+        She’s a passionate advocate for women in technology and was recognised as Digital Frontier Woman by DecadeOfWomen."
+        `
+      },
+      {
+        name: `Ayodeji Razaq`,
+        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
+        img: Deji,
+        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
+        `
+      },
+      {
+        name: `Shedrack Akintayo`,
+        title: "Frontend Engineer, Reliance HMO",
+        img: Shedrack,
+        bio: `Shedrack Is a Javascript Engineer and a strong lover of community building. He spends his free time playing soccer and also is a huge fan of Open Source Development.
+        `
+      },
+      {
+        name: `Ara Sadiq`,
+        title: "Business Development Lead, Finconecta",
+        img: Ara,
+        bio: `Ara is an innovation enthusiast who started her career in banking over a decade ago, and now works as Business Development Lead for Africa with Finconecta - a Miami-based fintech. She acquired her MBA from Lagos Business School and Master of Advanced Management from Yale School of Management, where she led stakeholder gatherings and executed research projects in innovation and digital finance. Ara is excited about technology, product design and the possibilities that come with these.
+        `
+      },
+      {
+        name: `Namnso Ukpanah`,
+        title: "Product Designer, Flutterwave",
+        img: Namnso,
+        bio: `Namnso is a Product Designer with great experience designing hospitality and financial SaaS applications for both web and mobile platforms. He also builds and maintains design systems as well as growing one of the largest design communities in Africa.
+        `
+      },
+      {
+        name: `Oghenekevwe Olukemi Omotosho `,
+        title: "Founder, Isabiwork",
+        img: Kevwe,
+        bio: `"Oghenekevwe Omotosho is a graduate of computer engineering. She obtained her B.Eng. at the Enugu State University of Science and Technology, Enugu, Nigeria in 2008. Kevwe is a creative thinker and serial entrepreneur.
+
+        Kevwe is the founder of Isabiwork, which is an app that bridges the digital divide between service providers and clients. She emerged the winner of the Top Female Entrepreneur award for Nigeria, at the 2018-2019 Total Startupper of the Year challenge organized by Total Exploration and Production Limited and held simultaneously in 55 countries as a result of which she was among the set of entrepreneurs that represented Nigeria in Paris, France in March 2019 
+        
+        Kevwe is also a social reformer with a passion to restore the dignity of labour for African artisans and local service providers. She believes that no handwork or skill should be discriminated against, on any basis.
+        
+        Her goal is to reduce unemployment by encouraging skills acquisition and proper certification, branding and representation of artisans and local service providers to better themselves and present their services for more visibility and income generation.
+        
+        She is also the CEO of the brand “Oh Wow Popcorn and Events” which specialises in popcorn, ice cream and cotton candy catering for weddings, birthdays and corporate organisations.
+        
+        I hope it's not too long. Feel free to suggest any type of editing."
+        `
+      },
+      {
+        name: `Kevin Eligwe`,
+        title: "Creative Director & Designer, Hemcloth",
+        img: Kevin,
+        bio: `Kevin is a designer in the clothing and architecture industry in Fort Lauderdale, Florida, US. Co-founder at Hemcloth, a brand focused on sharing messages through clothing and unifying cultures by wearing them. In Architectural design he is Experienced in Commercial, Residential, 3D Modeling and Interior design all over South Florida. A business enthusiast and a creative at heart,  focused on solving problems through design.
+        `
+      },
+      {
+        name: "Muyiwa Aleshinloye",
+        title: "Head of Digital, 141 Worldwide ",
+        img: "https://naijahacks.com/2018/res/bosses/muyiwa.png",
+        bio: `
+        `
+      },
+      {
+        name: `Nelly Mesik`,
+        title: "Creative Director, Nelly Mesik Consultancy/Vanguard Allure",
+        img: Nelly,
+        bio: `"My name is Nelly Mesik ,30years of age ... I am a graduate of Marketing from the Nnamdi Azikiwe University, Awka ... Graduated in 2011... I worked with different media houses as a writer and on some tv shows between 2012 and 2014, in 2014 I became the youngest Creative Director for Vanguard Newspaper.
+
+        In 2015 I started Nelly Mesik Consultancy which is a photography and talent consultancy firm .
+        
+        I enjoy hanging out when I can ; cause am mostly an indoors when am not working ,I also love movies ,games and cooking "
+        `
+      },
+      {
+        name: `Phillips Tunde`,
+        title: "Brand Engagement Manager, Printivo",
+        img: Tunde,
+        bio: `A graduate of Economics from the University of Lagos. Tunde started out as a digital marketing associate at Printivo.com before moving to becoming the brand engagement manager of the same company 2 years later. He is a member of the Chattered institute of Marketing and was among the Judges at the 2018 edition of Naijahacks Hackathon.
+        `
+      }
     ]
+  },
+  keynote: {
+    title: "Keynote Speaker",
+    name: "Chude Jideonwo",
+    company: "Founder Joy Inc.",
+    description:
+      "Chude is Founder of Joy Incredible, and Co-founder of African media group, RED which he led as CEO for 13 years.",
+    note:
+      "Chude will be speaking about the importance of mental wellbeing, in critical connection to sustaining our budding tech ecosystem in Nigeria"
   }
 };
