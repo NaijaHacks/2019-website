@@ -4,7 +4,7 @@ import { Text } from "@hackthenorth/north";
 
 import copy from "copy";
 import SectionWrapper from "components/SectionWrapper";
-// import Keynote from "components/Keynote";
+import Keynote from "components/Keynote";
 
 const JudgeWrapper = styled(SectionWrapper)`
   color: ${props => props.theme.globalConstants.color.textLight};
@@ -48,7 +48,7 @@ const Description = styled.div`
 
 const Judges = () => (
   <JudgeWrapper id="judges">
-    {/* <Keynote /> */}
+    <Keynote />
     <Text className="heading" as="h3" variant="sectionHeading">
       {copy.leaders.title}
     </Text>
