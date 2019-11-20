@@ -178,3 +178,6 @@ export { default as Samson } from "./leaders/2019/samson.jpeg";
 export { default as Namnso } from "./leaders/2019/namnso.jpeg";
 export { default as Shedrack } from "./leaders/2019/shedrack.jpeg";
 export { default as Kevwe } from "./leaders/2019/kevwe.jpeg";
+export { default as Adaohh } from "./leaders/2019/adaohh.jpg";
+export { default as Stanley } from "./leaders/2019/stanley.jpeg";
+export { default as Victor } from "./leaders/2019/victor.jpg";

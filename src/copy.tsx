@@ -91,7 +91,10 @@ import {
   Namnso,
   Shedrack,
   Kevwe,
-  Christine
+  Christine,
+  Adaohh,
+  Stanley,
+  Victor
 } from "static/img";
 
 interface Sponsor {
@@ -902,7 +905,7 @@ export default {
       {
         question: "When will applications for NaijaHacks 2019 open?",
         answer:
-          "Applications for NaijaHacks opened October 5, 2019 and will close November 15, 2019 - follow us on social media to learn more!"
+          "Applications for NaijaHacks opened October 5, 2019 and will close November 30, 2019 - follow us on social media to learn more!"
       },
       {
         question: "What if I can't find a team?",
@@ -1217,10 +1220,10 @@ export default {
         `
       },
       {
-        name: `Sefunmi Osinaike`,
-        title: "Product Lead, Dot Health",
-        img: Sefunmi,
-        bio: `Sefunmi is passionate about using technology to solve human problems and has made that his mission that directs his life. With a background in electrical engineering and entrepreneurship from the University of Waterloo, he got the opportunity to work on his own start-up, Pave, and intern for companies like Apple and Microsoft. He is currently the Product Lead at Dot Health, where he is focused on building experiences to empower Canadians with their health information. Before Dot, he led the software product development for the thermostat product at ecobee. On the side, he is working on doing a thing which includes writing a book on how to transition into a product management role in technology from outside the industry and building a community of do-ers to encourage one another in enjoying the process of creating something exciting. 
+        name: `Stanley Chukwuma`,
+        title: "CEO, Bankspace Corp. Canada",
+        img: Stanley,
+        bio: `
         `
       },
       {
@@ -1267,6 +1270,28 @@ export default {
         `
       },
       {
+        name: `Ada OHH`,
+        title: "OAP/Producer, FEVA TV",
+        img: Adaohh,
+        bio: `Ada Onianwah aka Ada Ohh, is one of the freshest faces in the Media and
+        Entertainment Industry in Canada. She is a media creator, but best
+        known for her work as a radio personality on VIBE 105.5 FM as well as
+        her work on Television with FEVA TV.  Ada finished her
+        Bachelor's degree at Ryerson University in the Radio and Television
+        Arts Program (RTA). She's always been inspired by music and television
+        and has been active in her career since she was a teenager. With her
+        resilient work ethic, elite connections, and her personality
+        brand, she is a force to be reckoned with.
+        `
+      },
+      {
+        name: `Ayodeji Razaq`,
+        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
+        img: Deji,
+        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
+        `
+      },
+      {
         name: `Banke Alawaye`,
         title: "Digital Transformation Specialist, Independent Consultant",
         img: Banke,
@@ -1277,13 +1302,6 @@ export default {
         She is an Independent consultant working with Government and Private Sector clients on digital transformation projects. She was the pioneer program manager CodeLagos – an initiative to train 1 million Lagos residents to code. She’s on the advisory board for Girl Code Academy and founder, Girls-in-Glasses – a community for women in tech which seeks to improve access to opportunities and ultimately the success of women in tech.
         
         She’s a passionate advocate for women in technology and was recognised as Digital Frontier Woman by DecadeOfWomen."
-        `
-      },
-      {
-        name: `Ayodeji Razaq`,
-        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
-        img: Deji,
-        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
         `
       },
       {
@@ -1354,6 +1372,22 @@ export default {
         title: "Brand Engagement Manager, Printivo",
         img: Tunde,
         bio: `A graduate of Economics from the University of Lagos. Tunde started out as a digital marketing associate at Printivo.com before moving to becoming the brand engagement manager of the same company 2 years later. He is a member of the Chattered institute of Marketing and was among the Judges at the 2018 edition of Naijahacks Hackathon.
+        `
+      },
+      {
+        name: `Sefunmi Osinaike`,
+        title: "Product Lead, Dot Health",
+        img: Sefunmi,
+        bio: `Sefunmi is passionate about using technology to solve human problems and has made that his mission that directs his life. With a background in electrical engineering and entrepreneurship from the University of Waterloo, he got the opportunity to work on his own start-up, Pave, and intern for companies like Apple and Microsoft. He is currently the Product Lead at Dot Health, where he is focused on building experiences to empower Canadians with their health information. Before Dot, he led the software product development for the thermostat product at ecobee. On the side, he is working on doing a thing which includes writing a book on how to transition into a product management role in technology from outside the industry and building a community of do-ers to encourage one another in enjoying the process of creating something exciting. 
+        `
+      },
+      {
+        name: `Opeoluwa Victor Babasanmi`,
+        title: "Cloud Engineer, Amazon Web Services",
+        img: Victor,
+        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
+        
+        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
         `
       }
     ]
