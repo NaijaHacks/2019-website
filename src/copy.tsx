@@ -21,6 +21,10 @@ import {
   SponsorIllustrationImg,
   OnePassword,
   XYZDomains,
+  TheIndigene,
+  DevCareer,
+  Crowdcast,
+  Dexon,
   // About section imgs
   TrudeauHeadshotImg,
   RecapVidButtonBackgroundImg,
@@ -94,7 +98,16 @@ import {
   Christine,
   Adaohh,
   Stanley,
-  Victor
+  Victor,
+  Muyiwa,
+  Uchendu,
+  IK,
+  TopeA,
+  Tobi,
+  Tolu,
+  Mayo,
+  Ihunaya,
+  Jackye
 } from "static/img";
 
 interface Sponsor {
@@ -332,28 +345,34 @@ const previousSponsors: Sponsor[] = [
 
 const sponsors: Sponsor[] = [
   {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/linode.png",
+    link: "https://www.linode.com/",
+    tier: "gold",
+    name: "Linode"
+  },
+  {
     name: "Techyon",
     tier: "partner",
     imgSrc: TechyonLogoImg,
     link: "https://techyon.org/"
   },
   {
-    imgSrc: AWSLogoImg,
-    link: "https://www.aws.com/",
-    tier: "silver",
-    name: "Amazon"
-  },
-  {
     imgSrc: NexmoLogoImg,
     link: "https://nexmo.com",
-    tier: "silver",
+    tier: "gold",
     name: "Nexmo"
   },
   {
-    imgSrc: SketchLogoImg,
-    link: "https://www.sketch.com",
+    imgSrc: AWSLogoImg,
+    link: "https://www.aws.com/",
+    tier: "gold",
+    name: "Amazon"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/balsamiq.png",
+    link: "https://balsamiq.com/",
     tier: "silver",
-    name: "Sketch"
+    name: "Balsamiq"
   },
   {
     name: "Dotts Media",
@@ -388,6 +407,12 @@ const sponsors: Sponsor[] = [
     name: "StemHub Foundation"
   },
   {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/ivorymark.png",
+    link: "http://ivorymark.com/",
+    tier: "silver",
+    name: "IvoryMark NG"
+  },
+  {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
     link: "https://digitalocean.com/",
     tier: "silver",
@@ -406,28 +431,16 @@ const sponsors: Sponsor[] = [
     name: "Stickermule"
   },
   {
-    imgSrc: "https://naijahacks.com/2018/res/sponsors/ivorymark.png",
-    link: "http://ivorymark.com/",
-    tier: "silver",
-    name: "IvoryMark NG"
-  },
-  {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/jetbrains.png",
     link: "http://jetbrains.com/",
     tier: "silver",
     name: "Jetbrains"
   },
   {
-    imgSrc: "https://naijahacks.com/2018/res/sponsors/balsamiq.png",
-    link: "https://balsamiq.com/",
+    imgSrc: SketchLogoImg,
+    link: "https://www.sketch.com",
     tier: "silver",
-    name: "Balsamiq"
-  },
-  {
-    imgSrc: "https://naijahacks.com/2018/res/sponsors/linode.png",
-    link: "https://www.linode.com/",
-    tier: "gold",
-    name: "Linode"
+    name: "Sketch"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/trippy.png",
@@ -451,7 +464,7 @@ const sponsors: Sponsor[] = [
     imgSrc:
       "https://stories.pitchdrive.xyz/wp-content/uploads/2019/09/TechCabal-1.png",
     link: "https://techcabal.com",
-    tier: "silver",
+    tier: "bronze",
     name: "TechCabal"
   },
   {
@@ -474,11 +487,10 @@ const sponsors: Sponsor[] = [
     name: "Egghead.io"
   },
   {
-    imgSrc:
-      "https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png",
-    link: "https://voiceflow.com",
+    imgSrc: TheIndigene,
+    link: "https://www.instagram.com/the_indigene/",
     tier: "silver",
-    name: "Voiceflow"
+    name: "The Indigene"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/techher.png",
@@ -505,6 +517,12 @@ const sponsors: Sponsor[] = [
     name: "Oh Woh popcorn"
   },
   {
+    imgSrc: Crowdcast,
+    link: "https://www.crowdcast.io/",
+    tier: "silver",
+    name: "Crowdcast"
+  },
+  {
     imgSrc:
       "https://4.bp.blogspot.com/-sn_1frB-tto/W_eevs6kyzI/AAAAAAAANhE/ZPlkvH6ysTAMuBJlbtYsSxkC28xaRrZugCLcBGAs/s1600/PCBWay%2BTlogo.png",
     link: "https://pcbway.com",
@@ -522,6 +540,25 @@ const sponsors: Sponsor[] = [
     link: "1Password.com",
     tier: "bronze",
     name: "1Password"
+  },
+  {
+    imgSrc:
+      "https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png",
+    link: "https://voiceflow.com",
+    tier: "silver",
+    name: "Voiceflow"
+  },
+  {
+    imgSrc: Dexon,
+    link: "https://www.instagram.com/dexongroup",
+    tier: "silver",
+    name: "Dexon"
+  },
+  {
+    imgSrc: DevCareer,
+    link: "https://devcareer.io/",
+    tier: "silver",
+    name: "DevCareer"
   }
 ];
 
@@ -923,10 +960,10 @@ export default {
           <>
             Yes! Hackers are expected to adhere to the{" "}
             <Link
-              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              href="https://drive.google.com/file/d/1L00oPvBuFytYs2KIvFLkH0TYJ3nd_01X/view?usp=sharing"
               newTab
             >
-              Major League Hacking Code of Conduct.
+              NaijaHacks Code of Conduct.
             </Link>
             .
           </>
@@ -970,7 +1007,8 @@ export default {
       // },
       {
         text: "MLH Code of Conduct",
-        hyperlink: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+        hyperlink:
+          "https://drive.google.com/file/d/1L00oPvBuFytYs2KIvFLkH0TYJ3nd_01X/view?usp=sharing",
         newTab: true
       }
     ],
@@ -1084,8 +1122,8 @@ export default {
       },
       {
         name: "Muyiwa Aleshinloye",
-        title: "Head of Digital, 141 Worldwide ",
-        img: "https://naijahacks.com/2018/res/bosses/muyiwa.png"
+        title: "Head, Digital Media, Starcom Media Perspectives",
+        img: Muyiwa
       },
       {
         name: "Victory Oomotayo",
@@ -1227,8 +1265,8 @@ export default {
         `
       },
       {
-        name: `Temitope Ekundayo`,
-        title: "Chief of Growth, Printivo.com & Segment Mgr, Promostack",
+        name: `Ekundayo Temitope`,
+        title: "Chief of Growth, Printivo",
         img: Tope,
         bio: `"Temitope leads the growth team at Printivo.com, an online print and design company focused on helping SMEs and Multinationals print marketing collaterals with top quality, speed and convenience making it one of the fastest growing Startups today.
 
@@ -1248,6 +1286,22 @@ export default {
         `
       },
       {
+        name: `Jackye Madu`,
+        title: "Co-founder TCMN, Convrsah & DBA,	The Content Man Network",
+        img: Jackye,
+        bio: `"Jackye popularly called the Tech Queen is the co founder of The Content Man Network, a Software development and media company, the parent company behind Convrsah and DBA. She is also referred to as the AI girl because of her strong advocacy for AI while she was in the Big Brother house. Jackye strongly believes that technology is the gateway out of poverty for anyone who taps into it.
+
+        Jackye is also a model, TV host and an ex beauty queen. She is what I'll call ""Jack of all trades master of all"" I guess that's why her name is Jackye 😜"
+        `
+      },
+      {
+        name: "Tiwalola Olanubi Jnr",
+        title: "Creative Director, Dotts Media House",
+        img: "https://naijahacks.com/2018/res/bosses/tj.png",
+        bio: `
+        `
+      },
+      {
         name: `Oluwasola Obagbemi`,
         title: "Senior Comms Mgr., Africa, Andela",
         img: Sola,
@@ -1263,10 +1317,10 @@ export default {
         `
       },
       {
-        name: "Tiwalola Olanubi Jnr",
-        title: "Creative Director, Dotts Media House",
-        img: "https://naijahacks.com/2018/res/bosses/tj.png",
-        bio: `
+        name: `Ayodeji Razaq`,
+        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
+        img: Deji,
+        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
         `
       },
       {
@@ -1285,10 +1339,30 @@ export default {
         `
       },
       {
-        name: `Ayodeji Razaq`,
-        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
-        img: Deji,
-        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
+        name: `Nelly Mesik`,
+        title: "Creative Director, Nelly Mesik Consultancy/Vanguard Allure",
+        img: Nelly,
+        bio: `"My name is Nelly Mesik ,30years of age ... I am a graduate of Marketing from the Nnamdi Azikiwe University, Awka ... Graduated in 2011... I worked with different media houses as a writer and on some tv shows between 2012 and 2014, in 2014 I became the youngest Creative Director for Vanguard Newspaper.
+
+        In 2015 I started Nelly Mesik Consultancy which is a photography and talent consultancy firm .
+        
+        I enjoy hanging out when I can ; cause am mostly an indoors when am not working ,I also love movies ,games and cooking "
+        `
+      },
+      {
+        name: `Namnso Ukpanah`,
+        title: "Product Designer, Flutterwave",
+        img: Namnso,
+        bio: `Namnso is a Product Designer with great experience designing hospitality and financial SaaS applications for both web and mobile platforms. He also builds and maintains design systems as well as growing one of the largest design communities in Africa.
+        `
+      },
+      {
+        name: `Opeoluwa Victor Babasanmi`,
+        title: "Cloud Engineer, Amazon Web Services",
+        img: Victor,
+        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
+        
+        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
         `
       },
       {
@@ -1305,10 +1379,26 @@ export default {
         `
       },
       {
-        name: `Shedrack Akintayo`,
-        title: "Frontend Engineer, Reliance HMO",
-        img: Shedrack,
-        bio: `Shedrack Is a Javascript Engineer and a strong lover of community building. He spends his free time playing soccer and also is a huge fan of Open Source Development.
+        name: `Kevin Eligwe`,
+        title: "Creative Director & Designer, Hemcloth",
+        img: Kevin,
+        bio: `Kevin is a designer in the clothing and architecture industry in Fort Lauderdale, Florida, US. Co-founder at Hemcloth, a brand focused on sharing messages through clothing and unifying cultures by wearing them. In Architectural design he is Experienced in Commercial, Residential, 3D Modeling and Interior design all over South Florida. A business enthusiast and a creative at heart,  focused on solving problems through design.
+        `
+      },
+      {
+        name: "Muyiwa Aleshinloye",
+        title: "Head, Digital Media, Starcom Media Perspectives",
+        img: Muyiwa,
+        bio: `
+        `
+      },
+      {
+        name: `Uchendu Onyekachi`,
+        title: "Cloud Engineer, Amazon Web Services",
+        img: Uchendu,
+        bio: `Onyekachi is a Cloud Engineer in Amazon Web Service, a subject matter expert in enterprise grade network and Cloud Infrastructure with vast experience covering wide-range of functional areas in organizations including consulting and integration services, IT Architecture, Network Engineering & Management and Cybersecurity.He has held various Tech roles across different sectors including Telecommunication, Consulting, Financial services. He holds a Masters Degree in Information Technology from the Prestigious University of Lagos. 
+        
+        He enjoys spending leisure time playing video games and spending time with his family.
         `
       },
       {
@@ -1319,10 +1409,11 @@ export default {
         `
       },
       {
-        name: `Namnso Ukpanah`,
-        title: "Product Designer, Flutterwave",
-        img: Namnso,
-        bio: `Namnso is a Product Designer with great experience designing hospitality and financial SaaS applications for both web and mobile platforms. He also builds and maintains design systems as well as growing one of the largest design communities in Africa.
+        name: `Tolu Akinwumi`,
+        title: "Manager, Supply Programs and Sustainability Engineering, Lyft",
+        img: Tolu,
+        bio: `
+        Tolu Akinwumi is a Nigerian-born, US Professional Engineer, who has delivered billion dollar projects and commercial deals for Shell and Tesla. He is currently leading manufacturing programs and technical sustainability efforts for Lyft's micro-mobility division. He is passionate about capital and the environment, and currently working on a stealth venture focused on improving capital in Africa. 
         `
       },
       {
@@ -1343,28 +1434,46 @@ export default {
         `
       },
       {
-        name: `Kevin Eligwe`,
-        title: "Creative Director & Designer, Hemcloth",
-        img: Kevin,
-        bio: `Kevin is a designer in the clothing and architecture industry in Fort Lauderdale, Florida, US. Co-founder at Hemcloth, a brand focused on sharing messages through clothing and unifying cultures by wearing them. In Architectural design he is Experienced in Commercial, Residential, 3D Modeling and Interior design all over South Florida. A business enthusiast and a creative at heart,  focused on solving problems through design.
+        name: `Tobi Akinwumi`,
+        title: "Co-Founder/CPO,	Crowdsmint",
+        img: Tobi,
+        bio: `Tobi is an experienced Product Manager and full stack web developer.  Also the founder/CPO of Crowdsmint. 
         `
       },
       {
-        name: "Muyiwa Aleshinloye",
-        title: "Head of Digital, 141 Worldwide ",
-        img: "https://naijahacks.com/2018/res/bosses/muyiwa.png",
-        bio: `
-        `
-      },
-      {
-        name: `Nelly Mesik`,
-        title: "Creative Director, Nelly Mesik Consultancy/Vanguard Allure",
-        img: Nelly,
-        bio: `"My name is Nelly Mesik ,30years of age ... I am a graduate of Marketing from the Nnamdi Azikiwe University, Awka ... Graduated in 2011... I worked with different media houses as a writer and on some tv shows between 2012 and 2014, in 2014 I became the youngest Creative Director for Vanguard Newspaper.
+        name: `Tope Adenola`,
+        title: "Photographer, HORPLOAD WORKS",
+        img: TopeA,
+        bio: `"Tope Adenola is a Portrait & Lifestyle Photographer based in Lagos - Nigeria, and leader of his team at Horpload Works Photography.
 
-        In 2015 I started Nelly Mesik Consultancy which is a photography and talent consultancy firm .
+        Known for his versatility, creative drive, and being one of the most sought-after youth photographers in Nigeria, Tope has earned multiple recognitions which include the TES2016 Entrepreneurship Award, and the Legacy TV Ingenious Photographer Award (2017). In addition to these, his photographs have been published in prestigious editorial magazines including Complete Fashion, Genevieve Magazine, Wow Magazine and Guardian Life.
         
-        I enjoy hanging out when I can ; cause am mostly an indoors when am not working ,I also love movies ,games and cooking "
+        His portfolio consists of works with reputable individuals and companies in/of Africa such as Aliko Dangote, Mitchell Elegbe, Onyeka Onwenu, Interswitch, Dangote Group, MoneyGram, Konamii Africa, amongst a host of others. Tope was also one of a selected few photographers to participate in the 2019 Presidential Campaign photo-shoot for Nigeria’s President Muhammadu Buhari.
+        
+        Being a big believer of giving back to the society, Tope is currently running a programme which offers free photography training across African countries, and he is an Associate of the Unabashed Photography Project in Nigeria."
+        `
+      },
+      {
+        name: `Ihunanyachi Thompson`,
+        title: "Founder,	Bubble Innovation Hub",
+        img: Ihunaya,
+        bio: `Ihunanyachi is the founder of Bubble Innovation Hub, He is an entrepreneur who is also an experienced software developer. He founded the Bubble Innovation Hub formally known as the Bubble Coworking to support young tech start-up who needed affordable office space with great facility to grow their idea. Now Bubble Innovation Hub, preferably known as just Bubble is a leading talent outsourcing/Hiring company focused on helping companies/organizations hire world-class developers quickly.
+        `
+      },
+      {
+        name: `Okunnu Olumayokun Adebayo`,
+        title: "CEO, BodyRox Fitness Studio",
+        img: Mayo,
+        bio: `MR. OLUMAYOKUN ‘ICEBOX’ OKUNNU – CEO (BODYROX FITNESS STUDIO)
+        Mr Okunnu is the creator of the fitness concept of BodyRox Fitness Studio. A remarkable feat considering his non-athletic formative years. He finished secondary education at Loyola Jesuit College, Abuja Nigeria before proceeding to obtain his University education at University of Sunderland.
+        His foray into the fitness world began while studying chemical and Pharmaceutical science/pharmacology at the University of Sunderland, UK. He took up mixed martial arts and dedicated his time towards understanding the human body and with the scientific mind, catalyzed his approach towards health and fitness. He facilitated his first BodyRox studio in space in 2013 within fitness 2000 gym in Sunderland and in just over a year opened a second fitness studio at the Silverbird center, Abuja.
+        `
+      },
+      {
+        name: `Shedrack Akintayo`,
+        title: "Frontend Engineer, Reliance HMO",
+        img: Shedrack,
+        bio: `Shedrack Is a Javascript Engineer and a strong lover of community building. He spends his free time playing soccer and also is a huge fan of Open Source Development.
         `
       },
       {
@@ -1382,12 +1491,10 @@ export default {
         `
       },
       {
-        name: `Opeoluwa Victor Babasanmi`,
-        title: "Cloud Engineer, Amazon Web Services",
-        img: Victor,
-        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
-        
-        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
+        name: `Ik Obi`,
+        title: "Integrations Lead,	Paystack",
+        img: IK,
+        bio: `Ik leads the Integration team at Paystack.
         `
       }
     ]

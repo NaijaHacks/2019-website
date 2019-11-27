@@ -29,7 +29,7 @@ const sections: BackgroundSection[] = [
   },
   {
     name: "judges",
-    bg: "linear-gradient(180deg, #ffd6dc 0%, #ff775f 51%)"
+    bg: "#ff775f "
   },
   {
     name: "leaders",
