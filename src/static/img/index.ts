@@ -23,6 +23,12 @@ export {
 } from "./sponsors/2019/bizskill_logo.svg";
 export { default as OnePassword } from "./sponsors/2019/1Password.png";
 export { default as XYZDomains } from "./sponsors/2019/xyz.png";
+export { default as TheIndigene } from "./sponsors/2019/theindigene.png";
+export { default as DevCareer } from "./sponsors/2019/devcareer.png";
+export {
+  default as Crowdcast
+} from "./sponsors/2019/cc-logo-light-bg-wide.png";
+export { default as Dexon } from "./sponsors/2019/dexon.png";
 
 /* Logos */
 export { default as LogoDarkImg } from "./logos/primary-dark.svg";
@@ -162,11 +168,11 @@ export { default as TracyHeadshotImg } from "./leaders/tracy-chou.jpg";
 export { default as Sam } from "./leaders/2019/sam.jpg";
 export { default as Christine } from "./leaders/2019/christine.jpeg";
 export { default as Deji } from "./leaders/2019/deji.jpg";
-export { default as Tope } from "./leaders/2019/tope.jpeg";
-export { default as Ara } from "./leaders/2019/ara.jpg";
+export { default as Tope } from "./leaders/2019/tope.png";
+export { default as Ara } from "./leaders/2019/ara.png";
 export { default as Sola } from "./leaders/2019/sola.jpeg";
 export { default as Nelly } from "./leaders/2019/nelly.jpg";
-export { default as Kevin } from "./leaders/2019/kevin.jpeg";
+export { default as Kevin } from "./leaders/2019/kevin.png";
 export { default as Doug } from "./leaders/2019/doug.jpeg";
 export { default as Chude } from "./leaders/2019/chude.png";
 export { default as Chris } from "./leaders/2019/chris.jpg";
@@ -179,5 +185,14 @@ export { default as Namnso } from "./leaders/2019/namnso.jpeg";
 export { default as Shedrack } from "./leaders/2019/shedrack.jpeg";
 export { default as Kevwe } from "./leaders/2019/kevwe.jpeg";
 export { default as Adaohh } from "./leaders/2019/adaohh.jpg";
-export { default as Stanley } from "./leaders/2019/stanley.jpeg";
+export { default as Stanley } from "./leaders/2019/stanley.png";
 export { default as Victor } from "./leaders/2019/victor.jpg";
+export { default as Muyiwa } from "./leaders/2019/muyiwa.jpg";
+export { default as Uchendu } from "./leaders/2019/uchendu.jpeg";
+export { default as IK } from "./leaders/2019/IK.png";
+export { default as TopeA } from "./leaders/2019/tope_a.png";
+export { default as Tobi } from "./leaders/2019/tobi.png";
+export { default as Tolu } from "./leaders/2019/tolu.jpg";
+export { default as Mayo } from "./leaders/2019/mayo.jpg";
+export { default as Ihunaya } from "./leaders/2019/ihunaya.jpg";
+export { default as Jackye } from "./leaders/2019/jackye.jpg";

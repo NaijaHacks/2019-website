@@ -133,18 +133,14 @@ const componentStyles = {
         `}
 
         ${props => props.theme.mediaQueries.tabletMobile`
-          font-size: ${
-            props.theme.globalConstants.fontSize.heroHeadingMobile
-          }px;
+          font-size: ${props.theme.globalConstants.fontSize.heroHeadingMobile}px;
           line-height: 40px;
           margin-top: 6px;
           text-rendering: optimizeLegibility;
         `}
 
         ${props => props.theme.mediaQueries.smallMobile`
-          font-size: ${
-            props.theme.globalConstants.fontSize.smallMobileHeading
-          }px;
+          font-size: ${props.theme.globalConstants.fontSize.smallMobileHeading}px;
           line-height: 36px;
           margin-top: 14px;
 
