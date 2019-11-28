@@ -196,3 +196,6 @@ export { default as Tolu } from "./leaders/2019/tolu.jpg";
 export { default as Mayo } from "./leaders/2019/mayo.jpg";
 export { default as Ihunaya } from "./leaders/2019/ihunaya.jpg";
 export { default as Jackye } from "./leaders/2019/jackye.jpg";
+export { default as Jaja } from "./leaders/2019/jaja.jpg";
+export { default as Ekene } from "./leaders/2019/ekene.jpeg";
+export { default as Femi } from "./leaders/2019/femi.jpg";
