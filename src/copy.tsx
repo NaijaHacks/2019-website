@@ -107,7 +107,10 @@ import {
   Tolu,
   Mayo,
   Ihunaya,
-  Jackye
+  Jackye,
+  Jaja,
+  Ekene,
+  Femi
 } from "static/img";
 
 interface Sponsor {
@@ -1006,7 +1009,7 @@ export default {
       //   newTab: true
       // },
       {
-        text: "MLH Code of Conduct",
+        text: "Code of Conduct",
         hyperlink:
           "https://drive.google.com/file/d/1L00oPvBuFytYs2KIvFLkH0TYJ3nd_01X/view?usp=sharing",
         newTab: true
@@ -1201,7 +1204,7 @@ export default {
       },
       {
         name: `Sam "SuperGeek" Uduma`,
-        title: "Acting CEO, Nigeria, TechAdvance",
+        title: "Serial Entepreneur/Investor",
         img: Sam,
         bio: `Sam is a seasoned entrepreneur, who has ventured into both hardware and software tech startups in Nigeria. With a Penchant for innovation and technology for solutions, Sam has launched several investment vehicles geared towards activating the knowledge capacity of Nigerians, promote our technology and culture and equipping the industry as a whole.
         `
@@ -1251,10 +1254,10 @@ export default {
         `
       },
       {
-        name: `Samson Opaleye`,
-        title: "COO/Managing Partner, Dotts Media House",
-        img: Samson,
-        bio: `Samson Opaleye is the Chief Operating Officer and Managing Partner of Dotts Media House, Nigeria’s foremost digital media agency for leading brands in Africa. Samson’s passion for solving problems for brands through digital media marketing and business development has led him to work with global brands like Pepsi, HP, Dano Milk Nigeria, SPAR Nigeria, Intel, Lufthansa Airlines, World Economic Forum and many more. He is a thought leader in digital marketing.
+        name: `Femi Taiwo`,
+        title: "Executive Director, LEAP Africa",
+        img: Femi,
+        bio: `Femi is the Executive Director of LEAP Africa- one of Africa’s leading youth-focused leadership development organisations. In this role, he leads the organization’s fund-raising, strategy implementation, and programme delivery in six African countries. A 2018 Aspen Institute IdeasFest Scholar and a member of the inaugural class of the Obama Africa Leader's Program, Femi serves on the Board of Global Compact Network of Nigeria (United Nations Global Compact). Prior to this position at LEAP, he was the founding Executive Director of Eagles HOPE Foundation. Femi holds a MSc degree in Innovation Management & Entrepreneurship from Manchester Business School, where he focused his research on Social Innovation and Entrepreneurship. He completed his Bachelor’s degree at Covenant University, where he earned a first class degree in Computer Science..
         `
       },
       {
@@ -1350,10 +1353,10 @@ export default {
         `
       },
       {
-        name: `Namnso Ukpanah`,
-        title: "Product Designer, Flutterwave",
-        img: Namnso,
-        bio: `Namnso is a Product Designer with great experience designing hospitality and financial SaaS applications for both web and mobile platforms. He also builds and maintains design systems as well as growing one of the largest design communities in Africa.
+        name: `Samson Opaleye`,
+        title: "COO/Managing Partner, Dotts Media House",
+        img: Samson,
+        bio: `Samson Opaleye is the Chief Operating Officer and Managing Partner of Dotts Media House, Nigeria’s foremost digital media agency for leading brands in Africa. Samson’s passion for solving problems for brands through digital media marketing and business development has led him to work with global brands like Pepsi, HP, Dano Milk Nigeria, SPAR Nigeria, Intel, Lufthansa Airlines, World Economic Forum and many more. He is a thought leader in digital marketing.
         `
       },
       {
@@ -1366,16 +1369,10 @@ export default {
         `
       },
       {
-        name: `Banke Alawaye`,
-        title: "Digital Transformation Specialist, Independent Consultant",
-        img: Banke,
-        bio: `"Banke Alawaye is a digital transformation specialist and business analyst based in Lagos Nigeria. With over 20 years of work experience with many businesses, she has been helping personal brands and organisations make the best of digital tools for years.
-
-        Banke is a Chartered Management Consultant. She holds a B.Sc in Computer Science, a Masters in Business Administration from Edinburgh Business School, Scotland and a Certificate in Entrepreneurial Management from Pan African University’s Enterprise Development Centre. 
-        
-        She is an Independent consultant working with Government and Private Sector clients on digital transformation projects. She was the pioneer program manager CodeLagos – an initiative to train 1 million Lagos residents to code. She’s on the advisory board for Girl Code Academy and founder, Girls-in-Glasses – a community for women in tech which seeks to improve access to opportunities and ultimately the success of women in tech.
-        
-        She’s a passionate advocate for women in technology and was recognised as Digital Frontier Woman by DecadeOfWomen."
+        name: `Ara Sadiq`,
+        title: "Business Development Lead, Finconecta",
+        img: Ara,
+        bio: `Ara is an innovation enthusiast who started her career in banking over a decade ago, and now works as Business Development Lead for Africa with Finconecta - a Miami-based fintech. She acquired her MBA from Lagos Business School and Master of Advanced Management from Yale School of Management, where she led stakeholder gatherings and executed research projects in innovation and digital finance. Ara is excited about technology, product design and the possibilities that come with these.
         `
       },
       {
@@ -1393,19 +1390,23 @@ export default {
         `
       },
       {
-        name: `Uchendu Onyekachi`,
-        title: "Cloud Engineer, Amazon Web Services",
-        img: Uchendu,
-        bio: `Onyekachi is a Cloud Engineer in Amazon Web Service, a subject matter expert in enterprise grade network and Cloud Infrastructure with vast experience covering wide-range of functional areas in organizations including consulting and integration services, IT Architecture, Network Engineering & Management and Cybersecurity.He has held various Tech roles across different sectors including Telecommunication, Consulting, Financial services. He holds a Masters Degree in Information Technology from the Prestigious University of Lagos. 
-        
-        He enjoys spending leisure time playing video games and spending time with his family.
+        name: `Namnso Ukpanah`,
+        title: "Product Designer, Flutterwave",
+        img: Namnso,
+        bio: `Namnso is a Product Designer with great experience designing hospitality and financial SaaS applications for both web and mobile platforms. He also builds and maintains design systems as well as growing one of the largest design communities in Africa.
         `
       },
       {
-        name: `Ara Sadiq`,
-        title: "Business Development Lead, Finconecta",
-        img: Ara,
-        bio: `Ara is an innovation enthusiast who started her career in banking over a decade ago, and now works as Business Development Lead for Africa with Finconecta - a Miami-based fintech. She acquired her MBA from Lagos Business School and Master of Advanced Management from Yale School of Management, where she led stakeholder gatherings and executed research projects in innovation and digital finance. Ara is excited about technology, product design and the possibilities that come with these.
+        name: `Banke Alawaye`,
+        title: "Digital Transformation Specialist, Independent Consultant",
+        img: Banke,
+        bio: `"Banke Alawaye is a digital transformation specialist and business analyst based in Lagos Nigeria. With over 20 years of work experience with many businesses, she has been helping personal brands and organisations make the best of digital tools for years.
+
+        Banke is a Chartered Management Consultant. She holds a B.Sc in Computer Science, a Masters in Business Administration from Edinburgh Business School, Scotland and a Certificate in Entrepreneurial Management from Pan African University’s Enterprise Development Centre. 
+        
+        She is an Independent consultant working with Government and Private Sector clients on digital transformation projects. She was the pioneer program manager CodeLagos – an initiative to train 1 million Lagos residents to code. She’s on the advisory board for Girl Code Academy and founder, Girls-in-Glasses – a community for women in tech which seeks to improve access to opportunities and ultimately the success of women in tech.
+        
+        She’s a passionate advocate for women in technology and was recognised as Digital Frontier Woman by DecadeOfWomen."
         `
       },
       {
@@ -1435,7 +1436,7 @@ export default {
       },
       {
         name: `Tobi Akinwumi`,
-        title: "Co-Founder/CPO,	Crowdsmint",
+        title: "Product Manager, SOCAN Canada",
         img: Tobi,
         bio: `Tobi is an experienced Product Manager and full stack web developer.  Also the founder/CPO of Crowdsmint. 
         `
@@ -1491,10 +1492,33 @@ export default {
         `
       },
       {
+        name: `Uchendu Onyekachi`,
+        title: "Cloud Engineer, Amazon Web Services",
+        img: Uchendu,
+        bio: `Onyekachi is a Cloud Engineer in Amazon Web Service, a subject matter expert in enterprise grade network and Cloud Infrastructure with vast experience covering wide-range of functional areas in organizations including consulting and integration services, IT Architecture, Network Engineering & Management and Cybersecurity.He has held various Tech roles across different sectors including Telecommunication, Consulting, Financial services. He holds a Masters Degree in Information Technology from the Prestigious University of Lagos. 
+        
+        He enjoys spending leisure time playing video games and spending time with his family.
+        `
+      },
+      {
         name: `Ik Obi`,
         title: "Integrations Lead,	Paystack",
         img: IK,
         bio: `Ik leads the Integration team at Paystack.
+        `
+      },
+      {
+        name: `Jasper Jaja`,
+        title: "Digital Media Consultant, The Norris Campbell Company",
+        img: Jaja,
+        bio: `With experience spanning FMCG, health and fintech startups, and politics, Jaja helps brands and organisations formulate and execute digital media strategies.
+        `
+      },
+      {
+        name: `Ekene Eze`,
+        title: "Developer Advocate, Flutterwave ",
+        img: Ekene,
+        bio: `Ekene is a Software Developer Advocate at Flutterwave. His passion for growing the technology ecosystem in Africa has led him to write technical articles, mentor upcoming developers and speak at conferences to help power the next generation of software developers in Africa. 
         `
       }
     ]
