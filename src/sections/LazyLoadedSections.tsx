@@ -15,9 +15,6 @@ import Sponsors from "sections/Sponsors";
 const FAQ = createAsyncComponent({
   load: () => import("sections/FAQ")
 });
-const Footer = createAsyncComponent({
-  load: () => import("sections/Footer")
-});
 // const Leaders = createAsyncComponent({
 //   load: () => import("./Leaders")
 // });
@@ -31,7 +28,6 @@ const LazyLoadedSections = () => (
     {/* <Leaders /> */}
     <Sponsors />
     <FAQ />
-    <Footer />
   </>
 );
 

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { withRouter, RouteComponentProps } from "react-router-dom";
+
 import styled from "styled-components";
 
 import useWindowWidth from "hooks/useWindowWidth";
@@ -124,7 +126,7 @@ const Circle = styled.div`
   }
 `;
 
-const NavBar: React.FC = () => {
+const NavBar: React.FC<any> = props => {
   const width = useWindowWidth();
   const mobile = width <= 375;
   const tablet = width <= 768;
@@ -140,6 +142,9 @@ const NavBar: React.FC = () => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      const history = props.history;
+      history && history.push(id === "participants" ? "participants" : `/`);
     }
   };
 
@@ -249,4 +254,4 @@ const NavBar: React.FC = () => {
   );
 };
 
-export default NavBar;
+export default withRouter(NavBar);

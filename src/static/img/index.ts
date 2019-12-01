@@ -29,6 +29,7 @@ export {
   default as Crowdcast
 } from "./sponsors/2019/cc-logo-light-bg-wide.png";
 export { default as Dexon } from "./sponsors/2019/dexon.png";
+export { default as Gridcode } from "./sponsors/2019/gridcode.jpeg";
 
 /* Logos */
 export { default as LogoDarkImg } from "./logos/primary-dark.svg";
