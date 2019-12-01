@@ -6,6 +6,7 @@ import QuestionSet, { QuestionItem } from "./QuestionSet";
 // accepted props of a FAQ column (2 on desktop, 1 on mobile + tablet)
 interface ColumnProps {
   questions: QuestionItem[];
+  openAll: boolean;
 }
 
 const ColumnContainer = styled.div`
@@ -18,7 +19,7 @@ const ColumnContainer = styled.div`
   `}
 `;
 
-const Column: React.FC<ColumnProps> = ({ questions }) => {
+const Column: React.FC<ColumnProps> = ({ questions, openAll }) => {
   const [openedIndex, setOpened] = useState(0);
 
   const onQuestionClicked = (index: number) => {
@@ -32,7 +33,7 @@ const Column: React.FC<ColumnProps> = ({ questions }) => {
           key={question}
           question={question}
           answer={answer}
-          shouldOpen={openedIndex === i}
+          shouldOpen={openedIndex === i || openAll}
           onClick={() => onQuestionClicked(i)}
         />
       ))}

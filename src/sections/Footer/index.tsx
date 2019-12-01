@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 
 const Image = styled.img`
   height: 61px;
-  width: 46px;
+  width: "auto";
 `;
 
 const Links = styled.div`
@@ -101,7 +101,7 @@ const Footer = () => {
 
   return (
     <Wrapper>
-      <Image alt="" src={copy.footer.img} />
+      <Image alt="" src="https://naijahacks.com/guide/img/favicon.png" />
       <Text as="p" variant="footerText">
         {copy.footer.cta}
       </Text>

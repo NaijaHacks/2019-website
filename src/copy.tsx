@@ -25,6 +25,7 @@ import {
   DevCareer,
   Crowdcast,
   Dexon,
+  Gridcode,
   // About section imgs
   TrudeauHeadshotImg,
   RecapVidButtonBackgroundImg,
@@ -526,6 +527,12 @@ const sponsors: Sponsor[] = [
     name: "Crowdcast"
   },
   {
+    imgSrc: Gridcode,
+    link: "https://findgridcode.com/",
+    tier: "silver",
+    name: "Gridcode"
+  },
+  {
     imgSrc:
       "https://4.bp.blogspot.com/-sn_1frB-tto/W_eevs6kyzI/AAAAAAAANhE/ZPlkvH6ysTAMuBJlbtYsSxkC28xaRrZugCLcBGAs/s1600/PCBWay%2BTlogo.png",
     link: "https://pcbway.com",
@@ -681,7 +688,7 @@ export default {
       light: "https://naijahacks.com/guide/img/favicon.png",
       dark: "https://naijahacks.com/guide/img/favicon.png"
     },
-    sections: ["About", "Judges", "Sponsors", "FAQ", "2018"],
+    sections: ["About", "Participants", "Judges", "Sponsors", "FAQ", "2018"],
     socialLinks: [
       {
         name: "twitter",
@@ -995,7 +1002,7 @@ export default {
     links: [
       {
         text: "About NaijaHacks",
-        hyperlink: "#about",
+        hyperlink: "/#about",
         newTab: false
       },
       // {
@@ -1531,5 +1538,147 @@ export default {
       "Chude is Founder of Joy Incredible, and Co-founder of African media group, RED which he led as CEO for 13 years.",
     note:
       "Chude will be speaking about the importance of mental wellbeing, in critical connection to sustaining our budding tech ecosystem in Nigeria"
+  },
+  prizes: {
+    title: "Prizes",
+    body: [
+      {
+        question:
+          "Winner - The Dr. Andrew S. Nevin Prize  for Best Citizen Safety Project",
+        answer:
+          "A Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, DigitalOcean Tshirts, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question:
+          "Winner - STEMHub Foundation Prize for The Best STEM Education Project",
+        answer:
+          "A Chromebook Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, DigitalOcean Tshirts, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Winner - Best Housing/Real Estate Project",
+        answer:
+          "$10,000 in AWS Credit, $5,000 in AWS support credit, DigitalOcean Tshirts, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Winner - Best Job Creation Project",
+        answer:
+          "$10,000 in AWS Credit, $5,000 in AWS support credit, DigitalOcean Tshirts, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "NaijaHacks 2019 Finalist (top 10 teams, 50% beginners)",
+        answer:
+          "Acceptance into Amazon Activate ($10,000 in AWS credit and $5,000 in support), NaijaHacks Medal, Opportunity to go through Incubation at BizSkills Academy, and option of funding",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Best Project hosted on a .XYZ domain name",
+        answer: "Gift Bag from Generation XYZ",
+        Criteria: "",
+        Sponsor: "Generation XYZ"
+      },
+      {
+        question: "Best Project hosted on Linode - First Prize",
+        answer:
+          "A Laptop for each team member and $500 in Linode Credit for each team member",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Best Project hosted on Linode - Second Prize",
+        answer: "$250 in Linode Credit for each team member",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Best Project hosted on Linode - 3rd Prize",
+        answer: "$100 in Linode Credit for each team member",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Best IoT/Hardware Project",
+        answer: "Particle Wifi Bundle",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "BizSkills Prize for the team with the Best Pitch",
+        answer:
+          "Valued at $ 2,000 CAD, $200 CAD cash prize and 300 minutes worth of coaching sessions equivalent to - $1,800 CAD",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Nexmo Prize for Best Use of Nexmo API",
+        answer: "Bluetooth speaker for each team member",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "DigitalOcean Prize for Best use of DigitalOcean - 1st place",
+        answer: "$500 in DO credit",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "DigitalOcean Prize for Best use of DigitalOcean - 2nd place",
+        answer: "$200 in DO credit",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "DigitalOcean Prize for Best use of DigitalOcean - 3rd place",
+        answer: "$100 in DO credit",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Beginner Category: Top 12 projects from Beginner teams",
+        answer: "1 year subscription to Egghead.io",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Sketch Prize for Best User Experience Prize",
+        answer: "Sketch License",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Balsamiq Prize for Best User Experience Prize",
+        answer: "Balsamiq License",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Axure Prize for Best User Experience Prize",
+        answer: "Axure License",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question: "Wolfram Prize for Best 30 Projects",
+        answer: "Wolfram 1 year License",
+        Criteria: "",
+        Sponsor: ""
+      },
+      {
+        question:
+          "Beginner Category: Prize for Best Project from a maority-beginner team",
+        answer:
+          "A Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
+      }
+    ]
   }
 };
