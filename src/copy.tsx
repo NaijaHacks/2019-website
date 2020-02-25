@@ -26,6 +26,9 @@ import {
   Crowdcast,
   Dexon,
   Gridcode,
+  Feva,
+  Pepsi,
+  Popcentral,
   // About section imgs
   TrudeauHeadshotImg,
   RecapVidButtonBackgroundImg,
@@ -106,12 +109,20 @@ import {
   TopeA,
   Tobi,
   Tolu,
-  Mayo,
   Ihunaya,
   Jackye,
   Jaja,
   Ekene,
-  Femi
+  Barry,
+  Femi,
+  Bukky,
+  Mayo,
+  Oluchi,
+  Segun,
+  Yinka,
+  Nikky,
+  Muna,
+  Lola
 } from "static/img";
 
 interface Sponsor {
@@ -417,10 +428,16 @@ const sponsors: Sponsor[] = [
     name: "IvoryMark NG"
   },
   {
-    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
-    link: "https://digitalocean.com/",
+    imgSrc: Gridcode,
+    link: "https://findgridcode.com/",
     tier: "silver",
-    name: "DigitalOcean"
+    name: "Gridcode"
+  },
+  {
+    imgSrc: Popcentral,
+    link: "https://www.popcentraltv.com/",
+    tier: "silver",
+    name: "Popcentraltv"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/twilio.png",
@@ -439,6 +456,12 @@ const sponsors: Sponsor[] = [
     link: "http://jetbrains.com/",
     tier: "silver",
     name: "Jetbrains"
+  },
+  {
+    imgSrc: Crowdcast,
+    link: "https://www.crowdcast.io/",
+    tier: "silver",
+    name: "Crowdcast"
   },
   {
     imgSrc: SketchLogoImg,
@@ -491,10 +514,10 @@ const sponsors: Sponsor[] = [
     name: "Egghead.io"
   },
   {
-    imgSrc: TheIndigene,
-    link: "https://www.instagram.com/the_indigene/",
+    imgSrc: Pepsi,
+    link: "https://twitter.com/Pepsi_Naija",
     tier: "silver",
-    name: "The Indigene"
+    name: "Pepsi"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/techher.png",
@@ -509,10 +532,28 @@ const sponsors: Sponsor[] = [
     name: "DigiClan"
   },
   {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
+    link: "https://digitalocean.com/",
+    tier: "silver",
+    name: "DigitalOcean"
+  },
+  {
     imgSrc: XYZDomains,
     link: "https://gen.xyz/",
     tier: "silver",
     name: ".XYZ Domains"
+  },
+  {
+    imgSrc: DevCareer,
+    link: "https://devcareer.io/",
+    tier: "silver",
+    name: "DevCareer"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/printivo.png",
+    link: "https://www.printivo.com/",
+    tier: "silver",
+    name: "Printivo"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/gimme.png",
@@ -521,16 +562,10 @@ const sponsors: Sponsor[] = [
     name: "Oh Woh popcorn"
   },
   {
-    imgSrc: Crowdcast,
-    link: "https://www.crowdcast.io/",
+    imgSrc: TheIndigene,
+    link: "https://www.instagram.com/the_indigene/",
     tier: "silver",
-    name: "Crowdcast"
-  },
-  {
-    imgSrc: Gridcode,
-    link: "https://findgridcode.com/",
-    tier: "silver",
-    name: "Gridcode"
+    name: "The Indigene"
   },
   {
     imgSrc:
@@ -538,6 +573,12 @@ const sponsors: Sponsor[] = [
     link: "https://pcbway.com",
     tier: "silver",
     name: "PCBWay"
+  },
+  {
+    imgSrc: Feva,
+    link: "http://www.fevatv.com/",
+    tier: "silver",
+    name: "Feva TV"
   },
   {
     imgSrc: CovenantLogoImg,
@@ -551,24 +592,18 @@ const sponsors: Sponsor[] = [
     tier: "bronze",
     name: "1Password"
   },
-  {
-    imgSrc:
-      "https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png",
-    link: "https://voiceflow.com",
-    tier: "silver",
-    name: "Voiceflow"
-  },
+  // {
+  //   imgSrc:
+  //     "https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png",
+  //   link: "https://voiceflow.com",
+  //   tier: "silver",
+  //   name: "Voiceflow"
+  // },
   {
     imgSrc: Dexon,
     link: "https://www.instagram.com/dexongroup",
     tier: "silver",
     name: "Dexon"
-  },
-  {
-    imgSrc: DevCareer,
-    link: "https://devcareer.io/",
-    tier: "silver",
-    name: "DevCareer"
   }
 ];
 
@@ -593,26 +628,18 @@ const team = [
   {
     text: "Uchi Uchibeke",
     alt: "Uchi Uchibeke",
-    img: "https://naijahacks.com/2018/res/team/uchi.png"
+    img: "https://naijahacks.com/2018/res/team/uchi.png",
+    title: "Founder"
   },
   {
     text: "Blessing Thomas",
     alt: "Blessing Thomas",
-    img: "https://naijahacks.com/2018/res/team/blessing.jpeg"
+    img: "https://naijahacks.com/2018/res/team/blessing.jpeg",
+    title: "Co-chair"
   },
   {
-    text: "Dolapo Fadare",
-    alt: "Dolapo Fadare",
-    img: "https://naijahacks.com/res/team/dolapo.jpg"
-  },
-  {
-    text: "Rosemary Ajuka",
-    alt: "Rosemary Ajuka",
-    img: "https://naijahacks.com/2018/res/team/rosemary.jpg"
-  },
-  {
-    text: "ABDULSALAM DAUD",
-    alt: "ABDULSALAM DAUD",
+    text: "Abdulsalam Daud",
+    alt: "Abdulsalam Daud",
     img: "https://naijahacks.com/res/team/abdulsalam.jpg"
   },
   {
@@ -631,24 +658,9 @@ const team = [
     img: "https://naijahacks.com/res/team/adeniyi.jpg"
   },
   {
-    text: "Steven Omole-Adebomi",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/steven.jpg"
-  },
-  {
-    text: "Olabode Oyinkansola",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/olabode.jpg"
-  },
-  {
     text: "Richard",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/ganihu.jpg"
-  },
-  {
-    text: "Favour George Okpara ",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/favour.jpg"
   },
   {
     text: "Mohammed Bayero Yayandi",
@@ -666,11 +678,6 @@ const team = [
     img: "https://naijahacks.com/res/team/cisca.jpg"
   },
   {
-    text: "Helen Ogbogu",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/helen.jpg"
-  },
-  {
     text: "Daniel Enemchukwu",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/daniel_e.jpg"
@@ -679,6 +686,17 @@ const team = [
     text: "Chidiebere Onyegbuchulem",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/chidi.jpg"
+  },
+  {
+    text: "Hillary Masha",
+    alt: ". . .",
+    img:
+      "https://media.licdn.com/dms/image/C5603AQH0M9UrRQgmqA/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=4V5oo-oewMdZg05IYpk2OwXk1Th86AJDZCa5mEmkr3I"
+  },
+  {
+    text: "Toni Ogunmade",
+    alt: ". . .",
+    img: "http://inspeksi.me/img/toni.jpg"
   }
 ];
 
@@ -716,7 +734,7 @@ export default {
       }
     ],
     sponsorButton: {
-      text: "Interested in volunteering?"
+      text: "Become a Campus Ambassador"
     }
   },
   hero: {
@@ -826,8 +844,7 @@ export default {
         "We started NaijaHacks to inspire a new generation of Nigerians and Africans to be makers, leaders and diruptors. After attending over 50 Hackathons and seeing the impact that they made in our lives and careers, we decided to bring a Hackathon, built for Africa, from the lessons we learned at Harvard, MIT, Stanford, Waterloo, Princeton and others. NaijaHacks is built by Africans for Africans and powered by supporters from over 8 countries."
     },
     video: {
-      url:
-        "https://www.youtube-nocookie.com/embed/P3VhS7jvXN8?autoplay=1&rel=0&amp;showinfo=0",
+      url: "https://www.youtube.com/watch?v=QaAzvrL-Qb4",
       closeIcon: CloseIconImg
     }
   },
@@ -1044,7 +1061,7 @@ export default {
         link: "https://www.facebook.com/naijahacks"
       }
     ],
-    team: shuffle(team),
+    team: team, // shuffle(team),
     // defaultOrganizerText: "Originally made with 💛 in Waterloo 🇨🇦"
     defaultOrganizerText: "By #TeamNaijaHacks 🇳🇬. Originally made in 🇨🇦"
   },
@@ -1327,10 +1344,10 @@ export default {
         `
       },
       {
-        name: `Ayodeji Razaq`,
-        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
-        img: Deji,
-        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
+        name: `Yinka Obebe`,
+        title: "MD/CEO, Popcentral TV",
+        img: Yinka,
+        bio: `Yinka is the founder and CEO of popcentral, a Pop culture General entertainment channel on Dstv ch189 and Pophub Lagos, a content co-creation hub. A tv director and producer. Yinka founded and served as CEO for Redboxafrica a creatives and production company known for producing television commercials and channel branding prior to launching Popcentral on Dstv. He is an enabler, always avant-garde and committed to using technology to drive the African stories and engagement.
         `
       },
       {
@@ -1367,12 +1384,10 @@ export default {
         `
       },
       {
-        name: `Opeoluwa Victor Babasanmi`,
-        title: "Cloud Engineer, Amazon Web Services",
-        img: Victor,
-        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
-        
-        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
+        name: `Ayodeji Razaq`,
+        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
+        img: Deji,
+        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
         `
       },
       {
@@ -1469,11 +1484,10 @@ export default {
         `
       },
       {
-        name: `Okunnu Olumayokun Adebayo`,
-        title: "CEO, BodyRox Fitness Studio",
+        name: `Olumayokun Okunnu`,
+        title: "CEO, BodyRox Fitness Studios",
         img: Mayo,
-        bio: `MR. OLUMAYOKUN ‘ICEBOX’ OKUNNU – CEO (BODYROX FITNESS STUDIO)
-        Mr Okunnu is the creator of the fitness concept of BodyRox Fitness Studio. A remarkable feat considering his non-athletic formative years. He finished secondary education at Loyola Jesuit College, Abuja Nigeria before proceeding to obtain his University education at University of Sunderland.
+        bio: `Mr Okunnu is the creator of the fitness concept of BodyRox Fitness Studio. A remarkable feat considering his non-athletic formative years. He finished secondary education at Loyola Jesuit College, Abuja Nigeria before proceeding to obtain his University education at University of Sunderland.
         His foray into the fitness world began while studying chemical and Pharmaceutical science/pharmacology at the University of Sunderland, UK. He took up mixed martial arts and dedicated his time towards understanding the human body and with the scientific mind, catalyzed his approach towards health and fitness. He facilitated his first BodyRox studio in space in 2013 within fitness 2000 gym in Sunderland and in just over a year opened a second fitness studio at the Silverbird center, Abuja.
         `
       },
@@ -1493,7 +1507,8 @@ export default {
       },
       {
         name: `Sefunmi Osinaike`,
-        title: "Product Lead, Dot Health",
+        title:
+          "Sefunmi Osinaike, Co-founder @doing.a.thing, Product Lead Dot Health",
         img: Sefunmi,
         bio: `Sefunmi is passionate about using technology to solve human problems and has made that his mission that directs his life. With a background in electrical engineering and entrepreneurship from the University of Waterloo, he got the opportunity to work on his own start-up, Pave, and intern for companies like Apple and Microsoft. He is currently the Product Lead at Dot Health, where he is focused on building experiences to empower Canadians with their health information. Before Dot, he led the software product development for the thermostat product at ecobee. On the side, he is working on doing a thing which includes writing a book on how to transition into a product management role in technology from outside the industry and building a community of do-ers to encourage one another in enjoying the process of creating something exciting. 
         `
@@ -1508,17 +1523,76 @@ export default {
         `
       },
       {
-        name: `Ik Obi`,
-        title: "Integrations Lead,	Paystack",
-        img: IK,
-        bio: `Ik leads the Integration team at Paystack.
-        `
-      },
-      {
         name: `Jasper Jaja`,
         title: "Digital Media Consultant, The Norris Campbell Company",
         img: Jaja,
         bio: `With experience spanning FMCG, health and fintech startups, and politics, Jaja helps brands and organisations formulate and execute digital media strategies.
+        `
+      },
+      {
+        name: `Segun Maleghemi`,
+        title:
+          "Co-founder, Director of Incubation, The Nest Innovation Technology Park ",
+        img: Segun,
+        bio: `
+        "Nigerian Entrepreneur and Steve Huckvale Scholar, ‘Segun, is passionate about helping people maximize their potentials. A multiple award winner with over 15 years’ experience, he was until recently the Regional Sales Manager for NEC Africa. There he led Business development, Strategy and Project management activities in 14 West African countries and closed Sales of over $60 Million. 
+
+          ‘Segun is one of the Co-Founder of The Nest Innovation Technology Park. In his role as Director of Incubation, he helps startups improve on the MVP and build market traction. Between 2018 and now, he has supported over 1000 Tony Elumelu Foundation Entreprenuers from 54 different countries and helped them develop their business plans and improve on their business strategy
+
+          Segun has an MSc from the University of Bath, UK in Innovation and Technology Management, and a BSc. from  Obafemi Awolowo University, Ile-Ife. He has also attended several leadership, strategy, management and technical courses across 5 different continents. 
+
+          His favorite words are “If I can’t add value to you, I am of no value to you”. Olusegun Maleghemi is all about leadership and growth. He strongly believes that technology start-ups should engage “under-served"" markets and solve social issues while evolving to become sustainable businesses. He is bored by the Regular, excited by Passion."`
+      },
+      {
+        name: `Bukonla Adebakin`,
+        title: "Chief Operating Officer, RED,	RED / For Africa",
+        img: Bukky,
+        bio: `
+        
+        `
+      },
+      {
+        name: `Oluchi Anyagaligbo`,
+        title: "Lawyer,	Private Practice",
+        img: Oluchi,
+        bio: `Oluchi Anyagaligbo is a recent graduate from The George Washington Law School. She desires for her legal career to inspire the youth to pursue their creative talents and career goals.  
+        `
+      },
+      {
+        name: `Barry Vopnu`,
+        title: "Founder,	BvB Digital",
+        img: Barry,
+        bio: `
+        `
+      },
+      {
+        name: `Munachi Nwoke-Ekpo`,
+        title: "Head, Operations, Anakle",
+        img: Muna,
+        bio: `Munachi has 8 years experience in marketing/advertising strategy and execution and has overseen the growth of value driven offerings to Anakle’s numerous clients
+        `
+      },
+      {
+        name: `Nikky Samuel`,
+        title: "Marketing Strategist & Social Media Creative",
+        img: Nikky,
+        bio: `Nikky Samuel currently works for Kantar, a Market Research firm; based out of NY. She also aims to maintain an Instagram feed curating content around travel, events, life and food. 
+        `
+      },
+      {
+        name: `Lola Idowu`,
+        title: "Release coordinator, Toronto Hydro",
+        img: Lola,
+        bio: `Lola is an Industrial Engineering graduate from Ryerson University, with experience working in large organizations such as --- Loblaw Companies Limited, Nestle Canada and Toronto Hydro, to name a few. She is excited about up and coming innovative tech in Toronto, and is looking forward to see what the brilliant minds of Nigeria has to offer the tech world.
+        `
+      },
+      {
+        name: `Opeoluwa Victor Babasanmi`,
+        title: "Cloud Engineer, Amazon Web Services",
+        img: Victor,
+        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
+        
+        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
         `
       },
       {
@@ -1527,9 +1601,17 @@ export default {
         img: Ekene,
         bio: `Ekene is a Software Developer Advocate at Flutterwave. His passion for growing the technology ecosystem in Africa has led him to write technical articles, mentor upcoming developers and speak at conferences to help power the next generation of software developers in Africa. 
         `
+      },
+      {
+        name: `Ik Obi`,
+        title: "Integrations Lead,	Paystack",
+        img: IK,
+        bio: `Ik leads the Integration team at Paystack.
+        `
       }
     ]
   },
+  team,
   keynote: {
     title: "Keynote Speaker",
     name: "Chude Jideonwo",
@@ -1678,7 +1760,69 @@ export default {
           "A Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, NaijaHacks Medal",
         Criteria: "",
         Sponsor: ""
+      },
+      {
+        question:
+          "The Dotts Media Prize for the Project with the best new media integration",
+        answer:
+          "A Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
       }
     ]
+  },
+  scheduleSection: {
+    title: "Schedule",
+    filter: {
+      placeholder: "Filter schedule by..."
+    },
+    tabs: [
+      {
+        title: "Day 1",
+        subtitle: "Friday, September 13"
+      },
+      {
+        title: "Day 2",
+        subtitle: "Saturday, September 14"
+      },
+      {
+        title: "Day 3",
+        subtitle: "Sunday, September 15"
+      }
+    ],
+    toastCloseIcon: CloseIconImg,
+    noItems: (day: number) => `No matching events found for day ${day + 1}.`,
+    itemTypeInfo: {
+      event: {
+        color: "textDark",
+        label: "Event"
+      },
+      food: {
+        color: "orangeM",
+        label: "Food"
+      },
+      activity: {
+        color: "redM",
+        label: "Activity"
+      },
+      workshop: {
+        color: "blueM",
+        label: "Workshop"
+      }
+    },
+    statusInfo: {
+      ended: {
+        color: "grey",
+        label: "Ended"
+      },
+      ongoing: {
+        color: "greenM",
+        label: "Ongoing"
+      },
+      soon: {
+        color: "tanM",
+        label: "Starting Soon"
+      }
+    }
   }
 };

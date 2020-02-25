@@ -6,6 +6,7 @@ interface SectionWrapperProps {
   className?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children?: any; // seems like the recommended practice is to type children as any (https://github.com/Microsoft/TypeScript/issues/6471)
+  overflow?: string;
 }
 
 const Container = styled.section`
@@ -40,9 +41,10 @@ const Container = styled.section`
 const SectionWrapper: React.FC<SectionWrapperProps> = ({
   id,
   className,
-  children
+  children,
+  overflow
 }) => (
-  <Container id={id} className={className}>
+  <Container id={id} className={className} style={{ overflow }}>
     {children}
   </Container>
 );

@@ -192,12 +192,10 @@ const About: React.FC = () => {
       {AboutTextBlock}
       <RecapVideoButton
         icon={aboutCopy.videoButton.icon}
-        text={"View 2018 Highlights"}
+        text={aboutCopy.videoButton.text}
         background={aboutCopy.videoButton.background}
         toggleVideo={() =>
-          openInNewTab(
-            "https://drive.google.com/file/d/1TIOWGH8f9aqCQQqxHSCYC4sdWc1dJtRx/view"
-          )
+          (window.location.href = "https://www.youtube.com/watch?v=QaAzvrL-Qb4")
         }
       />
       {isVideoOpen && (

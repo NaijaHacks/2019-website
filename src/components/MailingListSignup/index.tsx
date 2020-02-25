@@ -268,9 +268,13 @@ const MailingListSignUp = (props: MailingListSignUpProps) => {
       </EmailForm> */}
       <SponsorButton
         className="cta"
-        onClick={() => window.open("https://apply.naijahacks.com")}
+        onClick={() =>
+          window.open(
+            "https://docs.google.com/forms/d/e/1FAIpQLSeqYghgXy83ZW5ulCrD0Ookgs1SEL1uALNH9gOUr5pEHuPreA/viewform?usp=sf_link"
+          )
+        }
       >
-        Apply to participate
+        Apply as Ambassador
       </SponsorButton>
       {buttonVariant === "duplicate" || buttonVariant === "error" ? (
         <PoseWrapper footer={props.footer}>

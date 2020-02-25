@@ -45,6 +45,9 @@ declare module "styled-components" {
         orangeL: string;
         orangeM: string;
         orangeD: string;
+
+        grey: string;
+        greyL: string;
       };
       fontFamily: {
         heading: string;

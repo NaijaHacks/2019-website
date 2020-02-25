@@ -38,7 +38,10 @@ const globalConstants: GlobalConstants = {
 
     orangeL: "#FFC684",
     orangeM: "#ED9615",
-    orangeD: "#7C4411"
+    orangeD: "#7C4411",
+
+    grey: "#A5A5A5",
+    greyL: "#f4f4f4"
   },
   fontFamily: {
     heading:

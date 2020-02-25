@@ -30,6 +30,9 @@ export {
 } from "./sponsors/2019/cc-logo-light-bg-wide.png";
 export { default as Dexon } from "./sponsors/2019/dexon.png";
 export { default as Gridcode } from "./sponsors/2019/gridcode.jpeg";
+export { default as Feva } from "./sponsors/2019/feva.png";
+export { default as Pepsi } from "./sponsors/2019/pepsi.png";
+export { default as Popcentral } from "./sponsors/2019/popcentral.png";
 
 /* Logos */
 export { default as LogoDarkImg } from "./logos/primary-dark.svg";
@@ -194,9 +197,17 @@ export { default as IK } from "./leaders/2019/IK.png";
 export { default as TopeA } from "./leaders/2019/tope_a.png";
 export { default as Tobi } from "./leaders/2019/tobi.png";
 export { default as Tolu } from "./leaders/2019/tolu.jpg";
-export { default as Mayo } from "./leaders/2019/mayo.jpg";
 export { default as Ihunaya } from "./leaders/2019/ihunaya.jpg";
 export { default as Jackye } from "./leaders/2019/jackye.jpg";
 export { default as Jaja } from "./leaders/2019/jaja.jpg";
 export { default as Ekene } from "./leaders/2019/ekene.jpeg";
 export { default as Femi } from "./leaders/2019/femi.jpg";
+export { default as Barry } from "./leaders/2019/barry.jpeg";
+export { default as Bukky } from "./leaders/2019/bukky.jpeg";
+export { default as Mayo } from "./leaders/2019/mayo.jpg";
+export { default as Oluchi } from "./leaders/2019/oluchi.jpeg";
+export { default as Segun } from "./leaders/2019/segun.jpg";
+export { default as Yinka } from "./leaders/2019/yinka.jpg";
+export { default as Nikky } from "./leaders/2019/nikky.jpeg";
+export { default as Muna } from "./leaders/2019/muna.jpeg";
+export { default as Lola } from "./leaders/2019/lola.jpg";
