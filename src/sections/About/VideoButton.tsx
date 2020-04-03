@@ -28,6 +28,7 @@ const VideoButton = styled(UnstyledButton)`
   align-items: center;
   background: ${props => props.theme.globalConstants.color.action};
   margin-top: 35px;
+  background: black;
 
   &:hover {
     opacity: 0.8;
@@ -64,7 +65,7 @@ const RecapVideoButton: React.FC<RecapVideoButtonProps> = ({
         {text}
       </Text>
     </ButtonContents>
-    <VideoButtonBackgroundImage src={background} alt="recap video" />
+    {/* <VideoButtonBackgroundImage src={background} alt="recap video" /> */}
   </VideoButton>
 );
 

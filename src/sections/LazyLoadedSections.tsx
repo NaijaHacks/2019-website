@@ -7,9 +7,7 @@ import About from "sections/About";
 import Judges from "sections/Judges";
 import Sponsors from "sections/Sponsors";
 import Team from "sections/Team";
-// const Schedule = createAsyncComponent({
-//   load: () => import("sections/Schedule")
-// });
+
 // const Sponsors = createAsyncComponent({
 //   load: () => import("sections/Sponsors")
 // });

@@ -81,13 +81,6 @@ const Gear: React.FC<GearProps> = ({
   const [imageIndex, setImageIndex] = useState(0);
   const [hovered, setHovered] = useState(true);
 
-  const imageTransitions = useTransition(images[imageIndex], item => item.id, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-    config: config.molasses
-  });
-
   const textTransitions = useTransition(hovered, null, {
     from: { opacity: 0 },
     enter: { opacity: 0.9 },

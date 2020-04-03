@@ -102,7 +102,7 @@ const EngineeringLogo = styled.img`
 
 const EngineeringText = styled.div`
   color: ${props => props.theme.globalConstants.color.textLight};
-  max-width: 579px;
+  max-width: "700px";
 
   p {
     color: ${props => props.theme.globalConstants.color.textLight} !important;
@@ -162,10 +162,10 @@ const AboutTextBlock = (
 
 const Engineering = () => (
   <EngineeringWrapper>
-    <EngineeringIllustration
+    {/* <EngineeringIllustration
       src={aboutCopy.engineering.illustration}
       alt="engineering-illustration"
-    />
+    /> */}
     <EngineeringText>
       <Text className="heading" as="h2" variant="sectionHeading">
         {"Why NaijaHacks"}

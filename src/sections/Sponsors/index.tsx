@@ -103,11 +103,11 @@ const Sponsors = () => (
       </Text>
       <div className="desc">{sponsorsSection.desc}</div>
 
-      <img
+      {/* <img
         className="illustration"
         src={sponsorsSection.illustration}
         alt="Person writing on a whiteboard with a goose peeking out from behind it"
-      />
+      /> */}
       <SponsorButton
         className="cta"
         onClick={() => window.open(sponsorsSection.cta.link)}
@@ -116,7 +116,7 @@ const Sponsors = () => (
       </SponsorButton>
     </MainContent>
 
-    <SponsorsFeature />
+    {/* <SponsorsFeature /> */}
     <SponsorsList />
   </SponsorsWrapper>
 );

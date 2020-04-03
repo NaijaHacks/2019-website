@@ -1,17 +1,7 @@
 import React from "react";
 import { Link, Text } from "@hackthenorth/north";
 import {
-  // Stories section
-  KoryHeadshotImg,
-  KimberHeadshotImg,
-  AlexisHeadshotImg,
-  AlexHackerHeadshotImg,
-  BrunoHackerHeadshotImg,
-  JackyHackerHeadshotImg,
-  KevinHackerHeadshotImg,
-  MichelleHackerHeadshotImg,
   // Sponsors & Partners
-  TechyonLogoImg,
   SketchLogoImg,
   NexmoLogoImg,
   ZoneTechLogoImg,
@@ -30,47 +20,14 @@ import {
   Pepsi,
   Popcentral,
   // About section imgs
-  TrudeauHeadshotImg,
-  RecapVidButtonBackgroundImg,
   PlayIconImg,
-  EngineeringIllustrationImg,
+  WhyStarted,
   CloseIconImg,
-  ActivityGradient,
-  ActivityImg1,
-  ActivityImg2,
-  ActivityImg3,
-  ActivityImg4,
-  HackerGradient,
-  HackerImg1,
-  HackerImg2,
-  HackerImg3,
-  HackerImg4,
-  HardwareGradient,
-  HardwareImg1,
-  HardwareImg2,
-  HardwareImg3,
-  HardwareImg4,
-  SpeakerGradient,
-  SpeakerImg1,
-  SpeakerImg2,
-  SpeakerImg3,
-  SpeakerImg4,
-  WaterlooEngLogoImg,
-  // Leaders section
-  // CatHeadshotImg,
-  // ChamathHeadshotImg,
-  // ConnieHeadshotImg,
-  // DylanHeadshotImg,
-  // EthanWildingHeadshotImg,
-  // JeffHeadshotImg,
-  // JenniferHeadshotImg,
-  // TiffaniHeadshotImg,
-  // TracyHeadshotImg,
-  // VinodHeadshotImg,
+  Circle1,
+  Circle2,
+  Circle3,
+  Circle4,
   LightbulbBalloonCloudsIllustrationImg,
-  // Navbar
-  // LogoIconLightImg,
-  // LogoIconDarkImg,
   SocialFacebookImg,
   SocialFacebookImgDark,
   SocialInstaImg,
@@ -78,9 +35,6 @@ import {
   SocialTwitterImg,
   SocialTwitterImgDark,
   SocialEmailImg,
-  Robogoose4IllustrationImg,
-  // MichalHeadshotImg,
-  // OrganizerHeadshotImg
   Sam,
   Deji,
   Tope,
@@ -122,7 +76,10 @@ import {
   Yinka,
   Nikky,
   Muna,
-  Lola
+  Lola,
+  // Team
+  Hillary,
+  Toni
 } from "static/img";
 
 interface Sponsor {
@@ -366,12 +323,6 @@ const sponsors: Sponsor[] = [
     name: "Linode"
   },
   {
-    name: "Techyon",
-    tier: "partner",
-    imgSrc: TechyonLogoImg,
-    link: "https://techyon.org/"
-  },
-  {
     imgSrc: NexmoLogoImg,
     link: "https://nexmo.com",
     tier: "gold",
@@ -607,23 +558,6 @@ const sponsors: Sponsor[] = [
   }
 ];
 
-// Taken from https://github.com/Daplie/knuth-shuffle
-const shuffle = <T extends {}>(array: T[]) => {
-  let currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-};
-
 const team = [
   {
     text: "Uchi Uchibeke",
@@ -643,9 +577,29 @@ const team = [
     img: "https://naijahacks.com/res/team/abdulsalam.jpg"
   },
   {
+    text: "Hillary Masha",
+    alt: ". . .",
+    img: Hillary
+  },
+  {
+    text: "Toni Ogunmade",
+    alt: ". . .",
+    img: Toni
+  },
+  {
+    text: "Mohammed Bayero Yayandi",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/mohammed.jpg"
+  },
+  {
     text: "Ifeanyichukwu Nwabuokei ",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/ify.jpg"
+  },
+  {
+    text: "Adekanye Francisca",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/cisca.jpg"
   },
   {
     text: "Andrew Miracle",
@@ -663,19 +617,9 @@ const team = [
     img: "https://naijahacks.com/res/team/ganihu.jpg"
   },
   {
-    text: "Mohammed Bayero Yayandi",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/mohammed.jpg"
-  },
-  {
     text: "Ahmed Olanrewaju O.",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/ahmed.jpeg"
-  },
-  {
-    text: "Adekanye Francisca",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/cisca.jpg"
   },
   {
     text: "Daniel Enemchukwu",
@@ -686,17 +630,6 @@ const team = [
     text: "Chidiebere Onyegbuchulem",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/chidi.jpg"
-  },
-  {
-    text: "Hillary Masha",
-    alt: ". . .",
-    img:
-      "https://media.licdn.com/dms/image/C5603AQH0M9UrRQgmqA/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=4V5oo-oewMdZg05IYpk2OwXk1Th86AJDZCa5mEmkr3I"
-  },
-  {
-    text: "Toni Ogunmade",
-    alt: ". . .",
-    img: "http://inspeksi.me/img/toni.jpg"
   }
 ];
 
@@ -777,69 +710,49 @@ export default {
     sentence1:
       "Join 1,300+ participants, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019 to build solutions for Education, Housing, Job Creation and Citizen Safety",
     sentence2:
-      "NaijaHacks is not just a hackathon. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
+      "NaijaHacks is not just a hackathon in Nigeria. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
     gears: [
       {
         name: "speakers",
         // body: "Speakers and Judges from 5 countries",
         body: "CITIZEN SAFETY",
-        images: [
-          { id: "speaker1", url: SpeakerImg1 },
-          { id: "speaker2", url: SpeakerImg2 },
-          { id: "speaker3", url: SpeakerImg3 },
-          { id: "speaker4", url: SpeakerImg4 }
-        ],
+        images: [],
         delay: 2000,
-        gradient: { id: "speakerGradient", url: SpeakerGradient }
+        gradient: { id: "speakerGradient", url: Circle1 }
       },
       {
         name: "activities",
-        // body: "Have fun while working on a challenge you're passionate about",
         body: "EDUCATION",
-        images: [
-          { id: "activity1", url: ActivityImg1 },
-          { id: "activity2", url: ActivityImg2 },
-          { id: "activity3", url: ActivityImg3 },
-          { id: "activity4", url: ActivityImg4 }
-        ],
+        images: [],
         delay: 4000,
-        gradient: { id: "activityGradient", url: ActivityGradient }
+        gradient: { id: "activityGradient", url: Circle2 }
       },
       {
         name: "hackers",
-        // body:  "Meet and network with 1,300+ hackers from all around the the country",
-        body: "HOUSING ",
-        images: [
-          { id: "hacker1", url: HackerImg1 },
-          { id: "hacker2", url: HackerImg2 },
-          { id: "hacker3", url: HackerImg3 },
-          { id: "hacker4", url: HackerImg4 }
-        ],
+        // body:
+        //   "Meet and network with 1,300+ hackers from all around the the country",
+        body: "HOUSING",
+        images: [],
         delay: 6000,
-        gradient: { id: "hackerGradient", url: HackerGradient }
+        gradient: { id: "hackerGradient", url: Circle3 }
       },
       {
         name: "hardware",
         // body: "Win Millions of Naira in cash and prizes",
         body: "JOB CREATION",
-        images: [
-          { id: "hardware1", url: HardwareImg1 },
-          { id: "hardware2", url: HardwareImg2 },
-          { id: "hardware3", url: HardwareImg3 },
-          { id: "hardware4", url: HardwareImg4 }
-        ],
+        images: [],
         delay: 8000,
-        gradient: { id: "hardwareGradient", url: HardwareGradient }
+        gradient: { id: "hardwareGradient", url: Circle4 }
       }
     ],
     videoButton: {
       icon: PlayIconImg,
       text: "Watch our recap video",
-      background: RecapVidButtonBackgroundImg
+      background: "black"
     },
     engineering: {
-      logo: WaterlooEngLogoImg,
-      illustration: EngineeringIllustrationImg,
+      logo: "",
+      illustration: WhyStarted,
       text:
         "We started NaijaHacks to inspire a new generation of Nigerians and Africans to be makers, leaders and diruptors. After attending over 50 Hackathons and seeing the impact that they made in our lives and careers, we decided to bring a Hackathon, built for Africa, from the lessons we learned at Harvard, MIT, Stanford, Waterloo, Princeton and others. NaijaHacks is built by Africans for Africans and powered by supporters from over 8 countries."
     },
@@ -848,81 +761,7 @@ export default {
       closeIcon: CloseIconImg
     }
   },
-  storiesSection: {
-    heading: "Everything you need to create something incredible",
-    desc:
-      "For the past 5 years, we’ve continued to inspire participants to discover the world around them and empower participants like you who are eager to learn and create by providing an environment for you to explore and build with workshops, mentorship, and hardware.",
-    stories: [
-      {
-        person: "Justin Trudeau",
-        desc: "Prime Minister of Canada",
-        img: TrudeauHeadshotImg,
-        quote:
-          "When I look around this room, I see quick learners, creative thinkers, and natural risk takers who are not only the leaders of tomorrow, but the leaders of today. You have the power to enact positive change right here right now."
-      },
-      {
-        person: "Kory Jeffrey",
-        desc: "Google",
-        img: KoryHeadshotImg,
-        quote:
-          "Hack the North is North America’s premier hackathon. It brings together the best minds from around the world and takes care of all the logistics so that they can focus on learning and creating. Can’t wait to see what they do next year."
-      },
-      {
-        person: "Kimber Schlegelmilch",
-        desc: "Lyft",
-        img: KimberHeadshotImg,
-        quote:
-          "Hack the North is one of the best hackathons I've experienced — the organizers are incredible, the projects produced at the end of the weekend are really impressive, and the energy of participants and mentors remains insanely high throughout the event."
-      },
-      {
-        person: "Alexis Ohanian",
-        desc: "Co-founder of Reddit",
-        img: AlexisHeadshotImg,
-        quote:
-          "There is an undeniable reputation throughout tech of the kind of engineering talent that comes out of the University of Waterloo. The participants here are probably going to be the business leaders of this century."
-      },
-      {
-        person: "Alex",
-        desc: "Hack the North 2017 Finalist",
-        img: AlexHackerHeadshotImg,
-        link: "https://devpost.com/software/doppel-gallery",
-        quote:
-          "I collaborated with different people and had the chance to talk to many interesting people. I got a lot of perspective on the beginning to end of a software development project. My team was able to go from an idea to a working app that we could present to people. It was a really unique experience."
-      },
-      {
-        person: "Bruno",
-        desc: "Hack the North 2018 First-time Hacker",
-        img: BrunoHackerHeadshotImg,
-        link: "https://devpost.com/software/instaface",
-        quote:
-          "Hack the North was both my first international event and hackathon. I was quite nervous about leaving Brazil and going to the event but once there, everything was better than I could have ever imagined. I met so many cool and interesting people from all over the globe, made a lot of new friends and built something very cool on very little sleep with my team, overall an amazing experience!"
-      },
-      {
-        person: "Jacky",
-        desc: "Hack the North 2018 Experienced Hacker",
-        img: JackyHackerHeadshotImg,
-        link: "https://devpost.com/software/tappit-crypto-payments-over-nfc",
-        quote:
-          "Hack the North was – and still is – one of the best 36 hours I’ve ever had. Everything from the caffeine and stress-relief dogs to the amazing speakers, mentors, and organizers. It was amazing when you really needed to get a bite or take a break to walk around and see everyone’s amazing projects. Hack the North was a lot of ‘firsts’ and I hope it will be the same for many more in the future."
-      },
-      {
-        person: "Kevin",
-        desc: "Hack the North 2014 Finalist",
-        img: KevinHackerHeadshotImg,
-        link: "https://hackthenorth.devpost.com/submissions/27029-open-pokemon",
-        quote:
-          "Hack the North was a weekend where I could learn and start a passion for building great products. The experience was transformative and led me to where I am today. What really stood out to me was this sense of camaraderie between different hackers. I walked away from that weekend with so much more knowledge, and I made a lot of close, new friends."
-      },
-      {
-        person: "Michelle",
-        desc: "Hack the North 2015/2016 Finalist",
-        img: MichelleHackerHeadshotImg,
-        link: "https://devpost.com/software/modernized-weasley-clock-yotu43",
-        quote:
-          "Hack the North was my first (and second) hackathon, and the experience is still unforgettable! Everything Hack the North provided – inspiring speakers, mentors, workshops, food, coffee and free swag – contributed to an awesome supportive environment that made it really fun to hack away for those 36 hours."
-      }
-    ]
-  },
+  storiesSection: {},
   faq: {
     title: "Frequently asked questions",
     body: [
@@ -1014,7 +853,7 @@ export default {
     ]
   },
   footer: {
-    img: Robogoose4IllustrationImg,
+    img: "",
     cta: "Fun Makers • Creative Leaders • Norm Disruptors • #NaijaHacks2019 ",
     links: [
       {
@@ -1022,16 +861,6 @@ export default {
         hyperlink: "/#about",
         newTab: false
       },
-      // {
-      //   text: "Open Source",
-      //   hyperlink: "https://github.com/hackthenorth",
-      //   newTab: true
-      // },
-      // {
-      //   text: "Privacy Policy",
-      //   hyperlink: "https://2018.hackthenorth.com/privacy",
-      //   newTab: true
-      // },
       {
         text: "Code of Conduct",
         hyperlink:
@@ -1771,58 +1600,5 @@ export default {
       }
     ]
   },
-  scheduleSection: {
-    title: "Schedule",
-    filter: {
-      placeholder: "Filter schedule by..."
-    },
-    tabs: [
-      {
-        title: "Day 1",
-        subtitle: "Friday, September 13"
-      },
-      {
-        title: "Day 2",
-        subtitle: "Saturday, September 14"
-      },
-      {
-        title: "Day 3",
-        subtitle: "Sunday, September 15"
-      }
-    ],
-    toastCloseIcon: CloseIconImg,
-    noItems: (day: number) => `No matching events found for day ${day + 1}.`,
-    itemTypeInfo: {
-      event: {
-        color: "textDark",
-        label: "Event"
-      },
-      food: {
-        color: "orangeM",
-        label: "Food"
-      },
-      activity: {
-        color: "redM",
-        label: "Activity"
-      },
-      workshop: {
-        color: "blueM",
-        label: "Workshop"
-      }
-    },
-    statusInfo: {
-      ended: {
-        color: "grey",
-        label: "Ended"
-      },
-      ongoing: {
-        color: "greenM",
-        label: "Ongoing"
-      },
-      soon: {
-        color: "tanM",
-        label: "Starting Soon"
-      }
-    }
-  }
+  scheduleSection: {}
 };
