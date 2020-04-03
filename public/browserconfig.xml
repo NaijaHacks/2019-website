@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/mstile-150x150.png"/>
+            <square150x150logo src="https://naijahacks.com/images/logo.png"/>
             <TileColor>#eff8fa</TileColor>
         </tile>
     </msapplication>

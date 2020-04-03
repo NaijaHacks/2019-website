@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import MailingListSignup from "components/MailingListSignup";
-import InfiniteCarousel from "components/InfiniteCarousel";
+// import InfiniteCarousel from "components/InfiniteCarousel";
 import useWindowWidth from "hooks/useWindowWidth";
 import { Text, Link } from "@hackthenorth/north";
 
@@ -141,12 +141,12 @@ const Footer = () => {
           </Error>
         </PoseGroup>
         <CarouselWrapper>
-          <InfiniteCarousel
+          {/* <InfiniteCarousel
             itemWidth={90}
             setOrganizerText={setOrganizerText}
             items={copy.footer.team}
             clearOrganizerText={clearOrganizerText}
-          />
+          /> */}
           <Fade />
         </CarouselWrapper>
       </HeadshotWrapper>

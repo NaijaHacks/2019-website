@@ -183,7 +183,7 @@ const SponsorsList = () => (
         </SponsorItem>
       ))}
     </SponsorContainer>
-    <Text as="h3" variant="subheading">
+    {/* <Text as="h3" variant="subheading">
       Previous Sponsors
     </Text>
     <SponsorContainer>
@@ -201,7 +201,7 @@ const SponsorsList = () => (
           />
         </SponsorItem>
       ))}
-    </SponsorContainer>
+    </SponsorContainer> */}
     {/* <Text as="h3" variant="subheading">
       Our partners
     </Text>

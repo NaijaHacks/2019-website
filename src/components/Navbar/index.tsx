@@ -226,7 +226,7 @@ const NavBar: React.FC<any> = props => {
                 // onClick={() => scrollTo("sponsors-cta")}
                 onClick={() =>
                   window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSdfgQX6azxhaQD2JyVpSIaewQXCrnPMcqgZWTr1pv53qPhFVQ/viewform?usp=sf_link"
+                    "https://docs.google.com/forms/d/e/1FAIpQLSeqYghgXy83ZW5ulCrD0Ookgs1SEL1uALNH9gOUr5pEHuPreA/viewform?usp=sf_link"
                   )
                 }
                 scrolledDown={scrolledDown}

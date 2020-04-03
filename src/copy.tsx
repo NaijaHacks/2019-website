@@ -1,17 +1,7 @@
 import React from "react";
 import { Link, Text } from "@hackthenorth/north";
 import {
-  // Stories section
-  KoryHeadshotImg,
-  KimberHeadshotImg,
-  AlexisHeadshotImg,
-  AlexHackerHeadshotImg,
-  BrunoHackerHeadshotImg,
-  JackyHackerHeadshotImg,
-  KevinHackerHeadshotImg,
-  MichelleHackerHeadshotImg,
   // Sponsors & Partners
-  TechyonLogoImg,
   SketchLogoImg,
   NexmoLogoImg,
   ZoneTechLogoImg,
@@ -26,48 +16,18 @@ import {
   Crowdcast,
   Dexon,
   Gridcode,
+  Feva,
+  Pepsi,
+  Popcentral,
   // About section imgs
-  TrudeauHeadshotImg,
-  RecapVidButtonBackgroundImg,
   PlayIconImg,
-  EngineeringIllustrationImg,
+  WhyStarted,
   CloseIconImg,
-  ActivityGradient,
-  ActivityImg1,
-  ActivityImg2,
-  ActivityImg3,
-  ActivityImg4,
-  HackerGradient,
-  HackerImg1,
-  HackerImg2,
-  HackerImg3,
-  HackerImg4,
-  HardwareGradient,
-  HardwareImg1,
-  HardwareImg2,
-  HardwareImg3,
-  HardwareImg4,
-  SpeakerGradient,
-  SpeakerImg1,
-  SpeakerImg2,
-  SpeakerImg3,
-  SpeakerImg4,
-  WaterlooEngLogoImg,
-  // Leaders section
-  // CatHeadshotImg,
-  // ChamathHeadshotImg,
-  // ConnieHeadshotImg,
-  // DylanHeadshotImg,
-  // EthanWildingHeadshotImg,
-  // JeffHeadshotImg,
-  // JenniferHeadshotImg,
-  // TiffaniHeadshotImg,
-  // TracyHeadshotImg,
-  // VinodHeadshotImg,
+  Circle1,
+  Circle2,
+  Circle3,
+  Circle4,
   LightbulbBalloonCloudsIllustrationImg,
-  // Navbar
-  // LogoIconLightImg,
-  // LogoIconDarkImg,
   SocialFacebookImg,
   SocialFacebookImgDark,
   SocialInstaImg,
@@ -75,9 +35,6 @@ import {
   SocialTwitterImg,
   SocialTwitterImgDark,
   SocialEmailImg,
-  Robogoose4IllustrationImg,
-  // MichalHeadshotImg,
-  // OrganizerHeadshotImg
   Sam,
   Deji,
   Tope,
@@ -106,12 +63,23 @@ import {
   TopeA,
   Tobi,
   Tolu,
-  Mayo,
   Ihunaya,
   Jackye,
   Jaja,
   Ekene,
-  Femi
+  Barry,
+  Femi,
+  Bukky,
+  Mayo,
+  Oluchi,
+  Segun,
+  Yinka,
+  Nikky,
+  Muna,
+  Lola,
+  // Team
+  Hillary,
+  Toni
 } from "static/img";
 
 interface Sponsor {
@@ -355,12 +323,6 @@ const sponsors: Sponsor[] = [
     name: "Linode"
   },
   {
-    name: "Techyon",
-    tier: "partner",
-    imgSrc: TechyonLogoImg,
-    link: "https://techyon.org/"
-  },
-  {
     imgSrc: NexmoLogoImg,
     link: "https://nexmo.com",
     tier: "gold",
@@ -417,10 +379,16 @@ const sponsors: Sponsor[] = [
     name: "IvoryMark NG"
   },
   {
-    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
-    link: "https://digitalocean.com/",
+    imgSrc: Gridcode,
+    link: "https://findgridcode.com/",
     tier: "silver",
-    name: "DigitalOcean"
+    name: "Gridcode"
+  },
+  {
+    imgSrc: Popcentral,
+    link: "https://www.popcentraltv.com/",
+    tier: "silver",
+    name: "Popcentraltv"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/twilio.png",
@@ -439,6 +407,12 @@ const sponsors: Sponsor[] = [
     link: "http://jetbrains.com/",
     tier: "silver",
     name: "Jetbrains"
+  },
+  {
+    imgSrc: Crowdcast,
+    link: "https://www.crowdcast.io/",
+    tier: "silver",
+    name: "Crowdcast"
   },
   {
     imgSrc: SketchLogoImg,
@@ -491,10 +465,10 @@ const sponsors: Sponsor[] = [
     name: "Egghead.io"
   },
   {
-    imgSrc: TheIndigene,
-    link: "https://www.instagram.com/the_indigene/",
+    imgSrc: Pepsi,
+    link: "https://twitter.com/Pepsi_Naija",
     tier: "silver",
-    name: "The Indigene"
+    name: "Pepsi"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/techher.png",
@@ -509,10 +483,28 @@ const sponsors: Sponsor[] = [
     name: "DigiClan"
   },
   {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/digitalocean.png",
+    link: "https://digitalocean.com/",
+    tier: "silver",
+    name: "DigitalOcean"
+  },
+  {
     imgSrc: XYZDomains,
     link: "https://gen.xyz/",
     tier: "silver",
     name: ".XYZ Domains"
+  },
+  {
+    imgSrc: DevCareer,
+    link: "https://devcareer.io/",
+    tier: "silver",
+    name: "DevCareer"
+  },
+  {
+    imgSrc: "https://naijahacks.com/2018/res/sponsors/printivo.png",
+    link: "https://www.printivo.com/",
+    tier: "silver",
+    name: "Printivo"
   },
   {
     imgSrc: "https://naijahacks.com/2018/res/sponsors/gimme.png",
@@ -521,16 +513,10 @@ const sponsors: Sponsor[] = [
     name: "Oh Woh popcorn"
   },
   {
-    imgSrc: Crowdcast,
-    link: "https://www.crowdcast.io/",
+    imgSrc: TheIndigene,
+    link: "https://www.instagram.com/the_indigene/",
     tier: "silver",
-    name: "Crowdcast"
-  },
-  {
-    imgSrc: Gridcode,
-    link: "https://findgridcode.com/",
-    tier: "silver",
-    name: "Gridcode"
+    name: "The Indigene"
   },
   {
     imgSrc:
@@ -538,6 +524,12 @@ const sponsors: Sponsor[] = [
     link: "https://pcbway.com",
     tier: "silver",
     name: "PCBWay"
+  },
+  {
+    imgSrc: Feva,
+    link: "http://www.fevatv.com/",
+    tier: "silver",
+    name: "Feva TV"
   },
   {
     imgSrc: CovenantLogoImg,
@@ -551,74 +543,63 @@ const sponsors: Sponsor[] = [
     tier: "bronze",
     name: "1Password"
   },
-  {
-    imgSrc:
-      "https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png",
-    link: "https://voiceflow.com",
-    tier: "silver",
-    name: "Voiceflow"
-  },
+  // {
+  //   imgSrc:
+  //     "https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png",
+  //   link: "https://voiceflow.com",
+  //   tier: "silver",
+  //   name: "Voiceflow"
+  // },
   {
     imgSrc: Dexon,
     link: "https://www.instagram.com/dexongroup",
     tier: "silver",
     name: "Dexon"
-  },
-  {
-    imgSrc: DevCareer,
-    link: "https://devcareer.io/",
-    tier: "silver",
-    name: "DevCareer"
   }
 ];
-
-// Taken from https://github.com/Daplie/knuth-shuffle
-const shuffle = <T extends {}>(array: T[]) => {
-  let currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-};
 
 const team = [
   {
     text: "Uchi Uchibeke",
     alt: "Uchi Uchibeke",
-    img: "https://naijahacks.com/2018/res/team/uchi.png"
+    img: "https://naijahacks.com/2018/res/team/uchi.png",
+    title: "Founder"
   },
   {
     text: "Blessing Thomas",
     alt: "Blessing Thomas",
-    img: "https://naijahacks.com/2018/res/team/blessing.jpeg"
+    img: "https://naijahacks.com/2018/res/team/blessing.jpeg",
+    title: "Co-chair"
   },
   {
-    text: "Dolapo Fadare",
-    alt: "Dolapo Fadare",
-    img: "https://naijahacks.com/res/team/dolapo.jpg"
-  },
-  {
-    text: "Rosemary Ajuka",
-    alt: "Rosemary Ajuka",
-    img: "https://naijahacks.com/2018/res/team/rosemary.jpg"
-  },
-  {
-    text: "ABDULSALAM DAUD",
-    alt: "ABDULSALAM DAUD",
+    text: "Abdulsalam Daud",
+    alt: "Abdulsalam Daud",
     img: "https://naijahacks.com/res/team/abdulsalam.jpg"
+  },
+  {
+    text: "Hillary Masha",
+    alt: ". . .",
+    img: Hillary
+  },
+  {
+    text: "Toni Ogunmade",
+    alt: ". . .",
+    img: Toni
+  },
+  {
+    text: "Mohammed Bayero Yayandi",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/mohammed.jpg"
   },
   {
     text: "Ifeanyichukwu Nwabuokei ",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/ify.jpg"
+  },
+  {
+    text: "Adekanye Francisca",
+    alt: ". . .",
+    img: "https://naijahacks.com/res/team/cisca.jpg"
   },
   {
     text: "Andrew Miracle",
@@ -631,44 +612,14 @@ const team = [
     img: "https://naijahacks.com/res/team/adeniyi.jpg"
   },
   {
-    text: "Steven Omole-Adebomi",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/steven.jpg"
-  },
-  {
-    text: "Olabode Oyinkansola",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/olabode.jpg"
-  },
-  {
     text: "Richard",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/ganihu.jpg"
   },
   {
-    text: "Favour George Okpara ",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/favour.jpg"
-  },
-  {
-    text: "Mohammed Bayero Yayandi",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/mohammed.jpg"
-  },
-  {
     text: "Ahmed Olanrewaju O.",
     alt: ". . .",
     img: "https://naijahacks.com/res/team/ahmed.jpeg"
-  },
-  {
-    text: "Adekanye Francisca",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/cisca.jpg"
-  },
-  {
-    text: "Helen Ogbogu",
-    alt: ". . .",
-    img: "https://naijahacks.com/res/team/helen.jpg"
   },
   {
     text: "Daniel Enemchukwu",
@@ -716,7 +667,7 @@ export default {
       }
     ],
     sponsorButton: {
-      text: "Interested in volunteering?"
+      text: "Become a Campus Ambassador"
     }
   },
   hero: {
@@ -759,153 +710,58 @@ export default {
     sentence1:
       "Join 1,300+ participants, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019 to build solutions for Education, Housing, Job Creation and Citizen Safety",
     sentence2:
-      "NaijaHacks is not just a hackathon. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
+      "NaijaHacks is not just a hackathon in Nigeria. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
     gears: [
       {
         name: "speakers",
         // body: "Speakers and Judges from 5 countries",
         body: "CITIZEN SAFETY",
-        images: [
-          { id: "speaker1", url: SpeakerImg1 },
-          { id: "speaker2", url: SpeakerImg2 },
-          { id: "speaker3", url: SpeakerImg3 },
-          { id: "speaker4", url: SpeakerImg4 }
-        ],
+        images: [],
         delay: 2000,
-        gradient: { id: "speakerGradient", url: SpeakerGradient }
+        gradient: { id: "speakerGradient", url: Circle1 }
       },
       {
         name: "activities",
-        // body: "Have fun while working on a challenge you're passionate about",
         body: "EDUCATION",
-        images: [
-          { id: "activity1", url: ActivityImg1 },
-          { id: "activity2", url: ActivityImg2 },
-          { id: "activity3", url: ActivityImg3 },
-          { id: "activity4", url: ActivityImg4 }
-        ],
+        images: [],
         delay: 4000,
-        gradient: { id: "activityGradient", url: ActivityGradient }
+        gradient: { id: "activityGradient", url: Circle2 }
       },
       {
         name: "hackers",
-        // body:  "Meet and network with 1,300+ hackers from all around the the country",
-        body: "HOUSING ",
-        images: [
-          { id: "hacker1", url: HackerImg1 },
-          { id: "hacker2", url: HackerImg2 },
-          { id: "hacker3", url: HackerImg3 },
-          { id: "hacker4", url: HackerImg4 }
-        ],
+        // body:
+        //   "Meet and network with 1,300+ hackers from all around the the country",
+        body: "HOUSING",
+        images: [],
         delay: 6000,
-        gradient: { id: "hackerGradient", url: HackerGradient }
+        gradient: { id: "hackerGradient", url: Circle3 }
       },
       {
         name: "hardware",
         // body: "Win Millions of Naira in cash and prizes",
         body: "JOB CREATION",
-        images: [
-          { id: "hardware1", url: HardwareImg1 },
-          { id: "hardware2", url: HardwareImg2 },
-          { id: "hardware3", url: HardwareImg3 },
-          { id: "hardware4", url: HardwareImg4 }
-        ],
+        images: [],
         delay: 8000,
-        gradient: { id: "hardwareGradient", url: HardwareGradient }
+        gradient: { id: "hardwareGradient", url: Circle4 }
       }
     ],
     videoButton: {
       icon: PlayIconImg,
       text: "Watch our recap video",
-      background: RecapVidButtonBackgroundImg
+      background: "black"
     },
     engineering: {
-      logo: WaterlooEngLogoImg,
-      illustration: EngineeringIllustrationImg,
+      logo: "",
+      illustration: WhyStarted,
       text:
         "We started NaijaHacks to inspire a new generation of Nigerians and Africans to be makers, leaders and diruptors. After attending over 50 Hackathons and seeing the impact that they made in our lives and careers, we decided to bring a Hackathon, built for Africa, from the lessons we learned at Harvard, MIT, Stanford, Waterloo, Princeton and others. NaijaHacks is built by Africans for Africans and powered by supporters from over 8 countries."
     },
     video: {
-      url:
-        "https://www.youtube-nocookie.com/embed/P3VhS7jvXN8?autoplay=1&rel=0&amp;showinfo=0",
+      url: "https://www.youtube.com/watch?v=QaAzvrL-Qb4",
       closeIcon: CloseIconImg
     }
   },
-  storiesSection: {
-    heading: "Everything you need to create something incredible",
-    desc:
-      "For the past 5 years, we’ve continued to inspire participants to discover the world around them and empower participants like you who are eager to learn and create by providing an environment for you to explore and build with workshops, mentorship, and hardware.",
-    stories: [
-      {
-        person: "Justin Trudeau",
-        desc: "Prime Minister of Canada",
-        img: TrudeauHeadshotImg,
-        quote:
-          "When I look around this room, I see quick learners, creative thinkers, and natural risk takers who are not only the leaders of tomorrow, but the leaders of today. You have the power to enact positive change right here right now."
-      },
-      {
-        person: "Kory Jeffrey",
-        desc: "Google",
-        img: KoryHeadshotImg,
-        quote:
-          "Hack the North is North America’s premier hackathon. It brings together the best minds from around the world and takes care of all the logistics so that they can focus on learning and creating. Can’t wait to see what they do next year."
-      },
-      {
-        person: "Kimber Schlegelmilch",
-        desc: "Lyft",
-        img: KimberHeadshotImg,
-        quote:
-          "Hack the North is one of the best hackathons I've experienced — the organizers are incredible, the projects produced at the end of the weekend are really impressive, and the energy of participants and mentors remains insanely high throughout the event."
-      },
-      {
-        person: "Alexis Ohanian",
-        desc: "Co-founder of Reddit",
-        img: AlexisHeadshotImg,
-        quote:
-          "There is an undeniable reputation throughout tech of the kind of engineering talent that comes out of the University of Waterloo. The participants here are probably going to be the business leaders of this century."
-      },
-      {
-        person: "Alex",
-        desc: "Hack the North 2017 Finalist",
-        img: AlexHackerHeadshotImg,
-        link: "https://devpost.com/software/doppel-gallery",
-        quote:
-          "I collaborated with different people and had the chance to talk to many interesting people. I got a lot of perspective on the beginning to end of a software development project. My team was able to go from an idea to a working app that we could present to people. It was a really unique experience."
-      },
-      {
-        person: "Bruno",
-        desc: "Hack the North 2018 First-time Hacker",
-        img: BrunoHackerHeadshotImg,
-        link: "https://devpost.com/software/instaface",
-        quote:
-          "Hack the North was both my first international event and hackathon. I was quite nervous about leaving Brazil and going to the event but once there, everything was better than I could have ever imagined. I met so many cool and interesting people from all over the globe, made a lot of new friends and built something very cool on very little sleep with my team, overall an amazing experience!"
-      },
-      {
-        person: "Jacky",
-        desc: "Hack the North 2018 Experienced Hacker",
-        img: JackyHackerHeadshotImg,
-        link: "https://devpost.com/software/tappit-crypto-payments-over-nfc",
-        quote:
-          "Hack the North was – and still is – one of the best 36 hours I’ve ever had. Everything from the caffeine and stress-relief dogs to the amazing speakers, mentors, and organizers. It was amazing when you really needed to get a bite or take a break to walk around and see everyone’s amazing projects. Hack the North was a lot of ‘firsts’ and I hope it will be the same for many more in the future."
-      },
-      {
-        person: "Kevin",
-        desc: "Hack the North 2014 Finalist",
-        img: KevinHackerHeadshotImg,
-        link: "https://hackthenorth.devpost.com/submissions/27029-open-pokemon",
-        quote:
-          "Hack the North was a weekend where I could learn and start a passion for building great products. The experience was transformative and led me to where I am today. What really stood out to me was this sense of camaraderie between different hackers. I walked away from that weekend with so much more knowledge, and I made a lot of close, new friends."
-      },
-      {
-        person: "Michelle",
-        desc: "Hack the North 2015/2016 Finalist",
-        img: MichelleHackerHeadshotImg,
-        link: "https://devpost.com/software/modernized-weasley-clock-yotu43",
-        quote:
-          "Hack the North was my first (and second) hackathon, and the experience is still unforgettable! Everything Hack the North provided – inspiring speakers, mentors, workshops, food, coffee and free swag – contributed to an awesome supportive environment that made it really fun to hack away for those 36 hours."
-      }
-    ]
-  },
+  storiesSection: {},
   faq: {
     title: "Frequently asked questions",
     body: [
@@ -997,7 +853,7 @@ export default {
     ]
   },
   footer: {
-    img: Robogoose4IllustrationImg,
+    img: "",
     cta: "Fun Makers • Creative Leaders • Norm Disruptors • #NaijaHacks2019 ",
     links: [
       {
@@ -1005,16 +861,6 @@ export default {
         hyperlink: "/#about",
         newTab: false
       },
-      // {
-      //   text: "Open Source",
-      //   hyperlink: "https://github.com/hackthenorth",
-      //   newTab: true
-      // },
-      // {
-      //   text: "Privacy Policy",
-      //   hyperlink: "https://2018.hackthenorth.com/privacy",
-      //   newTab: true
-      // },
       {
         text: "Code of Conduct",
         hyperlink:
@@ -1044,7 +890,7 @@ export default {
         link: "https://www.facebook.com/naijahacks"
       }
     ],
-    team: shuffle(team),
+    team: team, // shuffle(team),
     // defaultOrganizerText: "Originally made with 💛 in Waterloo 🇨🇦"
     defaultOrganizerText: "By #TeamNaijaHacks 🇳🇬. Originally made in 🇨🇦"
   },
@@ -1327,10 +1173,10 @@ export default {
         `
       },
       {
-        name: `Ayodeji Razaq`,
-        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
-        img: Deji,
-        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
+        name: `Yinka Obebe`,
+        title: "MD/CEO, Popcentral TV",
+        img: Yinka,
+        bio: `Yinka is the founder and CEO of popcentral, a Pop culture General entertainment channel on Dstv ch189 and Pophub Lagos, a content co-creation hub. A tv director and producer. Yinka founded and served as CEO for Redboxafrica a creatives and production company known for producing television commercials and channel branding prior to launching Popcentral on Dstv. He is an enabler, always avant-garde and committed to using technology to drive the African stories and engagement.
         `
       },
       {
@@ -1367,12 +1213,10 @@ export default {
         `
       },
       {
-        name: `Opeoluwa Victor Babasanmi`,
-        title: "Cloud Engineer, Amazon Web Services",
-        img: Victor,
-        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
-        
-        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
+        name: `Ayodeji Razaq`,
+        title: "Marketing and Experiential Events Lead, Riquesa Africa ",
+        img: Deji,
+        bio: `Ayodeji is the Co-Founder of Riquesa Africa - A Premium Experiential and Activations Hub, with offices in Lagos and Ghana. He is a Fellow of the Chartered Institute of Management. Ayodeji has built a career in creating and executing signature events for Top Brands (Dano, HP, Intel, PZ, Oracle, Google, Microsoft, Unity Bank to name a few. Some of his more prominent executions include setting a new Guinness World Record for a brand in 2018. An Alumni of the University of Lagos, he began an amazing career in marketing by being the First Blackberry Ambassador in Lagos. 
         `
       },
       {
@@ -1469,11 +1313,10 @@ export default {
         `
       },
       {
-        name: `Okunnu Olumayokun Adebayo`,
-        title: "CEO, BodyRox Fitness Studio",
+        name: `Olumayokun Okunnu`,
+        title: "CEO, BodyRox Fitness Studios",
         img: Mayo,
-        bio: `MR. OLUMAYOKUN ‘ICEBOX’ OKUNNU – CEO (BODYROX FITNESS STUDIO)
-        Mr Okunnu is the creator of the fitness concept of BodyRox Fitness Studio. A remarkable feat considering his non-athletic formative years. He finished secondary education at Loyola Jesuit College, Abuja Nigeria before proceeding to obtain his University education at University of Sunderland.
+        bio: `Mr Okunnu is the creator of the fitness concept of BodyRox Fitness Studio. A remarkable feat considering his non-athletic formative years. He finished secondary education at Loyola Jesuit College, Abuja Nigeria before proceeding to obtain his University education at University of Sunderland.
         His foray into the fitness world began while studying chemical and Pharmaceutical science/pharmacology at the University of Sunderland, UK. He took up mixed martial arts and dedicated his time towards understanding the human body and with the scientific mind, catalyzed his approach towards health and fitness. He facilitated his first BodyRox studio in space in 2013 within fitness 2000 gym in Sunderland and in just over a year opened a second fitness studio at the Silverbird center, Abuja.
         `
       },
@@ -1493,7 +1336,8 @@ export default {
       },
       {
         name: `Sefunmi Osinaike`,
-        title: "Product Lead, Dot Health",
+        title:
+          "Sefunmi Osinaike, Co-founder @doing.a.thing, Product Lead Dot Health",
         img: Sefunmi,
         bio: `Sefunmi is passionate about using technology to solve human problems and has made that his mission that directs his life. With a background in electrical engineering and entrepreneurship from the University of Waterloo, he got the opportunity to work on his own start-up, Pave, and intern for companies like Apple and Microsoft. He is currently the Product Lead at Dot Health, where he is focused on building experiences to empower Canadians with their health information. Before Dot, he led the software product development for the thermostat product at ecobee. On the side, he is working on doing a thing which includes writing a book on how to transition into a product management role in technology from outside the industry and building a community of do-ers to encourage one another in enjoying the process of creating something exciting. 
         `
@@ -1508,17 +1352,76 @@ export default {
         `
       },
       {
-        name: `Ik Obi`,
-        title: "Integrations Lead,	Paystack",
-        img: IK,
-        bio: `Ik leads the Integration team at Paystack.
-        `
-      },
-      {
         name: `Jasper Jaja`,
         title: "Digital Media Consultant, The Norris Campbell Company",
         img: Jaja,
         bio: `With experience spanning FMCG, health and fintech startups, and politics, Jaja helps brands and organisations formulate and execute digital media strategies.
+        `
+      },
+      {
+        name: `Segun Maleghemi`,
+        title:
+          "Co-founder, Director of Incubation, The Nest Innovation Technology Park ",
+        img: Segun,
+        bio: `
+        "Nigerian Entrepreneur and Steve Huckvale Scholar, ‘Segun, is passionate about helping people maximize their potentials. A multiple award winner with over 15 years’ experience, he was until recently the Regional Sales Manager for NEC Africa. There he led Business development, Strategy and Project management activities in 14 West African countries and closed Sales of over $60 Million. 
+
+          ‘Segun is one of the Co-Founder of The Nest Innovation Technology Park. In his role as Director of Incubation, he helps startups improve on the MVP and build market traction. Between 2018 and now, he has supported over 1000 Tony Elumelu Foundation Entreprenuers from 54 different countries and helped them develop their business plans and improve on their business strategy
+
+          Segun has an MSc from the University of Bath, UK in Innovation and Technology Management, and a BSc. from  Obafemi Awolowo University, Ile-Ife. He has also attended several leadership, strategy, management and technical courses across 5 different continents. 
+
+          His favorite words are “If I can’t add value to you, I am of no value to you”. Olusegun Maleghemi is all about leadership and growth. He strongly believes that technology start-ups should engage “under-served"" markets and solve social issues while evolving to become sustainable businesses. He is bored by the Regular, excited by Passion."`
+      },
+      {
+        name: `Bukonla Adebakin`,
+        title: "Chief Operating Officer, RED,	RED / For Africa",
+        img: Bukky,
+        bio: `
+        
+        `
+      },
+      {
+        name: `Oluchi Anyagaligbo`,
+        title: "Lawyer,	Private Practice",
+        img: Oluchi,
+        bio: `Oluchi Anyagaligbo is a recent graduate from The George Washington Law School. She desires for her legal career to inspire the youth to pursue their creative talents and career goals.  
+        `
+      },
+      {
+        name: `Barry Vopnu`,
+        title: "Founder,	BvB Digital",
+        img: Barry,
+        bio: `
+        `
+      },
+      {
+        name: `Munachi Nwoke-Ekpo`,
+        title: "Head, Operations, Anakle",
+        img: Muna,
+        bio: `Munachi has 8 years experience in marketing/advertising strategy and execution and has overseen the growth of value driven offerings to Anakle’s numerous clients
+        `
+      },
+      {
+        name: `Nikky Samuel`,
+        title: "Marketing Strategist & Social Media Creative",
+        img: Nikky,
+        bio: `Nikky Samuel currently works for Kantar, a Market Research firm; based out of NY. She also aims to maintain an Instagram feed curating content around travel, events, life and food. 
+        `
+      },
+      {
+        name: `Lola Idowu`,
+        title: "Release coordinator, Toronto Hydro",
+        img: Lola,
+        bio: `Lola is an Industrial Engineering graduate from Ryerson University, with experience working in large organizations such as --- Loblaw Companies Limited, Nestle Canada and Toronto Hydro, to name a few. She is excited about up and coming innovative tech in Toronto, and is looking forward to see what the brilliant minds of Nigeria has to offer the tech world.
+        `
+      },
+      {
+        name: `Opeoluwa Victor Babasanmi`,
+        title: "Cloud Engineer, Amazon Web Services",
+        img: Victor,
+        bio: `Victor is a Cloud Engineer at Amazon Web Services, passionate about Cloud computing and helping businesses solve complex technology challenges. His expertise covers Cloud, Cybersecurity, Network Engineering and DevOps. He holds a BEng. in Electrical/Electronics Engineering from Covenant University.
+        
+        When he isn't lost in the cloud, you may find him playing soccer/tennis, debating social science issues with friends, or off to some new adventure somewhere.
         `
       },
       {
@@ -1527,9 +1430,17 @@ export default {
         img: Ekene,
         bio: `Ekene is a Software Developer Advocate at Flutterwave. His passion for growing the technology ecosystem in Africa has led him to write technical articles, mentor upcoming developers and speak at conferences to help power the next generation of software developers in Africa. 
         `
+      },
+      {
+        name: `Ik Obi`,
+        title: "Integrations Lead,	Paystack",
+        img: IK,
+        bio: `Ik leads the Integration team at Paystack.
+        `
       }
     ]
   },
+  team,
   keynote: {
     title: "Keynote Speaker",
     name: "Chude Jideonwo",
@@ -1678,7 +1589,16 @@ export default {
           "A Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, NaijaHacks Medal",
         Criteria: "",
         Sponsor: ""
+      },
+      {
+        question:
+          "The Dotts Media Prize for the Project with the best new media integration",
+        answer:
+          "A Laptop for each team member, $10,000 in AWS Credit, $5,000 in AWS support credit, NaijaHacks Medal",
+        Criteria: "",
+        Sponsor: ""
       }
     ]
-  }
+  },
+  scheduleSection: {}
 };

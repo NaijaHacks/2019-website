@@ -6,9 +6,8 @@ import Background from "components/Background";
 import About from "sections/About";
 import Judges from "sections/Judges";
 import Sponsors from "sections/Sponsors";
-// const Stories = createAsyncComponent({
-//   load: () => import("sections/Stories")
-// });
+import Team from "sections/Team";
+
 // const Sponsors = createAsyncComponent({
 //   load: () => import("sections/Sponsors")
 // });
@@ -28,6 +27,7 @@ const LazyLoadedSections = () => (
     {/* <Leaders /> */}
     <Sponsors />
     <FAQ />
+    <Team />
   </>
 );
 
