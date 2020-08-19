@@ -568,8 +568,7 @@ const team = [
   {
     text: "Blessing Thomas",
     alt: "Blessing Thomas",
-    img: "https://naijahacks.com/2018/res/team/blessing.jpeg",
-    title: "Co-chair"
+    img: "https://naijahacks.com/2018/res/team/blessing.jpeg"
   },
   {
     text: "Abdulsalam Daud",
@@ -710,7 +709,7 @@ export default {
     sentence1:
       "Join 1,300+ participants, 50+ sponsors and judges from 8+ countries at NaijaHacks 2019 to build solutions for Education, Housing, Job Creation and Citizen Safety",
     sentence2:
-      "NaijaHacks is not just a hackathon in Nigeria. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
+      "NaijaHacks is founded by Uchi Uchibeke. The #NaijaHacks2019 experience starts online and continues in a demo day and award ceremony at Zone Tech Park. Unlike other Hackathons, we follow up, match participants to companies and mentor and fund the projects that come out of NaijaHacks.",
     gears: [
       {
         name: "speakers",

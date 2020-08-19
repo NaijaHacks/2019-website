@@ -49,9 +49,8 @@ const Description = styled.div`
 const Team = () => (
   <JudgeWrapper id="team">
     <p style={{ color: "black" }}>
-      {" "}
       <Text className="heading" as="h3" variant="sectionHeading">
-        Team
+        2019 Organizing team
       </Text>
     </p>
 
