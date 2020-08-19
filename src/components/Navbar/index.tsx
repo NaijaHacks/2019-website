@@ -224,11 +224,9 @@ const NavBar: React.FC<any> = props => {
               <CallToActionButton
                 text={copy.nav.sponsorButton.text}
                 // onClick={() => scrollTo("sponsors-cta")}
-                onClick={() =>
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSeqYghgXy83ZW5ulCrD0Ookgs1SEL1uALNH9gOUr5pEHuPreA/viewform?usp=sf_link"
-                  )
-                }
+                onClick={() => {
+                  window.location.href = "mailto:uchi@naijahacks.com";
+                }}
                 scrolledDown={scrolledDown}
               />
             )}

@@ -646,7 +646,7 @@ export default {
           light: SocialTwitterImg,
           dark: SocialTwitterImgDark
         },
-        link: "https://twitter.com/naijahacks"
+        link: "https://twitter.com/naijahacks_"
       },
       {
         name: "instagram",
@@ -666,7 +666,7 @@ export default {
       }
     ],
     sponsorButton: {
-      text: "Become a Campus Ambassador"
+      text: "Become a Partner"
     }
   },
   hero: {
@@ -842,7 +842,7 @@ export default {
             to us at{" "}
             <Link href="mailto:team@naijahacks.com">team@naijahacks.com</Link>{" "}
             or on{" "}
-            <Link href="https://www.twitter.com/naijahacks" newTab>
+            <Link href="https://www.twitter.com/naijahacks_" newTab>
               Twitter
             </Link>
             .
@@ -876,7 +876,7 @@ export default {
       {
         name: "Twitter",
         img: SocialTwitterImg,
-        link: "https://twitter.com/naijahacks"
+        link: "https://twitter.com/naijahacks_"
       },
       {
         name: "Instagram",
